@@ -1,0 +1,6 @@
+@Friendbook.API_HostAddress = http://localhost:5022
+
+GET {{Friendbook.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
