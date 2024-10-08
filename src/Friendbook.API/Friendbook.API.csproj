@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Friendbook.Business\Friendbook.Business.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GrNIX9e2FiosyZiy5vbR2MywK6YdFC8tRoAxDv9+lLM=",
+  "Source": "Friendbook.API",
+  "BasePath": "_content/Friendbook.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

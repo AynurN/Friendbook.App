@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Friendbook.Core.Entities
 {
-    public class ProfileImage
+    public class ProfileImage :BaseClass
     {
         public string ImageURL { get; set; }
 

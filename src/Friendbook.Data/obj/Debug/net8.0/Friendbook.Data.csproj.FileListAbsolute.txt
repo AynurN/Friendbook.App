@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Data.deps.json
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Data.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Data.pdb
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Core.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Core.pdb
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.AssemblyInfo.cs
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.sourcelink.json
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbo.336F0F10.Up2Date
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\refint\Friendbook.Data.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.pdb
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\ref\Friendbook.Data.dll
