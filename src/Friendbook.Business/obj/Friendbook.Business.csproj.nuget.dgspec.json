@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.Business\\Friendbook.Business.csproj": {}
+    "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Friendbook.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.Business\\Friendbook.Business.csproj": {
+    "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Friendbook.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.Business\\Friendbook.Business.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Friendbook.Business.csproj",
         "projectName": "Friendbook.Business",
-        "projectPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.Business\\Friendbook.Business.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Friendbook.Business.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.Business\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
