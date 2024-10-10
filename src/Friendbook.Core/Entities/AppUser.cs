@@ -12,7 +12,6 @@ namespace Friendbook.Core.Entities
         public string UserName { get; set; }
 
         //relational
-        public int ProfileImageId { get; set; }
         public ProfileImage ProfileImage { get; set; }
         public ICollection<Post> Posts { get; set; }                  
         public  ICollection<Friendship> Friendships { get; set; } 

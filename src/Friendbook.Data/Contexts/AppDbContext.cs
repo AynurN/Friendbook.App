@@ -22,5 +22,54 @@ namespace Friendbook.Data.Contexts
         public DbSet<DirectMessage> DirectMessages { get; set; }
         public DbSet<PostLike> PostLikes{ get; set; }
         public DbSet<Notification> Notifications{ get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Friendship>()
+                .HasKey(f => new { f.AppUserId, f.FriendId }); 
+
+            modelBuilder.Entity<Friendship>()
+                .HasOne(f => f.AppUser)
+                .WithMany(u => u.Friendships)
+                .HasForeignKey(f => f.AppUserId)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            modelBuilder.Entity<Friendship>()
+                .HasOne(f => f.Friend)
+                .WithMany()
+                .HasForeignKey(f => f.FriendId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<DirectMessage>()
+          .HasOne(dm => dm.Sender)
+       .WithMany()  
+       .HasForeignKey(dm => dm.SenderId)
+       .OnDelete(DeleteBehavior.NoAction); 
+
+            modelBuilder.Entity<DirectMessage>()
+                .HasOne(dm => dm.Receiver)
+                .WithMany()  
+                .HasForeignKey(dm => dm.ReceiverId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+            modelBuilder.Entity<PostLike>()
+                .HasKey(pl => new { pl.AppUserId, pl.PostId }); 
+
+            modelBuilder.Entity<PostLike>()
+                .HasOne(pl => pl.Post)
+                .WithMany(p => p.Likes)
+                .HasForeignKey(pl => pl.PostId)
+                .OnDelete(DeleteBehavior.NoAction); 
+
+            modelBuilder.Entity<PostLike>()
+                .HasOne(pl => pl.AppUser)
+                .WithMany() 
+                .HasForeignKey(pl => pl.AppUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+
+        }
     }
 }

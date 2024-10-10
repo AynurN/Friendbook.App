@@ -14,3 +14,5 @@ C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friend
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\refint\Friendbook.Data.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.pdb
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\ref\Friendbook.Data.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\bin\Debug\net8.0\Friendbook.Data.runtimeconfig.json
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Data\obj\Debug\net8.0\Friendbook.Data.genruntimeconfig.cache

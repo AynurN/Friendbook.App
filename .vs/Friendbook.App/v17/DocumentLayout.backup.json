@@ -3,52 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\profileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\profileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\postlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\postlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\postimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\postimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\friendshiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\friendshiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\directmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\directmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\directmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\directmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\friendship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,52 +39,32 @@
       "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\directmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\directmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\ipostimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\ipostimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\ifriendshiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\ifriendshiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\iprofileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\iprofileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\ipostlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\ipostlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\baseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\idirectmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\irepositories\\idirectmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\irepositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,175 +83,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Friendbook.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\appsettings.json",
-              "RelativeToolTip": "src\\Friendbook.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-08T17:38:33.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.API\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs*",
-              "RelativeToolTip": "src\\Friendbook.API\\Program.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABjAAAAAAAAAA==",
+              "Title": "20241010082937_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Migrations\\20241010082937_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:36:44.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:33:23.504Z",
+              "WhenOpened": "2024-10-10T08:29:37.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\PostRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Title": "20241010082500_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Migrations\\20241010082500_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:32:09.021Z",
+              "WhenOpened": "2024-10-10T08:25:01.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PostLikeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostLikeRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\PostLikeRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostLikeRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\PostLikeRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Title": "20241010082210_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Migrations\\20241010082210_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:31:03.31Z",
+              "WhenOpened": "2024-10-10T08:22:10.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PostImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostImageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\PostImageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\PostImageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\PostImageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\Post.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Post.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\Post.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:30:10.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NotificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\NotificationRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\NotificationRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\NotificationRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\NotificationRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:28:54.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FriendshipRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\FriendshipRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\FriendshipRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\FriendshipRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\FriendshipRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:27:56.854Z",
+              "WhenOpened": "2024-10-10T07:41:58.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "DirectMessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\DirectMessageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\DirectMessageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\DirectMessageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\DirectMessageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Title": "PostImage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\PostImage.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\PostImage.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\PostImage.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\PostImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:27:03.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CommentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\CommentRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\CommentRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\CommentRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\CommentRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:25:58.046Z",
+              "WhenOpened": "2024-10-10T07:41:55.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\ServiceRegistration.cs*",
-              "RelativeToolTip": "src\\Friendbook.Data\\ServiceRegistration.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
+              "Title": "PostLike.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\PostLike.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\PostLike.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\PostLike.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\PostLike.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:23:24.308Z",
+              "WhenOpened": "2024-10-10T07:41:53.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:18:28.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Friendship.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Friendship.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\Friendship.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Friendship.cs",
-              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\Friendship.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:18:05.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Notification.cs",
               "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\Notification.cs",
@@ -299,176 +168,137 @@
               "RelativeToolTip": "src\\Friendbook.Core\\Entities\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:18:03.424Z",
+              "WhenOpened": "2024-10-10T07:41:49.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
+              "Title": "BaseClass.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\BaseClass.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\BaseClass.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\BaseClass.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\BaseClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:41:43.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DirectMessage.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\DirectMessage.cs",
               "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\DirectMessage.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\DirectMessage.cs",
               "RelativeToolTip": "src\\Friendbook.Core\\Entities\\DirectMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:18:01.305Z",
+              "WhenOpened": "2024-10-10T07:41:24.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileImage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:40:10.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:37:22.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Friendship.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Friendship.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\Friendship.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Friendship.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\Friendship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:37:15.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.API\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs",
+              "RelativeToolTip": "src\\Friendbook.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:31:07.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\ServiceRegistration.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:31:00.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\Comment.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\Comment.cs",
               "RelativeToolTip": "src\\Friendbook.Core\\Entities\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:17:58.871Z",
+              "WhenOpened": "2024-10-09T17:24:23.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "BaseClass.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\BaseClass.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\BaseClass.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\BaseClass.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\BaseClass.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:17:48.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProfileImage.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\ProfileImage.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\ProfileImage.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:12:55.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IProfileImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IProfileImageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IProfileImageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IProfileImageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IProfileImageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:12:26.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IPostLikeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostLikeRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IPostLikeRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostLikeRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IPostLikeRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:11:43.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IPostImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostImageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IPostImageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostImageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IPostImageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:10:50.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IPostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IPostRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IPostRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IPostRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:09:38.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "INotificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\INotificationRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\INotificationRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\INotificationRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\INotificationRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:08:49.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IFriendshipRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IFriendshipRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IFriendshipRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IFriendshipRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IFriendshipRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:07:58.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IDirectMessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IDirectMessageRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IDirectMessageRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IDirectMessageRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IDirectMessageRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:05:34.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "ICommentRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs",
               "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:04:47.56Z",
+              "WhenOpened": "2024-10-09T17:24:08.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Core\\IRepositories\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\IRepositories\\IGenericRepository.cs*",
-              "RelativeToolTip": "src\\Friendbook.Core\\IRepositories\\IGenericRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:00:12.151Z",
+              "WhenOpened": "2024-10-08T17:44:58.771Z",
               "EditorCaption": ""
             }
           ]

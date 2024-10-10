@@ -11,3 +11,5 @@ C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\obj\Debug\net8.0\refint
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\obj\Debug\net8.0\Friendbook.Core.pdb
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\obj\Debug\net8.0\ref\Friendbook.Core.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\obj\Debug\net8.0\Friendbook.Core.sourcelink.json
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\bin\Debug\net8.0\Friendbook.Core.runtimeconfig.json
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.Core\obj\Debug\net8.0\Friendbook.Core.genruntimeconfig.cache
