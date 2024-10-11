@@ -16,5 +16,6 @@ namespace Friendbook.Core.Entities
         public Comment ParentComment { get; set; }  
         public ICollection<Comment> Replies { get; set; }
 
+
     }
 }
