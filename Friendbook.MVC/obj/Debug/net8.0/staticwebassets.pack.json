@@ -1,0 +1,1473 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Friendbook.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Friendbook.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\css\\style-1.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-1.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\css\\style-2.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-2.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\404\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\404\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\404\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\404\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\404\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\404\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\app-btns\\app-store.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\app-btns\\app-store.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\app-btns\\play-store.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\app-btns\\play-store.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\birthday-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\birthday-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\blog\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\breadcrumb\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\breadcrumb\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\app\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\app\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\app\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\app\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\app\\mockup.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\app\\mockup.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\home-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\home-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\home-effect\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\home-effect\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\home-effect\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\home-effect\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\home-effect\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\home-effect\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\home-laptop.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\home-laptop.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\icon\\feature6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\icon\\feature6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company-landing\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-landing\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\company.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\company.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\16.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\cover\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\404.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\404.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\blog-details.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\blog-details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\blog.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\blog.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\career-details.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\career-details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\career.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\career.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\coming-soon.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\coming-soon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\faq.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\faq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\company\\home.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\company\\home.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\buttons.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\buttons.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\calendar.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\calendar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\icons.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\icons.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\map.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\map.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\modal.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\modal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\typography.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\typography.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\element\\widget.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\element\\widget.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\favourite\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\favourite\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\newsfeed\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\newsfeed\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\birthday.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\birthday.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\events.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\events.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\help.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\help.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\login.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\messanger.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\messanger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\music.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\music.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\register.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\register.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\setting.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\setting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\other\\weather.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\other\\weather.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\demo\\profile\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demo\\profile\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\event-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\event-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\event\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\event\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\event\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\event\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\event\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\event\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\flag.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\16.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\17.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\19.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\20.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\21.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\game\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\game\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\app-store.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\app-store.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\cake.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\cake.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\calender.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\calender.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\electricity.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\electricity.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\event.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\event.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\game\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\game\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\game\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\game\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\game\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\game\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\game\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\game\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\google-play.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\google-play.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\logo-color.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo-color.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\play.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\plus.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\plus.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\snow-flaks-blue.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\snow-flaks-blue.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\snow-flaks.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\snow-flaks.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\translate.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\translate.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\user-w.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\user-w.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\icon\\verified.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\verified.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\login\\charcter.png",
+      "PackagePath": "staticwebassets\\assets\\images\\login\\charcter.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\login\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\login\\login-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\logo\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\choose.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\choose.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\edit.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\edit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\gallery.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\gallery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\share.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\share.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\story.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\story.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\modal-img\\video.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\modal-img\\video.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\music\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\music\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\pages-logo\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages-logo\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\paris.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\paris.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\16.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\17.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\19.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\24.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\25.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\26.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\27.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\28.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\29.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\30.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\31.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\32.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\33.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\34.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\35.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\36.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\37.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\38.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\39.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\40.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\41.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\42.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\post\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\products\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\smiley-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\smiley-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\story\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\story\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\title.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\title.gif"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user-sm\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-sm\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\user\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\images\\weather.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\weather.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\chatbox-2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chatbox-2.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\chatbox.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chatbox.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\counter.js",
+      "PackagePath": "staticwebassets\\assets\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\custom-chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\custom-slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom-slick.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\custom_iframe.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom_iframe.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\custom_map.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom_map.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\date-picker.js",
+      "PackagePath": "staticwebassets\\assets\\js\\date-picker.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\emojionearea.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\emojionearea.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\fare-calender\\calender-data.js",
+      "PackagePath": "staticwebassets\\assets\\js\\fare-calender\\calender-data.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\fare-calender\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\fare-calender\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\fare-calender\\main_1.js",
+      "PackagePath": "staticwebassets\\assets\\js\\fare-calender\\main_1.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\feather.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\feather.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\filter.js",
+      "PackagePath": "staticwebassets\\assets\\js\\filter.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\jquery-migrate-1.4.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-migrate-1.4.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\lazysizes.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lazysizes.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\messanger.js",
+      "PackagePath": "staticwebassets\\assets\\js\\messanger.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\player.js",
+      "PackagePath": "staticwebassets\\assets\\js\\player.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\popover.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popover.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\theme-setting.js",
+      "PackagePath": "staticwebassets\\assets\\js\\theme-setting.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\tilt.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tilt.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\timer.js",
+      "PackagePath": "staticwebassets\\assets\\js\\timer.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Friendbook.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Friendbook.MVC.props",
+      "PackagePath": "build\\Friendbook.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Friendbook.MVC.props",
+      "PackagePath": "buildMultiTargeting\\Friendbook.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Friendbook.MVC.props",
+      "PackagePath": "buildTransitive\\Friendbook.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

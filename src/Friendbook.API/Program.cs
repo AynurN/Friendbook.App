@@ -1,7 +1,10 @@
 
 using Friendbook.Business;
+using Friendbook.Core.Entities;
 using Friendbook.Data;
+using Friendbook.Data.Contexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -40,6 +43,9 @@ namespace Friendbook.API
                 };
             });
            builder.Services.AddServices();
+           builder.Services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();    
 
             var app = builder.Build();
 

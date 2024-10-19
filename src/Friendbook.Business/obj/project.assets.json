@@ -1317,6 +1317,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "RestSharp/112.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -1952,7 +1965,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
-          "Microsoft.EntityFrameworkCore": "8.0.10"
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "RestSharp": "112.1.0"
         },
         "compile": {
           "bin/placeholder/Friendbook.Core.dll": {}
@@ -1968,7 +1982,8 @@
           "Friendbook.Core": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
+          "RestSharp": "112.1.0"
         },
         "compile": {
           "bin/placeholder/Friendbook.Data.dll": {}
@@ -3693,6 +3708,31 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "RestSharp/112.1.0": {
+      "sha512": "bOUGNZqhhv/QeCXHTKEUil846yBjwWXpzPKjO67kFvaAOoF361z7jLY5BMnuZ6WD2WQRA750sNMcK7MSPCQ5Mg==",
+      "type": "package",
+      "path": "restsharp/112.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net471/RestSharp.dll",
+        "lib/net471/RestSharp.xml",
+        "lib/net48/RestSharp.dll",
+        "lib/net48/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/net7.0/RestSharp.dll",
+        "lib/net7.0/RestSharp.xml",
+        "lib/net8.0/RestSharp.dll",
+        "lib/net8.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.112.1.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "System.Buffers/4.5.0": {
       "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
@@ -4747,7 +4787,8 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.10",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.10",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.10"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
+      "RestSharp >= 112.1.0"
     ]
   },
   "packageFolders": {
@@ -4821,6 +4862,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.10, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[112.1.0, )"
           }
         },
         "imports": [

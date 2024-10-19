@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Friendbook.Data", "src\Frie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Friendbook.API", "src\Friendbook.API\Friendbook.API.csproj", "{2EEBF10F-999C-474C-8279-29F8076DD126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friendbook.Business", "src\Friendbook.Business\Friendbook.Business.csproj", "{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Friendbook.Business", "src\Friendbook.Business\Friendbook.Business.csproj", "{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friendbook.MVC", "Friendbook.MVC\Friendbook.MVC.csproj", "{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{EB19979B-2FAE-44D1-B1AB-11A522C43CF5} = {6061BB25-5AE5-4634-A9CD-669303FEB0E2}
 		{2EEBF10F-999C-474C-8279-29F8076DD126} = {6061BB25-5AE5-4634-A9CD-669303FEB0E2}
 		{AEF6C9E8-0D91-4BF4-940F-7A7416E88291} = {6061BB25-5AE5-4634-A9CD-669303FEB0E2}
+		{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F} = {6061BB25-5AE5-4634-A9CD-669303FEB0E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C15C567B-30DB-4E6A-8E39-FDB8B9410FC9}
