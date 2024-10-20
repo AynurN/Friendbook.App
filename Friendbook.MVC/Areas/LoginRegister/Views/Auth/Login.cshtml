@@ -1,8 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Friendbook.MVC.Areas.LoginRegister.ViewModels
+@model UserLoginVM
+<!DOCTYPE html>
 <html lang="en">
 
 
-<!-- Mirrored from themes.pixelstrap.com/friendbook/html/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2024 20:07:27 GMT -->
+<!-- Mirrored from themes.pixelstrap.com/friendbook/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2024 20:06:54 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +64,7 @@
                         <div>
                             <img src="~/assets/images/login/charcter.png" class="img-fluid blur-up lazyload"
                                  alt="charcter">
-                            <h1>Welcome friend!</h1>
+                            <h1>Welcome Back!</h1>
                         </div>
                     </div>
                 </div>
@@ -70,43 +72,42 @@
                     <div class="login-form">
                         <div>
                             <div class="login-title">
-                                <h2>Register</h2>
+                                <h2>Login</h2>
                             </div>
                             <div class="login-discription">
-                                <h3>Hello Everyone</h3>
-                                <h4>Welcome to Friendbook, create your account below to start usinf friendbook.</h4>
+                                <h3>Hello Everyone, Welcome Back</h3>
+                                <h4>
+                                    Welcome to Friendbook, please login to your account.
+                                </h4>
                             </div>
                             <div class="form-sec">
                                 <div>
-                                    <form class="theme-form">
+                                    <form class="theme-form" action="@Url.Action("Login", "Auth")" method="post">
                                         <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <i class="input-icon iw-20 ih-20" data-feather="user"></i>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                            <label asp-for="Email">Email address</label>
+                                            <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1"
                                                    placeholder="Enter email">
-                                            <i class="input-icon iw-20 ih-20" data-feather="mail"></i>
+                                            
+                                            <i class="input-icon iw-20 ih-20" data-feather="user"></i>
+                                            <span class="text-danger" asp-validation-for="Email"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                            <label asp-for="Password">Password</label>
+                                            <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1"
                                                    placeholder="Password">
                                             <i class="input-icon iw-20 ih-20" data-feather="eye"></i>
-                                            <!-- <i class="input-icon iw-20 ih-20" data-feather="eye-off"></i> -->
+                                            <span class="text-danger" asp-validation-for="Password"></span>
+                                            <!-- <i class="input-icon" data-feather="eye-off" width="20" height="20"></i> -->
                                         </div>
-                                        <div class="bottom-sec">
-                                            <div class="form-check checkbox_animated">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">remember me</label>
-                                            </div>
-                                            <a href="#" class="ms-auto">forget password?</a>
-                                        </div>
+                
+                                            <a href="#" class="ms-auto forget-password">
+                                                forget
+                                                password?
+                                            </a>
+                                       
                                         <div class="btn-section">
-                                            <a href="#" class="btn btn-solid btn-lg">sign up</a>
-                                            <a href="login.html" class="btn btn-solid btn-lg ms-auto">login</a>
+                                            <button  class="btn btn-solid btn-lg">login</button>
+                                            
                                         </div>
                                     </form>
                                     <div class="connect-with">
@@ -148,8 +149,7 @@
                 <div class="media-body">
                     <h2>how it work?</h2>
                     <p>
-                        Friendbook is a website which allows users, who sign-up for free profiles, to connect with
-                        friends, work colleagues or people they don't know, online.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
                     </p>
                 </div>
             </div>
@@ -1157,5 +1157,5 @@
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.com/friendbook/html/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2024 20:07:27 GMT -->
+<!-- Mirrored from themes.pixelstrap.com/friendbook/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2024 20:06:54 GMT -->
 </html>

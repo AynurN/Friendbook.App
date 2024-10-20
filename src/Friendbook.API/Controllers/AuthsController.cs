@@ -25,7 +25,7 @@ namespace Friendbook.API.Controllers
             _userManager = userManager;
         }
 
-        [HttpPost("Register")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromBody] UserRegisterDto userRegisterDto)
         {
             try

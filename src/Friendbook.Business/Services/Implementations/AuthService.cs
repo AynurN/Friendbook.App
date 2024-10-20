@@ -1,7 +1,9 @@
 ﻿using Friendbook.Business.Dtos.TokenDtos;
 using Friendbook.Business.Dtos.UserDtos;
+using Friendbook.Business.Exceptions.LoginRegisterExceptions;
 using Friendbook.Business.Services.Interfaces;
 using Friendbook.Core.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -43,6 +45,7 @@ namespace Friendbook.Business.Services.Implementations
         [
             new Claim(ClaimTypes.NameIdentifier,user.Id),
             new Claim(ClaimTypes.Name,user.UserName),
+             new Claim("Fullname", user.FullName),
             .. roles.Select(role => new Claim(ClaimTypes.Role, role)),
         ];
 
@@ -68,18 +71,24 @@ namespace Friendbook.Business.Services.Implementations
 
         public async Task Register(UserRegisterDto userRegisterDto)
         {
+            if (userRegisterDto.Password != userRegisterDto.ConfirmPassword) throw new PasswordsDoNotMatchException(StatusCodes.Status400BadRequest, "ConfirmPassword", "Passwords do not match");
+
+            Random random = new Random();
+            int randomDigits = random.Next(100, 1000);
+
+            string userName = $"{userRegisterDto.FullName.Substring(0,3)}{randomDigits}";
             AppUser appUser = new AppUser()
             {
                 Email = userRegisterDto.Email,
-                
-                UserName = userRegisterDto.UserName
+                FullName= userRegisterDto.FullName,
+                UserName = userName
             };
 
             var result = await userManager.CreateAsync(appUser, userRegisterDto.Password);
 
             if (!result.Succeeded)
             {
-                throw new NullReferenceException();
+                throw new Exception();
             }
         }
     }

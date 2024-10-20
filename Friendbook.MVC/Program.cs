@@ -1,3 +1,6 @@
+using Friendbook.MVC.Services;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
 namespace Friendbook.MVC
 {
     public class Program
@@ -8,8 +11,18 @@ namespace Friendbook.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddRegisterService();
+            builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
 
             var app = builder.Build();
+            app.UseCors("AllowAll");
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -25,6 +38,10 @@ namespace Friendbook.MVC
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
             app.MapControllerRoute(
                 name: "default",

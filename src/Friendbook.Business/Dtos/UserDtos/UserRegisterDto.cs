@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Friendbook.Business.Dtos.UserDtos
 {
-    public record UserRegisterDto(string UserName, string Email, string Password, string ConfirmPassword);
+    public record UserRegisterDto(string FullName, string Email, string Password, string ConfirmPassword);
     
 }

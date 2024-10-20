@@ -9,7 +9,7 @@ namespace Friendbook.Core.Entities
 {
     public class AppUser :IdentityUser
     {
-        public string UserName { get; set; }
+        public string FullName { get; set; }
 
         //relational
         public ProfileImage ProfileImage { get; set; }

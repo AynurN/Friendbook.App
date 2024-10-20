@@ -26,12 +26,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Areas/LoginRegister/Views/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5SZWdpc3RlclxWaWV3c1xMb2dpbi5jc2h0bWw=
+[C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Areas/LoginRegister/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5SZWdpc3RlclxWaWV3c1xBdXRoXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Areas/LoginRegister/Views/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5SZWdpc3RlclxWaWV3c1xSZWdpc3Rlci5jc2h0bWw=
+[C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Areas/LoginRegister/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5SZWdpc3RlclxWaWV3c1xBdXRoXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Areas/LoginRegister/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5SZWdpc3RlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/Friendbook.App/Friendbook.MVC/Views/Home/Index.cshtml]

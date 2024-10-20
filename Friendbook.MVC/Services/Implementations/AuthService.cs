@@ -15,11 +15,11 @@ namespace Friendbook.MVC.Services.Implementations
         {
             this.configuration = configuration;
             this.contextAccessor = contextAccessor;
-            _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
+           _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
         }
         public async Task<RestResponse<ApiResponseMessage<LoginResponseVM>>> Login(UserLoginVM vm)
         {
-            var request = new RestRequest("/auth/login", Method.Post);
+            var request = new RestRequest("/auths/login", Method.Post);
             request.AddJsonBody(vm);
 
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<LoginResponseVM>>(request);
@@ -34,7 +34,7 @@ namespace Friendbook.MVC.Services.Implementations
 
         public async  Task<RestResponse<ApiResponseMessage<object>>> Register(UserRegisterVM vm)
         {
-            var request = new RestRequest("/auth/register", Method.Post);
+            var request = new RestRequest("/auths/register", Method.Post);
             request.AddJsonBody(vm);
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
 

@@ -42,10 +42,14 @@ namespace Friendbook.API
                     ClockSkew = TimeSpan.Zero
                 };
             });
-           builder.Services.AddServices();
-           builder.Services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();    
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.User.RequireUniqueEmail = true;
+                //opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -._@+";
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); 
+
+            builder.Services.AddServices();
+          
 
             var app = builder.Build();
 

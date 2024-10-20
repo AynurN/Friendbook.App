@@ -153,3 +153,4 @@ C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\tr\Micr
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\RestSharp.dll
