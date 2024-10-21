@@ -20,11 +20,11 @@ namespace Friendbook.MVC.Services.Implementations
                 var handler = new JwtSecurityTokenHandler();
                 var jwtToken = handler.ReadJwtToken(token);
 
-                bool isAdmin = jwtToken.Claims
+                bool isMember = jwtToken.Claims
                          .Where(c => c.Type == ClaimTypes.Role)
-                         .Any(c => c.Value == "Admin");
-
-                if (!isAdmin) context.Result = new RedirectToActionResult("Forbidden", "Home", new { area = "" });
+                         .Any(c => c.Value == "Member");
+                
+                if (!isMember) context.Result = new RedirectToActionResult("Forbidden", "Home", new { area = "" });
             }
         }
     }

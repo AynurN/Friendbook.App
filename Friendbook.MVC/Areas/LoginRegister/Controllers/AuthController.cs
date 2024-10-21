@@ -62,16 +62,20 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
 
             var response = await authService.Register(vm);
 
-            if (response.Data == null)
-            {
-                ModelState.AddModelError("", "An unknown error occurred during registration.");
-            }
-            else
+            //if (response.Data == null)
+            //{
+            //    ModelState.AddModelError("", "An unknown error occurred during registration.");
+            //}
+            //else
+            //{
+            if (response == null)
             {
                 ModelState.AddModelError(response.Data.PropertyName, response.Data.ErrorMessage);
                 return View();
+
             }
-            
+           
+            //}
 
             TempData["Message"] = "You have registered successfully";
             return RedirectToAction("Login","Auth", new { area = "LoginRegister" });

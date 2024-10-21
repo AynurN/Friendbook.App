@@ -90,6 +90,7 @@ namespace Friendbook.Business.Services.Implementations
             {
                 throw new Exception();
             }
+            await userManager.AddToRoleAsync(appUser, "Member");
         }
     }
 }

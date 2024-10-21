@@ -1,4 +1,5 @@
 using Friendbook.MVC.Services;
+using Friendbook.MVC.Services.Implementations;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Friendbook.MVC
@@ -20,7 +21,10 @@ namespace Friendbook.MVC
                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                 });
             });
-
+            //builder.Services.AddControllersWithViews(options =>
+            //{
+            //    options.Filters.Add<TokenAuthorizationFilter>();
+            //});
             var app = builder.Build();
             app.UseCors("AllowAll");
 
