@@ -30,5 +30,63 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.FriendshipsController",
+    "Method": "AcceptFriendship",
+    "RelativePath": "api/Friendships/AcceptFriendship",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "friendshipId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.FriendshipsController",
+    "Method": "AddFriend",
+    "RelativePath": "api/Friendships/AddFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "friendId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.FriendshipsController",
+    "Method": "GetFriends",
+    "RelativePath": "api/Friendships/GetFriends",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.FriendshipsController",
+    "Method": "RemoveFriend",
+    "RelativePath": "api/Friendships/RemoveFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "friendshipId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

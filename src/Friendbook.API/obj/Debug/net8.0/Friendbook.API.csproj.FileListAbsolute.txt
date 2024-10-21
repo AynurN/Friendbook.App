@@ -154,3 +154,10 @@ C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\zh-Hans
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\RestSharp.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.Owin.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.Owin.Security.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Owin.dll

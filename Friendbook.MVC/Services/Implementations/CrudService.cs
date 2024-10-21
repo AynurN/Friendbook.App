@@ -14,6 +14,7 @@ namespace Friendbook.MVC.Services.Implementations
         {
             this.configuration = configuration;
             this.contextAccessor = contextAccessor;
+            _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
 
             var token = contextAccessor.HttpContext.Request.Cookies["token"];
 

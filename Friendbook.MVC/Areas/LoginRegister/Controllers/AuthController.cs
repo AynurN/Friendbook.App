@@ -69,11 +69,12 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
             else
             {
                 ModelState.AddModelError(response.Data.PropertyName, response.Data.ErrorMessage);
+                return View();
             }
-            return View();
+            
 
             TempData["Message"] = "You have registered successfully";
-            return RedirectToAction();
+            return RedirectToAction("Login","Auth", new { area = "LoginRegister" });
         }
 
 

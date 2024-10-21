@@ -23,6 +23,7 @@ namespace Friendbook.Data
             services.AddScoped<IPostLikeRepository, PostLikeRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IProfileImageRepository, ProfileImageRepository>();
+            services.AddScoped<IAppUserRepository, AppUserRepository>();
 
             services.AddDbContext<AppDbContext>(opt =>
             {

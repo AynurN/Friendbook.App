@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Owin;
+using Friendbook.Business.Hubs;
 
 namespace Friendbook.API
 {
@@ -49,10 +51,17 @@ namespace Friendbook.API
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); 
 
             builder.Services.AddServices();
-          
+            builder.Services.AddSignalR();
+
 
             var app = builder.Build();
 
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //    endpoints.MapHub<NotificationHub>("/notificationHub");
+            //});
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -67,6 +76,7 @@ namespace Friendbook.API
 
             app.MapControllers();
 
+            //app.MapSignalR();
             app.Run();
         }
     }
