@@ -161,3 +161,4 @@ C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microso
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Microsoft.Owin.Security.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Owin.dll
+C:\Users\user\Desktop\Friendbook.App\src\Friendbook.API\bin\Debug\net8.0\Friendbook.API.staticwebassets.runtime.json

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Friendbook.MVC.ViewModels
+@model ProfileViewModel
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -444,12 +446,12 @@
                                        data-feather="user"></i>
                                     <div class="media d-none d-sm-flex">
                                         <div class="user-img">
-                                            <img src="~/assets/images/user-sm/1.jpg"
+                                            <img src="~/imgs/@(Model.ProfileImageImageUrl!=null ? Model.ProfileImageImageUrl : "profile-icon-9.png" )"
                                                  class="img-fluid blur-up lazyload bg-img" alt="user">
                                             <span class="available-stats online"></span>
                                         </div>
                                         <div class="media-body d-none d-md-block">
-                                            <h4>Josephin water</h4>
+                                            <h4>@Model.FullName</h4>
                                             <span>active now</span>
                                         </div>
                                     </div>
@@ -1539,12 +1541,12 @@
                                    data-feather="user"></i>
                                 <div class="media d-none d-sm-flex">
                                     <div class="user-img">
-                                        <img src="~/assets/images/user-sm/1.jpg"
+                                        <img src="~/imgs/@(Model.ProfileImageImageUrl!=null ? Model.ProfileImageImageUrl : "profile-icon-9.png" )"
                                              class="img-fluid blur-up lazyload bg-img" alt="user">
                                         <span class="available-stats online"></span>
                                     </div>
                                     <div class="media-body d-none d-md-block">
-                                        <h4>Josephin water</h4>
+                                        <h4>@Model.FullName</h4>
                                         <span>active now</span>
                                     </div>
                                 </div>

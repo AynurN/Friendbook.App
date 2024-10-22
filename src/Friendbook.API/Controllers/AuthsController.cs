@@ -25,6 +25,35 @@ namespace Friendbook.API.Controllers
             _userManager = userManager;
         }
 
+        //[HttpPost("[action]")]
+        //public async Task<IActionResult> CreateRole()
+        //{
+        //    IdentityRole role1 = new IdentityRole("Admin");
+        //    IdentityRole role2 = new IdentityRole("SuperAdmin");
+        //    IdentityRole role3 = new IdentityRole("Member");
+        //    IdentityRole role4 = new IdentityRole("Editor");
+
+        //    await _roleManager.CreateAsync(role4);
+        //    await _roleManager.CreateAsync(role1);
+        //    await _roleManager.CreateAsync(role2);
+        //    await _roleManager.CreateAsync(role3);
+
+        //    return Ok();
+
+        //}
+        //[HttpPost("[action]")]
+        // public async Task<IActionResult> CreateAdmin()
+        //{
+        //    AppUser user = new AppUser();
+        //    user.UserName = "SuperAdmin";
+        //    user.Email = "super@gmail.com";
+        //    user.Fullname = "Super Admin";
+        //    await userManager.CreateAsync(user, "Salam123@");
+        //     AppUser user = await userManager.FindByNameAsync("SuperAdmin");
+        //     await userManager.AddToRoleAsync(user, "SuperAdmin");
+        //     return Ok();
+        // }
+
         [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromBody] UserRegisterDto userRegisterDto)
         {

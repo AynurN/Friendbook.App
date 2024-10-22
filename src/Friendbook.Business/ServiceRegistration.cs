@@ -19,6 +19,8 @@ namespace Friendbook.Business
         {
             services.AddScoped<IAuthService, AuthService>(); 
             services.AddScoped<IFriendshipService, FriendshipService>(); 
+            services.AddScoped<IUserService, UserService>(); 
+            services.AddScoped<IProfileImageService, ProfileImageService>(); 
           
         }
     }

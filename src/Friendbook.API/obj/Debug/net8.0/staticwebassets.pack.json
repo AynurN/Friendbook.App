@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\ProfilePictures\\istockphoto-1495088043-612x612.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\istockphoto-1495088043-612x612.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Friendbook.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Friendbook.API.props",
+      "PackagePath": "build\\Friendbook.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Friendbook.API.props",
+      "PackagePath": "buildMultiTargeting\\Friendbook.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Friendbook.API.props",
+      "PackagePath": "buildTransitive\\Friendbook.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

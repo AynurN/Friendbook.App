@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "GrNIX9e2FiosyZiy5vbR2MywK6YdFC8tRoAxDv9+lLM=",
+  "Hash": "tZg1qNGbX1HmuwwrmHEmcB7mJDIA3CXAtDb8hJxuCmc=",
   "Source": "Friendbook.API",
   "BasePath": "_content/Friendbook.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Friendbook.API\\wwwroot",
+      "Source": "Friendbook.API",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\",
+      "BasePath": "_content/Friendbook.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\ProfilePictures\\istockphoto-1495088043-612x612.jpg",
+      "SourceId": "Friendbook.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\",
+      "BasePath": "_content/Friendbook.API",
+      "RelativePath": "ProfilePictures/istockphoto-1495088043-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\istockphoto-1495088043-612x612.jpg"
+    }
+  ]
 }

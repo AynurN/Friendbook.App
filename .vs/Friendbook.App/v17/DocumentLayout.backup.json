@@ -3,56 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\areas\\loginregister\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\areas\\loginregister\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\areas\\loginregister\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\areas\\loginregister\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\services\\implementations\\profileimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\services\\implementations\\profileimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\services\\interfaces\\iprofileimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\services\\interfaces\\iprofileimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\controllers\\profileimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\controllers\\profileimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\dtos\\userdtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\dtos\\userdtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\profileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\profileimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\services\\implementations\\crudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\areas\\loginregister\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\areas\\loginregister\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\services\\implementations\\tokenauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\services\\implementations\\tokenauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\controllers\\friendshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\controllers\\friendshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\areas\\loginregister\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\areas\\loginregister\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4FF446-43FC-49D4-AD9A-9CE18753C5F3}|src\\Friendbook.Core\\Friendbook.Core.csproj|solutionrelative:src\\friendbook.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\controllers\\authscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\controllers\\authscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\apiresponses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\apiresponses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB19979B-2FAE-44D1-B1AB-11A522C43CF5}|src\\Friendbook.Data\\Friendbook.Data.csproj|solutionrelative:src\\friendbook.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\apiresponsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\apiresponsemessages\\apiresponsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.business\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF6C9E8-0D91-4BF4-940F-7A7416E88291}|src\\Friendbook.Business\\Friendbook.Business.csproj|solutionrelative:src\\friendbook.business\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|c:\\users\\user\\desktop\\friendbook.app\\src\\friendbook.api\\controllers\\friendshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEBF10F-999C-474C-8279-29F8076DD126}|src\\Friendbook.API\\Friendbook.API.csproj|solutionrelative:src\\friendbook.api\\controllers\\friendshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,89 +118,232 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAG0AAABHAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Profile\\Index.cshtml*",
+              "RelativeToolTip": "Friendbook.MVC\\Views\\Profile\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T18:23:39.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "Friendbook.MVC\\Areas\\LoginRegister\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T18:23:35.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
-              "RelativeToolTip": "src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T18:19:50.029Z",
+              "WhenOpened": "2024-10-22T19:20:53.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Friendbook.MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Friendbook.MVC\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T18:11:48.649Z",
+              "WhenOpened": "2024-10-22T19:20:26.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Friendbook.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAEQEAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T19:01:40.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T19:01:20.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CrudService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
+              "RelativeToolTip": "Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T18:04:02.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Program.cs",
-              "RelativeToolTip": "Friendbook.MVC\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABUAAAATAAAAAAAAAA==",
+              "Title": "ProfileImagesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\ProfileImagesController.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.API\\Controllers\\ProfileImagesController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\ProfileImagesController.cs",
+              "RelativeToolTip": "src\\Friendbook.API\\Controllers\\ProfileImagesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T17:59:08.304Z",
+              "WhenOpened": "2024-10-22T15:37:13.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\ServiceRegistration.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T15:35:53.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T15:10:53.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProfileImageService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\ProfileImageService.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Services\\Implementations\\ProfileImageService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\ProfileImageService.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Services\\Implementations\\ProfileImageService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABYAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:48:07.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TokenAuthorizationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\TokenAuthorizationFilter.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Services\\Implementations\\TokenAuthorizationFilter.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\TokenAuthorizationFilter.cs",
-              "RelativeToolTip": "Friendbook.MVC\\Services\\Implementations\\TokenAuthorizationFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "Title": "IProfileImageService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Interfaces\\IProfileImageService.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Services\\Interfaces\\IProfileImageService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Interfaces\\IProfileImageService.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Services\\Interfaces\\IProfileImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T17:56:58.059Z",
+              "WhenOpened": "2024-10-22T14:46:28.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:15:42.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProfileImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
+              "RelativeToolTip": "src\\Friendbook.Data\\Repositories\\ProfileImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:13:25.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProfileImage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "RelativeToolTip": "src\\Friendbook.Core\\Entities\\ProfileImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:13:00.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApiResponseMessage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\ApiResponseMessages\\ApiResponseMessage.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\ApiResponseMessages\\ApiResponseMessage.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\ApiResponseMessages\\ApiResponseMessage.cs",
+              "RelativeToolTip": "Friendbook.MVC\\ApiResponseMessages\\ApiResponseMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:09:33.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:03:57.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:14:51.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "Friendbook.MVC\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:12:36.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "Friendbook.MVC\\appsettings.json",
@@ -152,81 +351,123 @@
               "RelativeToolTip": "Friendbook.MVC\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-21T15:41:19.882Z"
+              "WhenOpened": "2024-10-22T09:11:45.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CrudService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
-              "RelativeToolTip": "Friendbook.MVC\\Services\\Implementations\\CrudService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Friendbook.MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAArwDsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:38:43.258Z",
+              "WhenOpened": "2024-10-22T09:02:16.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "Friendbook.MVC\\Areas\\LoginRegister\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAAEgAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Dtos\\UserDtos\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Dtos\\UserDtos\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Dtos\\UserDtos\\UserProfileDto.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Dtos\\UserDtos\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:38:19.021Z",
+              "WhenOpened": "2024-10-22T08:28:19.434Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
-              "RelativeDocumentMoniker": "Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
-              "RelativeToolTip": "Friendbook.MVC\\Services\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:37:56.903Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.Business\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\ServiceRegistration.cs",
-              "RelativeToolTip": "src\\Friendbook.Business\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Title": "TokenResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Dtos\\TokenDtos\\TokenResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Dtos\\TokenDtos\\TokenResponseDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Dtos\\TokenDtos\\TokenResponseDto.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Dtos\\TokenDtos\\TokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:33:53.307Z"
+              "WhenOpened": "2024-10-22T08:25:23.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Friendbook.API\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Program.cs",
-              "RelativeToolTip": "src\\Friendbook.API\\Program.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAD0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:32:50.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 26,
               "Title": "FriendshipsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\FriendshipsController.cs",
               "RelativeDocumentMoniker": "src\\Friendbook.API\\Controllers\\FriendshipsController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\FriendshipsController.cs",
               "RelativeToolTip": "src\\Friendbook.API\\Controllers\\FriendshipsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABsAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T14:22:32.074Z"
+              "WhenOpened": "2024-10-22T08:18:34.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAFEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:14:21.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Hubs\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.Business\\Hubs\\NotificationHub.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.Business\\Hubs\\NotificationHub.cs",
+              "RelativeToolTip": "src\\Friendbook.Business\\Hubs\\NotificationHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:14:20.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "src\\Friendbook.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:06:46.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\AuthsController.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.API\\Controllers\\AuthsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\Controllers\\AuthsController.cs",
+              "RelativeToolTip": "src\\Friendbook.API\\Controllers\\AuthsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAGwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:06:45.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\ApiResponses\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "src\\Friendbook.API\\ApiResponses\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\ApiResponses\\ApiResponse.cs",
+              "RelativeToolTip": "src\\Friendbook.API\\ApiResponses\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:06:42.381Z",
+              "EditorCaption": ""
             }
           ]
         }
