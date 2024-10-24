@@ -57,11 +57,7 @@ namespace Friendbook.API
             var app = builder.Build();
 
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllers();
-            //    endpoints.MapHub<NotificationHub>("/notificationHub");
-            //});
+            
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -73,7 +69,7 @@ namespace Friendbook.API
 
             app.UseAuthorization();
 
-
+            app.MapHub<NotificationHub>("/notificationHub");
             app.MapControllers();
 
             //app.MapSignalR();

@@ -86,7 +86,7 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
         {
             authService.Logout();
 
-            return RedirectToAction("Index", "Home", new { area = "" });
+            return RedirectToAction("Login", "Auth", new { area = "LoginRegister" });
         }
     }
 }

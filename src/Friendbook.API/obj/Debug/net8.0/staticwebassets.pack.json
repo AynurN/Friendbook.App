@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ProfilePictures\\istockphoto-1495088043-612x612.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\ProfilePictures\\profile-icon-9.png",
+      "PackagePath": "staticwebassets\\ProfilePictures\\profile-icon-9.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Friendbook.API.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

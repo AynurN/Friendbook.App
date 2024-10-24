@@ -55,6 +55,7 @@ namespace Friendbook.Business.Services.Implementations
 
             await notifi.Clients.User(friendId)
                 .SendAsync("ReceiveFriendRequestNotification", requesterName);
+
         }
 
         public async  Task<List<AppUser>> GetFriendsAsync(string appUserId)

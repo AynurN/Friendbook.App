@@ -91,8 +91,8 @@
   },
   {
     "ContainingType": "Friendbook.API.Controllers.ProfileImagesController",
-    "Method": "DeleteProfileImage",
-    "RelativePath": "api/ProfileImages/{appUserId}",
+    "Method": "Delete",
+    "RelativePath": "api/ProfileImages/Delete/{appUserId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -107,54 +107,29 @@
   },
   {
     "ContainingType": "Friendbook.API.Controllers.ProfileImagesController",
-    "Method": "UpdateProfileImage",
-    "RelativePath": "api/ProfileImages/update",
+    "Method": "Update",
+    "RelativePath": "api/ProfileImages/Update/{appUserId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": true
       },
       {
         "Name": "appUserId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Friendbook.API.Controllers.ProfileImagesController",
-    "Method": "UploadProfileImage",
-    "RelativePath": "api/ProfileImages/upload",
+    "Method": "Upload",
+    "RelativePath": "api/ProfileImages/Upload/{appUserId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -192,7 +167,7 @@
       {
         "Name": "appUserId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -209,6 +184,22 @@
         "Name": "id",
         "Type": "System.String",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.UsersController",
+    "Method": "GetUserProfileByName",
+    "RelativePath": "api/Users/GetUserProfileByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -1,0 +1,25 @@
+﻿@using Friendbook.MVC.ViewModels
+@model IEnumerable<UserProfileViewModel>
+
+@if (Model != null && Model.Any())
+{
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>
+                <div class="media">
+                    <img src="~/imgs/@user.ProfileImageImageUrl" alt="user">
+                    <div class="media-body">
+                        <div>
+                            <h5 class="mt-0">@user.FullName</h5>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No users found.</p>
+}

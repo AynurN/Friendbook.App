@@ -62,37 +62,59 @@ namespace Friendbook.Business.Services.Implementations
 
         public async Task<string> UploadProfileImageAsync(IFormFile file, string appUserId)
         {
+         
             if (file.Length > MaxFileSize)
                 throw new InvalidOperationException("File size exceeds the 5MB limit");
 
-
+          
             var extension = Path.GetExtension(file.FileName);
             if (!AllowedExtensions.Contains(extension.ToLower()))
                 throw new InvalidOperationException("Invalid file format. Only .jpg, .jpeg, and .png are allowed");
 
+            
+            var existingImage = await profileImageRepository.GetByExpression(false, x => x.AppUserId == appUserId).FirstOrDefaultAsync();
+
+         
             var uniqueFileName = Guid.NewGuid().ToString() + extension;
             var filePath = Path.Combine(environment.WebRootPath, ProfilePicturesPath, uniqueFileName);
 
+         
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
             }
 
- 
-            var profileImage = new ProfileImage
+           
+            if (existingImage != null)
             {
-                ImageURL = Path.Combine(ProfilePicturesPath, uniqueFileName),
-                AppUserId = appUserId
-            };
+               
+                DeleteImageFile(existingImage.ImageURL);
 
-            await profileImageRepository.CreateAsync(profileImage);
+         
+                existingImage.ImageURL =  uniqueFileName;
+                profileImageRepository.Update(existingImage);
+            }
+            else
+            {
+             
+                var profileImage = new ProfileImage
+                {
+                    ImageURL =  uniqueFileName,
+                    AppUserId = appUserId
+                };
+
+                await profileImageRepository.CreateAsync(profileImage);
+            }
+
+         
             await profileImageRepository.CommitAsync();
 
-            return profileImage.ImageURL;
+            return existingImage?.ImageURL ??  uniqueFileName;
         }
+
         private void DeleteImageFile(string imageUrl)
         {
-            var filePath = Path.Combine(environment.WebRootPath, imageUrl);
+            var filePath = Path.Combine(environment.WebRootPath, ProfilePicturesPath, imageUrl);
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);

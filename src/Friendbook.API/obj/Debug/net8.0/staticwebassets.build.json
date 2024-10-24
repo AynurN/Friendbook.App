@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tZg1qNGbX1HmuwwrmHEmcB7mJDIA3CXAtDb8hJxuCmc=",
+  "Hash": "+oiY6BJhaTLSIS/Y7TVBSCqPB68i2TxNGh3KNrWyUIk=",
   "Source": "Friendbook.API",
   "BasePath": "_content/Friendbook.API",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\istockphoto-1495088043-612x612.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\ProfilePictures\\profile-icon-9.png",
+      "SourceId": "Friendbook.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Friendbook.App\\src\\Friendbook.API\\wwwroot\\",
+      "BasePath": "_content/Friendbook.API",
+      "RelativePath": "ProfilePictures/profile-icon-9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\profile-icon-9.png"
     }
   ]
 }

@@ -1,4 +1,5 @@
-﻿using Friendbook.Business.Services.Interfaces;
+﻿using Friendbook.API.ApiResponses;
+using Friendbook.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -36,7 +37,7 @@ namespace Friendbook.API.Controllers
         {
             var appUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var friends = await _friendshipService.GetFriendsAsync(appUserId);
-            return Ok(friends);
+          return Ok(friends);
         }
 
         [HttpPost("[action]")]

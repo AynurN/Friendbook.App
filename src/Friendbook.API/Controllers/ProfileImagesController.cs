@@ -17,8 +17,8 @@ namespace Friendbook.API.Controllers
             this.profileImageService = profileImageService;
         }
 
-        [HttpPost("upload")]
-        public async Task<IActionResult> UploadProfileImage([FromForm] IFormFile file, [FromForm] string appUserId)
+        [HttpPost("[action]/{appUserId}")]
+        public async Task<IActionResult> Upload([FromForm] IFormFile file, string appUserId)
         {
             var response = new ApiResponse<string>();
             try
@@ -36,8 +36,8 @@ namespace Friendbook.API.Controllers
             return StatusCode(response.StatusCode, response);
         }
 
-        [HttpPost("update")]
-        public async Task<IActionResult> UpdateProfileImage([FromForm] IFormFile file, [FromForm] string appUserId)
+        [HttpPost("[action]/{appUserId}")]
+        public async Task<IActionResult> Update([FromBody] IFormFile file, string appUserId)
         {
             var response = new ApiResponse<string>();
             try
@@ -55,8 +55,8 @@ namespace Friendbook.API.Controllers
             return StatusCode(response.StatusCode, response);
         }
 
-        [HttpDelete("{appUserId}")]
-        public async Task<IActionResult> DeleteProfileImage(string appUserId)
+        [HttpDelete("[action]/{appUserId}")]
+        public async Task<IActionResult> Delete(string appUserId)
         {
             var response = new ApiResponse<string>();
             try

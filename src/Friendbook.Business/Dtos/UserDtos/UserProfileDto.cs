@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace Friendbook.Business.Dtos.UserDtos
 {
-    public record UserProfileDto(string FullName, string? ProfileImageImageUrl);
+    public record UserProfileDto(string FullName, string? ProfileImageImageUrl, string Email, string Id);
     
 }

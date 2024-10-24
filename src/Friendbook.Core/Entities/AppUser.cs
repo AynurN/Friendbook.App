@@ -10,6 +10,7 @@ namespace Friendbook.Core.Entities
     public class AppUser :IdentityUser
     {
         public string FullName { get; set; }
+        public bool IsVisible {  get; set; }
 
         //relational
         public ProfileImage ProfileImage { get; set; }

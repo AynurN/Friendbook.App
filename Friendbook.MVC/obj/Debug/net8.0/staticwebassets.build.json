@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Tugr+teyJKeuOGQmdDhti3cVVy2zzHkgj9TyJptncho=",
+  "Hash": "MLtloVbwuO3NOzQzc+13I3+291ptzoMCT7jZYxZSc68=",
   "Source": "Friendbook.MVC",
   "BasePath": "_content/Friendbook.MVC",
   "Mode": "Default",
@@ -5829,6 +5829,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\cbf20d0c-68e0-4f67-b3e8-c3a95ef9be71.jpg",
+      "SourceId": "Friendbook.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\",
+      "BasePath": "_content/Friendbook.MVC",
+      "RelativePath": "imgs/cbf20d0c-68e0-4f67-b3e8-c3a95ef9be71.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\cbf20d0c-68e0-4f67-b3e8-c3a95ef9be71.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\profile-icon-9.png",

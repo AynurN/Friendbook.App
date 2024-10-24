@@ -1,5 +1,10 @@
 ﻿@using Friendbook.MVC.ViewModels
-@model ProfileViewModel
+@{
+    var searchTerm = ViewData["searchFullName"]?.ToString();
+    var searchedUsers = ViewBag.SearchedUsers as List<UserProfileViewModel>;
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -446,12 +451,12 @@
                                        data-feather="user"></i>
                                     <div class="media d-none d-sm-flex">
                                         <div class="user-img">
-                                            <img src="~/imgs/@(Model.ProfileImageImageUrl!=null ? Model.ProfileImageImageUrl : "profile-icon-9.png" )"
+                                            <img src="~/imgs/@(ViewBag.ProfileImageUrl != null ? ViewBag.ProfileImageUrl : "profile-icon-9.png")"
                                                  class="img-fluid blur-up lazyload bg-img" alt="user">
                                             <span class="available-stats online"></span>
                                         </div>
                                         <div class="media-body d-none d-md-block">
-                                            <h4>@Model.FullName</h4>
+                                            <h4>@ViewBag.FullName</h4>
                                             <span>active now</span>
                                         </div>
                                     </div>
@@ -466,17 +471,20 @@
                                     <div class="dropdown-content">
                                         <ul class="friend-list">
                                             <li>
-                                                <a href="profile.html">
-                                                    <div class="media">
-                                                        <i data-feather="user"></i>
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">Profile</h5>
+
+                                                <div class="media">
+                                                    <i data-feather="user"></i>
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <form asp-controller="Profile" asp-action="Index" method="post">
+                                                                <button type="submit" class="btn"><h5 class="mt-0">Profile</h5></button>
+
                                                                 <h6>Profile preview & settings</h6>
-                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
+
                                             </li>
                                             <li>
                                                 <a href="settings.html">
@@ -505,16 +513,17 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="login.html">
-                                                    <div class="media">
-                                                        <i data-feather="log-out"></i>
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">log out</h5>
-                                                            </div>
-                                                        </div>
+
+                                                <div class="media">
+                                                    <i data-feather="log-out"></i>
+                                                    <div class="media-body">
+                                                        5 class="mt-0">
+                                                        <form asp-area="LoginRegister" asp-controller="Auth" asp-action="Logout" method="post">
+                                                            <button type="submit" class="btn btn-link">Log out</button>
+                                                        </form>
                                                     </div>
-                                                </a>
+                                                </div>
+
                                             </li>
                                         </ul>
                                     </div>
@@ -1101,47 +1110,43 @@
                         </a>
                     </div>
                     <div class="search-box">
-                        <i data-feather="search" class="icon iw-16 icon-light"></i>
-                        <input type="text" class="form-control search-type" placeholder="find friends...">
+                     @*    <div class="lg-search">
+                            <i data-feather="search" class="icon iw-16 icon-light" onclick="submitSearchForm()"></i>
+                            <form id="searchForm" method="get" action="@Url.Action("Index", "Profile")">
+                                <input type="text" value="@searchTerm" name="FullName" class="form-control" placeholder="find friends...">
+                            </form>
+                        </div> *@
+                        <div class="lg-search">
+                            <i data-feather="search" class="icon iw-16 icon-light"></i>
+                            <form id="searchForm" onsubmit="return false;">
+                                <input type="text" id="searchInput" name="FullName" class="form-control" placeholder="Find friends...">
+                            </form>
+                        </div>
                         <div class="icon-close">
                             <i data-feather="x" class="iw-16 icon-light"></i>
                         </div>
                         <div class="search-suggestion">
                             <span class="recent">recent search</span>
-                            <ul class="friend-list">
-                                <li>
-                                    <div class="media">
-                                        <img src="~/assets/images/user-sm/9.jpg" alt="user">
-                                        <div class="media-body">
-                                            <div>
-                                                <h5 class="mt-0">Paige Turner</h5>
-                                                <h6> 1 mutual friend</h6>
+                            <ul class="friend-list" id="searchedUsers">
+                                @* @if (searchedUsers is not null)
+                                {
+                                    @foreach (var user in searchedUsers)
+                                    {
+                                        <li>
+                                            <div class="media">
+                                                <img src="~/imgs/@user.ProfileImageImageUrl" alt="user">
+                                                <div class="media-body">
+                                                    <div>
+                                                        <h5 class="mt-0">@user.FullName</h5>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <img src="~/assets/images/user-sm/12.jpg" alt="user">
-                                        <div class="media-body">
-                                            <div>
-                                                <h5 class="mt-0">Paige Turner</h5>
-                                                <h6> 1 mutual friend</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <img src="~/assets/images/user-sm/15.jpg" alt="user">
-                                        <div class="media-body">
-                                            <div>
-                                                <h5 class="mt-0">Paige Turner</h5>
-                                                <h6> 1 mutual friend</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
+                                    }
+                                } *@
+
+                                @* @await Html.PartialAsync("_SearchResults", ViewBag.SearchedUsers as IEnumerable<UserProfileViewModel>); *@
+
                             </ul>
                         </div>
                     </div>
@@ -1541,12 +1546,12 @@
                                    data-feather="user"></i>
                                 <div class="media d-none d-sm-flex">
                                     <div class="user-img">
-                                        <img src="~/imgs/@(Model.ProfileImageImageUrl!=null ? Model.ProfileImageImageUrl : "profile-icon-9.png" )"
+                                        <img src="~/imgs/@(ViewBag.ProfileImageUrl != null ? ViewBag.ProfileImageUrl : "profile-icon-9.png")"
                                              class="img-fluid blur-up lazyload bg-img" alt="user">
                                         <span class="available-stats online"></span>
                                     </div>
                                     <div class="media-body d-none d-md-block">
-                                        <h4>@Model.FullName</h4>
+                                        <h4>@ViewBag.FullName</h4>
                                         <span>active now</span>
                                     </div>
                                 </div>
@@ -1561,17 +1566,21 @@
                                 <div class="dropdown-content">
                                     <ul class="friend-list">
                                         <li>
-                                            <a href="profile.html">
-                                                <div class="media">
-                                                    <i data-feather="user"></i>
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Profile</h5>
+
+                                            <div class="media">
+                                                <i data-feather="user"></i>
+                                                <div class="media-body">
+                                                    <div>
+                                                        <form asp-controller="Profile" asp-action="Index" method="post">
+                                                            <button type="submit" class="btn"><h5 class="mt-0">Profile</h5></button>
+
                                                             <h6>Profile preview & settings</h6>
-                                                        </div>
+                                                        </form>
+
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </div>
+
                                         </li>
                                         <li>
                                             <a href="settings.html">
@@ -1600,16 +1609,20 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="login.html">
-                                                <div class="media">
-                                                    <i data-feather="log-out"></i>
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">log out</h5>
-                                                        </div>
+
+                                            <div class="media">
+                                                <i data-feather="log-out"></i>
+                                                <div class="media-body">
+                                                    <div>
+                                                        <form asp-area="LoginRegister" asp-controller="Auth" asp-action="Logout" method="post">
+                                                            <button type="submit" class="btn ">
+                                                                <h5 class="mt-0">Log out</h5>
+                                                            </button>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </div>
+
                                         </li>
                                     </ul>
                                 </div>
@@ -1621,7 +1634,7 @@
         </div>
     </header>
     <!-- header end -->
- @RenderBody();
+    @RenderBody();
     <!-- latest jquery-->
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
 
@@ -1667,6 +1680,30 @@
             pickerPosition: "top left",
         });
     </script>
+  @*   <script>
+        function submitSearchForm(e) {
+            document.getElementById('searchForm').submit();
+        }
+    </script> *@
+
+@*     <script>
+        async function submitSearchForm() {
+            const searchInput = document.getElementById("searchInput").value;
+
+            // Use fetch to send a GET request
+            const response = await fetch(`/Profile/Index?FullName=${encodeURIComponent(searchInput)}`, {
+                method: 'GET',
+                credentials: 'include' // Include cookies in the request
+            });
+
+            if (response.ok) {
+                const result = await response.text(); // Get the HTML response
+                document.getElementById("searchedUsers").innerHTML = result; // Update the friend list
+            } else {
+                console.error('Search failed:', response.statusText);
+            }
+        }
+    </script> *@
 
 </body>
 
