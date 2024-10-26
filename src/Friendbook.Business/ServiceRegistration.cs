@@ -21,6 +21,7 @@ namespace Friendbook.Business
             services.AddScoped<IFriendshipService, FriendshipService>(); 
             services.AddScoped<IUserService, UserService>(); 
             services.AddScoped<IProfileImageService, ProfileImageService>(); 
+            services.AddScoped<IPostService, PostService>(); 
           
         }
     }

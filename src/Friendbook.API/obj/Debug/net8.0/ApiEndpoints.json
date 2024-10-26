@@ -203,5 +203,84 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.PostsController",
+    "Method": "CreatePost",
+    "RelativePath": "CreatePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postDto",
+        "Type": "Friendbook.Business.Dtos.PostDtos.PostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.PostsController",
+    "Method": "DeletePost",
+    "RelativePath": "DeletePost/{postId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.PostsController",
+    "Method": "GetAllPosts",
+    "RelativePath": "GetAllPosts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.PostsController",
+    "Method": "GetPostById",
+    "RelativePath": "GetPostById/{postId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.PostsController",
+    "Method": "UpdatePost",
+    "RelativePath": "UpdatePost/{postId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "postDto",
+        "Type": "Friendbook.Business.Dtos.PostDtos.PostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

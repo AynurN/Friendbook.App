@@ -1110,24 +1110,33 @@
                         </a>
                     </div>
                     <div class="search-box">
-                     @*    <div class="lg-search">
-                            <i data-feather="search" class="icon iw-16 icon-light" onclick="submitSearchForm()"></i>
-                            <form id="searchForm" method="get" action="@Url.Action("Index", "Profile")">
-                                <input type="text" value="@searchTerm" name="FullName" class="form-control" placeholder="find friends...">
-                            </form>
-                        </div> *@
-                        <div class="lg-search">
-                            <i data-feather="search" class="icon iw-16 icon-light"></i>
-                            <form id="searchForm" onsubmit="return false;">
-                                <input type="text" id="searchInput" name="FullName" class="form-control" placeholder="Find friends...">
-                            </form>
-                        </div>
+                        <i data-feather="search" class="icon iw-16 icon-light"></i>
+                        <input type="text" id="searchInput" class="form-control search-type" placeholder="Find friends...">
                         <div class="icon-close">
                             <i data-feather="x" class="iw-16 icon-light"></i>
                         </div>
                         <div class="search-suggestion">
                             <span class="recent">recent search</span>
                             <ul class="friend-list" id="searchedUsers">
+
+                     @*    <div class="lg-search">
+                            <i data-feather="search" class="icon iw-16 icon-light" onclick="submitSearchForm()"></i>
+                            <form id="searchForm" method="get" action="@Url.Action("Index", "Profile")">
+                                <input type="text" value="@searchTerm" name="FullName" class="form-control" placeholder="find friends...">
+                            </form>
+                        </div> *@
+                       @*  <div class="lg-search">
+                            <i data-feather="search" class="icon iw-16 icon-light"></i>
+                            <form id="searchForm" onsubmit="return false;">
+                                <input type="text" id="searchInput" name="FullName" class="form-control" placeholder="Find friends...">
+                            </form>
+                        </div> *@
+                       @*  <div class="icon-close">
+                            <i data-feather="x" class="iw-16 icon-light"></i>
+                        </div>
+                        <div class="search-suggestion">
+                            <span class="recent">recent search</span>
+                            <ul class="friend-list" id="searchedUsers"> *@
                                 @* @if (searchedUsers is not null)
                                 {
                                     @foreach (var user in searchedUsers)
@@ -1679,6 +1688,52 @@
             placement: 'absleft',
             pickerPosition: "top left",
         });
+    </script>
+
+    <script>
+
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const query = this.value.trim();
+            if (query) {
+                fetchUsersByName(query);
+            } else {
+                document.getElementById('searchedUsers').innerHTML = '';
+            }
+        });
+
+        function fetchUsersByName(name) {
+            fetch("https://localhost:7008/api/Users/GetUserProfileByName?FullName=" + encodeURIComponent(name))
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    renderUserSuggestions(data);
+                })
+                .catch(error => console.error('Error fetching users:', error));
+        }
+
+        function renderUserSuggestions(users) {
+            const suggestionsContainer = document.getElementById('searchedUsers');
+            suggestionsContainer.innerHTML = '';
+
+            if (Array.isArray(users.entities)) {
+                users.entities.forEach(user => {
+                    const userItem = document.createElement('li');
+                    userItem.innerHTML = `
+                                <div class="media">
+                                                                                            <img src="../imgs/${user.profileImageImageUrl != null ? user.profileImageImageUrl : "profile-icon-9.png" }" alt="user">
+                                    <div class="media-body">
+                                        <div>
+                                            <h5 class="mt-0">${user.fullName}</h5>
+                                        </div>
+                                    </div>
+                                </div>`;
+                    suggestionsContainer.appendChild(userItem);
+                });
+            } else {
+                suggestionsContainer.innerHTML = `<li>No results found.</li>`;
+            }
+        }
     </script>
   @*   <script>
         function submitSearchForm(e) {

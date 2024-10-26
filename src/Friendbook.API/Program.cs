@@ -19,7 +19,13 @@ namespace Friendbook.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddCors(opt =>
+            {
+                opt.AddPolicy("AllowSpecific", policy =>
+                {
+                    policy.WithOrigins("https://localhost:7143").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -56,7 +62,7 @@ namespace Friendbook.API
 
             var app = builder.Build();
 
-
+            app.UseCors("AllowSpecific");
             
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

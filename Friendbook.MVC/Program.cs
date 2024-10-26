@@ -18,7 +18,7 @@ namespace Friendbook.MVC
             {
                 options.AddPolicy("AllowAll", builder =>
                 {
-                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                    builder.WithOrigins().AllowAnyMethod().AllowAnyHeader();
                 });
             });
             //builder.Services.AddControllersWithViews(options =>
