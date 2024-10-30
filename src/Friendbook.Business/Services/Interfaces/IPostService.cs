@@ -1,5 +1,6 @@
 ﻿using Friendbook.Business.Dtos.PostDtos;
 using Friendbook.Core.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,10 @@ namespace Friendbook.Business.Services.Interfaces
 {
     public interface IPostService
     {
-        Task<Post> CreatePost(PostDto postDto);
-        Task<Post> UpdatePost(int postId, PostDto postDto);
-        Task<bool> DeletePost(int postId);
-        Task<Post> GetPostById(int postId);
-        Task<IEnumerable<Post>> GetAllPosts();
+        Task<Post> CreatePostWithImagesAsync(string userId, PostDto postDto, List<IFormFile> images);
+        Task<Post> UpdatePostWithImagesAsync(int postId, PostDto postDto, List<IFormFile> newImages);
+        Task<bool> DeletePostAsync(int postId);
+       
     }
    
 }

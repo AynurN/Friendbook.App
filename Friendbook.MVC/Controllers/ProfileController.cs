@@ -22,7 +22,36 @@ namespace Friendbook.MVC.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View();
+
+            var token = HttpContext.Request.Cookies["token"];
+            if (token == null) return RedirectToAction("Login", "Auth");
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
+
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
+
+            var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
+            var request = new RestRequest($"/users/GetUserPosts/{userId}", Method.Get);
+            request.AddHeader("Authorization", $"Bearer {token}");
+
+
+            var response = await _restClient.ExecuteAsync<ApiResponseMessage<List<PostVM>>>(request);
+
+            if (response == null || response.Data == null)
+            {
+                TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
+                return RedirectToAction("Index");
+            }
+            var postVM = new List<PostVM>();
+            foreach (var post in response.Data.Entities)
+            {
+                postVM.Add(new PostVM(post.Content, post.PostImageUrls));
+            }
+
+            TempData["Message"] = "Profile image uploaded successfully.";
+            return View(postVM);
         }
 
         [HttpPost("[action]")]
@@ -66,6 +95,8 @@ namespace Friendbook.MVC.Controllers
             }
         
 
+
+
  
     
         [HttpPost("[action]")]
@@ -95,6 +126,85 @@ namespace Friendbook.MVC.Controllers
             TempData["SuccessMessage"] = "Profile image deleted successfully.";
             return RedirectToAction("Index");
         }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetPosts()
+        {
+            var token = HttpContext.Request.Cookies["token"];
+            if (token == null) return RedirectToAction("Login", "Auth");
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
+
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
+
+            var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
+            var request = new RestRequest($"/users/GetUserPosts/{userId}", Method.Get);
+            request.AddHeader("Authorization", $"Bearer {token}");
+
+
+            var response = await _restClient.ExecuteAsync<ApiResponseMessage<List<PostVM>>>(request);
+
+            if (response == null || response.Data == null)
+            {
+                TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
+                return RedirectToAction("Index");
+            }
+            var postVM= new List<PostVM>();
+            foreach (var post in response.Data.Entities) { 
+                postVM.Add(new PostVM(post.Content,post.PostImageUrls));
+            }
+
+            TempData["Message"] = "Profile image uploaded successfully.";
+            return View(postVM);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UploadPostWithImages(PostVM postDto, List<IFormFile> images)
+        {
+            var token = HttpContext.Request.Cookies["token"];
+            if (token == null) return RedirectToAction("Login", "Auth");
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
+
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
+
+            var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
+            var request = new RestRequest($"posts/create/{userId}", Method.Post);
+            request.AddHeader("Authorization", $"Bearer {token}");
+
+            request.AddJsonBody(postDto);
+
+            if (images != null && images.Any())
+            {
+                foreach (var image in images)
+                {
+                    if (image.Length > 0)
+                    {
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await image.CopyToAsync(memoryStream);
+                            var fileBytes = memoryStream.ToArray();
+                            request.AddFile("images", fileBytes, image.FileName, image.ContentType);
+                        }
+                    }
+                }
+            }
+
+            var response = await _restClient.ExecuteAsync(request);
+            if (response.IsSuccessful)
+            {
+                return Json(new { success = true, message = "Post uploaded successfully" });
+            }
+
+            return Json(new { success = false, message = "Failed to upload post" });
+        }
+
+
     }
 }
 

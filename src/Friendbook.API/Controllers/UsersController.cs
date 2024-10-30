@@ -1,4 +1,5 @@
 ﻿using Friendbook.API.ApiResponses;
+using Friendbook.Business.Dtos.PostDtos;
 using Friendbook.Business.Dtos.UserDtos;
 using Friendbook.Core.Entities;
 using Friendbook.Core.IRepositories;
@@ -68,6 +69,33 @@ namespace Friendbook.API.Controllers
                 StatusCode = StatusCodes.Status200OK,
                 Entities = profile
             });
+        }
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetUserPosts(string id)
+        {
+            var user = await repository.GetByExpression(false, x => x.Id == id, new[] { "Posts.PostImages" }).FirstOrDefaultAsync();
+            if (user == null)
+            {
+                return NotFound(new ApiResponse<string>
+                {
+                    StatusCode = 404,
+                    ErrorMessage = "User not found!"
+                });
+            }
+
+            List<PostDto> posts = new List<PostDto>();
+            foreach (var post in user.Posts)
+            {
+                PostDto postDto = new PostDto(post.Content,post.PostImages.Select(x=>x.ImageURL).ToList());
+                posts.Add(postDto);
+            }
+
+            return Ok(new ApiResponse<List<PostDto>>
+            {
+                StatusCode = StatusCodes.Status200OK,
+                Entities = posts
+            });
+
         }
     }
 }

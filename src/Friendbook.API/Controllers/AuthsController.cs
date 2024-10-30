@@ -40,21 +40,21 @@ namespace Friendbook.API.Controllers
 
         //    return Ok();
 
-        //}
-        //[HttpPost("[action]")]
-        // public async Task<IActionResult> CreateAdmin()
-        //{
-        //    AppUser user = new AppUser();
-        //    user.UserName = "SuperAdmin";
-        //    user.Email = "super@gmail.com";
-        //    user.Fullname = "Super Admin";
-        //    await userManager.CreateAsync(user, "Salam123@");
-        //     AppUser user = await userManager.FindByNameAsync("SuperAdmin");
-        //     await userManager.AddToRoleAsync(user, "SuperAdmin");
-        //     return Ok();
-        // }
+            //}
+            //[HttpPost("[action]")]
+            // public async Task<IActionResult> CreateAdmin()
+            //{
+            //    AppUser user = new AppUser();
+            //    user.UserName = "SuperAdmin";
+            //    user.Email = "super@gmail.com";
+            //    user.Fullname = "Super Admin";
+            //    await userManager.CreateAsync(user, "Salam123@");
+            //     AppUser user = await userManager.FindByNameAsync("SuperAdmin");
+            //     await userManager.AddToRoleAsync(user, "SuperAdmin");
+            //     return Ok();
+            // }
 
-        [HttpPost("[action]")]
+            [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromBody] UserRegisterDto userRegisterDto)
         {
             try

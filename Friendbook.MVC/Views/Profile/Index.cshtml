@@ -1,4 +1,6 @@
-﻿<div class="page-body container-fluid custom-padding profile-page">
+﻿@using Friendbook.MVC.ViewModels
+@model List<PostVM>
+<div class="page-body container-fluid custom-padding profile-page">
 
         <!-- sidebar panel start -->
         <div class="sidebar-panel">
@@ -756,345 +758,16 @@
                         </div>
                         <div class="overlay-bg"></div>
                         <div class="post-panel infinite-loader-sec section-t-space">
-                            <div class="post-wrapper col-grid-box">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/15.jpg">
-                                                <img src="~/assets/images/user-sm/15.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details">
-                                    <div class="img-wrapper">
-                                        <img src="~/assets/images/post/11.jpg" class="img-fluid blur-up lazyload"
-                                            alt="">
-                                        <div class="controler">
-                                            <a href="#" class="play" data-bs-toggle="modal" data-bs-target="#videoPlayer">
-                                                <i class="iw-50 ih-50" data-feather="play-circle"></i>
-                                            </a>
-                                            <div class="duration">
-                                                <h6>06:20</h6>
-                                            </div>
-                                            <a href="#" class="volume">
-                                                <i class="iw-14 ih-14" data-feather="volume-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h3>Today Our Three Cute Puppy Dog Birthday !!!!</h3>
-                                        <h5 class="tag"><span>#ourcutepuppy,</span> #puppy, #birthday, #dog</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-block">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        @foreach(var post in Model)
+                        {
                             <div class="post-wrapper col-grid-box section-t-space">
                                 <div class="post-title">
                                     <div class="profile">
                                         <div class="media">
                                             <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/14.jpg">
+                                               data-name="sufiya eliza" data-img="~/assets/images/user-sm/14.jpg">
                                                 <img src="~/assets/images/user-sm/14.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
+                                                     class="img-fluid blur-up lazyload bg-img" alt="user">
                                             </a>
                                             <div class="media-body">
                                                 <h5>sufiya eliza</h5>
@@ -1105,23 +778,29 @@
                                     <div class="setting-btn ms-auto setting-dropdown no-bg">
                                         <div class="btn-group custom-dropdown arrow-none dropdown-sm">
                                             <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                                 aria-expanded="false">
                                                 <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
+                                                   data-feather="more-horizontal"></i>
                                             </div>
                                             <div class="dropdown-menu dropdown-menu-right custom-dropdown">
                                                 <ul>
                                                     <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
+                                                        <a href="#">
+                                                            <i class="icon-font-light iw-16 ih-16"
+                                                               data-feather="bookmark"></i>save post
+                                                        </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
+                                                        <a href="#">
+                                                            <i class="icon-font-light iw-16 ih-16"
+                                                               data-feather="edit"></i>edit post
+                                                        </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
+                                                        <a href="#">
+                                                            <i class="icon-font-light iw-16 ih-16"
+                                                               data-feather="x-square"></i>hide post
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1138,9 +817,9 @@
                                                             <div class="overlay">
                                                                 <div class="portfolio-image">
                                                                     <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#imageModel">
+                                                                       data-bs-target="#imageModel">
                                                                         <img src="~/assets/images/story/9.jpg" alt=""
-                                                                            class="img-fluid blur-up lazyload bg-img">
+                                                                             class="img-fluid blur-up lazyload bg-img">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -1150,10 +829,10 @@
                                                                 <div class="overlay">
                                                                     <div class="portfolio-image">
                                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                            data-bs-target="#imageModel">
+                                                                           data-bs-target="#imageModel">
                                                                             <img src="~/assets/images/story/10.jpg"
-                                                                                alt=""
-                                                                                class="img-fluid blur-up lazyload bg-img">
+                                                                                 alt=""
+                                                                                 class="img-fluid blur-up lazyload bg-img">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -1162,10 +841,10 @@
                                                                 <div class="overlay image-plus">
                                                                     <div class="portfolio-image">
                                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                            data-bs-target="#imageModel">
+                                                                           data-bs-target="#imageModel">
                                                                             <img src="~/assets/images/story/11.jpg"
-                                                                                alt=""
-                                                                                class="img-fluid blur-up lazyload bg-img">
+                                                                                 alt=""
+                                                                                 class="img-fluid blur-up lazyload bg-img">
                                                                             <span>+20</span>
                                                                         </a>
                                                                     </div>
@@ -1178,10 +857,12 @@
                                         </div>
                                     </div>
                                     <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
+                                        <h3>@post.Content</h3>
                                         <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            has been the industry's standard dummy text ever since the 1500s
+                                        </p>
                                         <div class="bookmark favourite-btn">
                                             <i class="iw-14 ih-14" data-feather="bookmark"></i>
                                         </div>
@@ -1189,15 +870,15 @@
                                             <ul>
                                                 <li>
                                                     <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
+                                                         class="img-fluid blur-up lazyload bg-img" alt="">
                                                 </li>
                                                 <li>
                                                     <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
+                                                         class="img-fluid blur-up lazyload bg-img" alt="">
                                                 </li>
                                                 <li>
                                                     <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
+                                                         class="img-fluid blur-up lazyload bg-img" alt="">
                                                 </li>
                                             </ul>
                                             <h6>+12 people react this post</h6>
@@ -1348,13 +1029,14 @@
                                                 <div class="media">
                                                     <a href="#" class="user-img">
                                                         <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
+                                                             class="img-fluid blur-up lazyload bg-img" alt="user">
                                                     </a>
                                                     <div class="media-body">
                                                         <a href="#">
                                                             <h5>Pabelo Mukrani</h5>
                                                         </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
+                                                        <p>
+                                                            Oooo Very Cute and Sweet Dog, happy birthday Cuty....
                                                             &#128578;
                                                         </p>
                                                         <ul class="comment-option">
@@ -1371,7 +1053,7 @@
                                                     <div class="media">
                                                         <a href="#" class="user-img">
                                                             <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
+                                                                 class="img-fluid blur-up lazyload bg-img" alt="user">
                                                         </a>
                                                         <div class="media-body">
                                                             <a href="#">
@@ -1391,7 +1073,7 @@
                                                     <div class="media">
                                                         <a href="#" class="user-img">
                                                             <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
+                                                                 class="img-fluid blur-up lazyload bg-img" alt="user">
                                                         </a>
                                                         <div class="media-body">
                                                             <a href="#">
@@ -1418,7 +1100,7 @@
                                                 <div class="media">
                                                     <a href="#" class="user-img">
                                                         <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
+                                                             class="img-fluid blur-up lazyload bg-img" alt="user">
                                                     </a>
                                                     <div class="media-body">
                                                         <a href="#">
@@ -1440,7 +1122,7 @@
                                         <div class="reply">
                                             <div class="search-input input-style input-lg icon-right">
                                                 <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
+                                                       placeholder="write a comment..">
                                                 <a href="javascript:void(0)">
                                                     <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
                                                 </a>
@@ -1452,1597 +1134,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="post-wrapper col-grid-box section-t-space">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/10.jpg">
-                                                <img src="~/assets/images/user-sm/10.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details">
-                                    <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-none">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-wrapper col-grid-box section-t-space">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/11.jpg">
-                                                <img src="~/assets/images/user-sm/11.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details">
-                                    <div class="img-wrapper">
-                                        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
-                                                src="https://giphy.com/embed/xl2zRzM8sVo3td58kS"
-                                                style="position:absolute" class="giphy-embed w-100 h-100"
-                                                allowFullScreen></iframe></div>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-none">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-wrapper col-grid-box section-t-space">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/15.jpg">
-                                                <img src="~/assets/images/user-sm/15.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details ratio_55">
-                                    <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-none">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-wrapper col-grid-box section-t-space">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/15.jpg">
-                                                <img src="~/assets/images/user-sm/15.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details">
-                                    <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                        data-name="sufiya eliza" data-img="~/assets/images/user-sm/2.jpg">
-                                        <img src="~/assets/images/user-sm/2.jpg"
-                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                    </a>
-                                    <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-none">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-wrapper col-grid-box section-t-space">
-                                <div class="post-title">
-                                    <div class="profile">
-                                        <div class="media">
-                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
-                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/10.jpg">
-                                                <img src="~/assets/images/user-sm/10.jpg"
-                                                    class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </a>
-                                            <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting-btn ms-auto setting-dropdown no-bg">
-                                        <div class="btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <div role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon icon-font-color iw-14"
-                                                    data-feather="more-horizontal"></i>
-                                            </div>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="bookmark"></i>save post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit post</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="x-square"></i>hide post</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-details ratio_55">
-                                    <div class="detail-box">
-                                        <h3>Celebration new album song launched</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s</p>
-                                        <div class="bookmark favourite-btn">
-                                            <i class="iw-14 ih-14" data-feather="bookmark"></i>
-                                        </div>
-                                        <div class="people-likes">
-                                            <ul>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/1.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/2.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                                <li>
-                                                    <img src="~/assets/images/user-sm/3.jpg"
-                                                        class="img-fluid blur-up lazyload bg-img" alt="">
-                                                </li>
-                                            </ul>
-                                            <h6>+12 people react this post</h6>
-                                        </div>
-                                    </div>
-                                    <div class="like-panel">
-                                        <div class="left-emoji">
-                                            <ul>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                </li>
-                                                <li>
-                                                    <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/033.svg" alt="angry">
-                                                </li>
-                                            </ul>
-                                            <h6>+75</h6>
-                                        </div>
-                                        <div class="right-stats">
-                                            <ul>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="message-square"></i>
-                                                        <span>4565</span> comment
-                                                    </h5>
-                                                </li>
-                                                <li>
-                                                    <h5>
-                                                        <i class="iw-16 ih-16" data-feather="share"></i><span>985</span>
-                                                        share
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="post-react">
-                                        <ul>
-                                            <li class="react-btn">
-                                                <a class="react-click" href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="smile"></i> react
-                                                </a>
-                                                <div class="react-box">
-                                                    <ul>
-                                                        <li data-title="smile">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/040.svg" alt="smile">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="love">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/113.svg" alt="heart">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="cry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/027.svg" alt="cry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="wow">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/052.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="angry">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/039.svg" alt="angry">
-                                                            </a>
-                                                        </li>
-                                                        <li data-title="haha">
-                                                            <a href="javascript:void(0)">
-                                                                <img src="https://themes.pixelstrap.com/friendbook/assets/svg/emoji/042.svg" alt="">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="comment-click">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
-                                                </a>
-                                            </li>
-                                            <li data-bs-target="#shareModal" data-bs-toggle="modal">
-                                                <a href="javascript:void(0)">
-                                                    <i class="iw-16 ih-16" data-feather="share"></i> share
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="comment-section">
-                                        <div class="comments d-none">
-                                            <div class="ldr-comments">
-                                                <ul>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="sub-comment">
-                                                            <li>
-                                                                <div class="media">
-                                                                    <div class="ldr-img"></div>
-                                                                    <div class="media-body">
-                                                                        <div class="contents">
-                                                                            <div class="ldr-content"></div>
-                                                                            <div class="ldr-content"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="media">
-                                                            <div class="ldr-img"></div>
-                                                            <div class="media-body">
-                                                                <div class="contents">
-                                                                    <div class="ldr-content"></div>
-                                                                    <div class="ldr-content"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                            class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                    placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                        }
+                       
+                          
                         </div>
                         <div id="load-more" class="post-loader">
                             <div class="loader-icon">
@@ -3053,81 +1148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-right d-xl-block d-none">
-                        <!-- birthday reminder -->
-                        <div class="birthday-section event-sec">
-                            <img src="~/assets/images/event-bg.jpg" class="img-fluid blur-up lazyload bg-img"
-                                alt="birthday">
-                            <div class="birthday-top">
-                                <div class="title">
-                                    <h3>college meet</h3>
-                                    <h6>today your collge group meeting</h6>
-                                </div>
-                                <div class="setting">
-                                    <div class="setting-btn light-btn">
-                                        <a href="#" class="d-flex">
-                                            <i class="iw-11 ih-11 icon icon-light stroke-width-3"
-                                                data-feather="rotate-cw"></i>
-                                        </a>
-                                    </div>
-                                    <div class="setting-btn light-btn ms-2 setting-dropdown">
-                                        <div class=" btn-group custom-dropdown arrow-none dropdown-sm">
-                                            <a class="d-flex" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="icon-light stroke-width-3 iw-12 ih-12" data-feather="sun"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="edit"></i>edit profile</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                                data-feather="user"></i>view profile</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="birthday-content">
-                                <div class="image-section">
-                                    <div class="event-group">
-                                        <div class="center-profile">
-                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                        </div>
-                                        <div class="center-profile">
-                                            <img src="~/assets/images/user-sm/5.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                        </div>
-                                        <div class="center-profile">
-                                            <img src="~/assets/images/user-sm/2.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                        </div>
-                                        <div class="center-profile">
-                                            <img src="~/assets/images/user-sm/1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt="user">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <h3><i class="icon-light me-2 stroke-width-3 iw-12 ih-12" data-feather="user"></i>56
-                                        people</h3>
-                                    <h6>glasgow, scotland</h6>
-                                    <p>Lorem 5th Sept 2019 dummy text of the printing and typesetting industry.</p>
-                                    <form>
-                                        <input type="text" placeholder="send invitation" class="form-control">
-                                        <button type="submit">
-                                            <i class="iw-13 ih-13 icon-light icon stroke-width-3"
-                                                data-feather="arrow-right"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+            
 
                         <!-- gallery section -->
                         <div class="gallery-section section-t-space">
@@ -4385,17 +2406,14 @@
                             <img src="~/assets/images/post/1.jpg" class="img-fluid blur-up lazyload bg-img" alt="">
                         </div>
                         <div class="post-content">
-                            <h3>Today Our Three Cute Puppy Dog Birthday
-                                !!!!
+                            <h3>
                             </h3>
-                            <h5 class="tag"><span>#ourcutepuppy,</span>
-                                #puppy, #birthday, #dog</h5>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-solid">share
-                        post</button>
+       
                 </div>
             </div>
         </div>
@@ -5204,3 +3222,36 @@
             </div>
         </div>
     </div>
+<script>
+    document.getElementById('post-btn').addEventListener('click', async function () {
+        const postText = document.querySelector('.input-style .form-control').value;
+        const images = document.querySelector('.choose-file').files;
+
+        const formData = new FormData();
+        formData.append("postDto.Text", postText);
+        for (let i = 0; i < images.length; i++) {
+            formData.append("images", images[i]);
+        }
+
+        try {
+            const response = await fetch('/Profile/UploadPostWithImages', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('input[name="__RequestVerificationToken"]').value // if CSRF token is required
+                }
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+               
+                alert('Post uploaded successfully!');
+            } else {
+
+                alert('Failed to upload post.');
+            }
+        } catch (error) {
+            console.error('Error uploading post:', error);
+        }
+    });
+</script>

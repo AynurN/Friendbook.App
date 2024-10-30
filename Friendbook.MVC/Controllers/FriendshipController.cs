@@ -2,8 +2,12 @@
 
 namespace Friendbook.MVC.Controllers
 {
-    public class FriendshipController : Controller
+    public class FriendshipController : BaseController
     {
+        public FriendshipController(IConfiguration configuration) : base(configuration)
+        {
+        }
+
         public IActionResult Index()
         {
             return View();

@@ -7,7 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Friendbook.API.Controllers
 {
-    public class PostsController : Controller
+   
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PostsController : ControllerBase
     {
         private readonly IPostService postService;
 
@@ -15,72 +18,72 @@ namespace Friendbook.API.Controllers
         {
             this.postService = postService;
         }
-        [HttpPost("[action]")]
-        public async Task<IActionResult> CreatePost([FromBody] PostDto postDto)
-        {
-            var post = await postService.CreatePost(postDto);
-            return Ok(new ApiResponse<Post>
-            {
-                Entities = post,
-                StatusCode = StatusCodes.Status200OK
-            });
-        }
 
-        [HttpPut("[action]/{postId}")]
-        public async Task<IActionResult> UpdatePost(int postId, [FromBody] PostDto postDto)
+        [HttpPost("[action]/{id}")]
+        public async Task<IActionResult> Create(string id,[FromForm] PostDto postDto, [FromForm] List<IFormFile> images)
         {
+            var response = new ApiResponse<Post>();
             try
             {
-                var post = await postService.UpdatePost(postId, postDto);
-                return Ok(new ApiResponse<Post>
-                {
-                    Entities = post,
-                    StatusCode = StatusCodes.Status200OK
-                });
+                var post = await postService.CreatePostWithImagesAsync(id, postDto, images);
+                response.Entities = post;
+                response.StatusCode = 200;
             }
             catch (Exception ex)
             {
-                return BadRequest(new ApiResponse<object>
-                {
-                    ErrorMessage = ex.Message,
-                    StatusCode = StatusCodes.Status400BadRequest
-                });
+                response.ErrorMessage = ex.Message;
+                response.StatusCode = 400;
             }
+
+            return StatusCode(response.StatusCode, response);
+        }
+
+        [HttpPost("[action]/{postId}")]
+        public async Task<IActionResult> Update(int postId, [FromForm] PostDto postDto, [FromForm] List<IFormFile> images)
+        {
+            var response = new ApiResponse<Post>();
+            try
+            {
+                var updatedPost = await postService.UpdatePostWithImagesAsync(postId, postDto, images);
+                response.Entities = updatedPost;
+                response.StatusCode = 200;
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+                response.StatusCode = 400;
+            }
+
+            return StatusCode(response.StatusCode, response);
         }
 
         [HttpDelete("[action]/{postId}")]
-        public async Task<IActionResult> DeletePost(int postId)
+        public async Task<IActionResult> Delete(int postId)
         {
-            var result = await postService.DeletePost(postId);
-            if (!result) return NotFound();
-
-            return Ok(new ApiResponse<object>
+            var response = new ApiResponse<string>();
+            try
             {
-                StatusCode = StatusCodes.Status200OK
-            });
-        }
-
-        [HttpGet("[action]/{postId}")]
-        public async Task<IActionResult> GetPostById(int postId)
-        {
-            var post = await postService.GetPostById(postId);
-            return Ok(new ApiResponse<Post>
+                var success = await postService.DeletePostAsync(postId);
+                if (!success)
+                {
+                    response.ErrorMessage = "Post not found";
+                    response.StatusCode = 404;
+                }
+                else
+                {
+                    response.StatusCode = 200;
+                    response.Entities = "Post deleted successfully";
+                }
+            }
+            catch (Exception ex)
             {
-                Entities = post,
-                StatusCode = StatusCodes.Status200OK
-            });
-        }
+                response.ErrorMessage = ex.Message;
+                response.StatusCode = 400;
+            }
 
-        [HttpGet("[action]")]
-        public async Task<IActionResult> GetAllPosts()
-        {
-            var posts = await postService.GetAllPosts();
-            return Ok(new ApiResponse<IEnumerable<Post>>
-            {
-                Entities = posts,
-                StatusCode = StatusCodes.Status200OK
-            });
+            return StatusCode(response.StatusCode, response);
         }
     }
+
 }
 
