@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Friendbook.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa843d50b18ef969e369ad2d3ba49dae4cd5dd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1eb7fe327365539993e88d0f7e20714c9484f1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Friendbook.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Friendbook.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

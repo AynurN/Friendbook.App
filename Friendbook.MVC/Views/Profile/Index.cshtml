@@ -584,8 +584,21 @@
                         </div>
                     </div>
                     <div class="content-center">
+                    <form action="@Url.Action("UploadPostWithImages", "Profile")" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="Content">Post Content</label>
+                            <textarea class="form-control" id="Content" name="postDto.Content" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="images">Upload Images</label>
+                            <input type="file" id="images" name="images" class="form-control" multiple />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                         <!-- create post -->
-                        <div class="create-post">
+                     @*    <div class="create-post">
                             <div class="static-section">
                                 <div class="card-title">
                                     <h3>create post</h3>
@@ -755,7 +768,7 @@
                             <div id="post-btn" class="post-btn">
                                 <button disabled="disabled" class="Disable">post</button>
                             </div>
-                        </div>
+                        </div> *@
                         <div class="overlay-bg"></div>
                         <div class="post-panel infinite-loader-sec section-t-space">
                         @foreach(var post in Model)
@@ -3222,7 +3235,7 @@
             </div>
         </div>
     </div>
-<script>
+@* <script>
     document.getElementById('post-btn').addEventListener('click', async function () {
         const postText = document.querySelector('.input-style .form-control').value;
         const images = document.querySelector('.choose-file').files;
@@ -3254,4 +3267,4 @@
             console.error('Error uploading post:', error);
         }
     });
-</script>
+</script> *@

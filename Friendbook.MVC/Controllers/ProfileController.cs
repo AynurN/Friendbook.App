@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using RestSharp;
 using System.Configuration;
 using System.IdentityModel.Tokens.Jwt;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Friendbook.MVC.Controllers
 {
@@ -77,28 +78,29 @@ namespace Friendbook.MVC.Controllers
                     await profileImage.CopyToAsync(memoryStream);
                     var fileBytes = memoryStream.ToArray();
                     request.AddFile("file", fileBytes, profileImage.FileName, profileImage.ContentType);
+           
                 }
             }
 
 
 
-                var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
+            var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
 
-                if (response == null || response.Data == null || !response.Data.IsSuccessfull)
-                {
-                    TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
-                    return RedirectToAction("Index");
-                }
-
-                TempData["Message"] = "Profile image uploaded successfully.";
+            if (response == null || response.Data == null || !response.Data.IsSuccessfull)
+            {
+                TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
                 return RedirectToAction("Index");
             }
-        
+
+            TempData["Message"] = "Profile image uploaded successfully.";
+            return RedirectToAction("Index");
+        }
 
 
 
- 
-    
+
+
+
         [HttpPost("[action]")]
         public async Task<IActionResult> DeleteProfileImage()
         {
@@ -151,9 +153,10 @@ namespace Friendbook.MVC.Controllers
                 TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
                 return RedirectToAction("Index");
             }
-            var postVM= new List<PostVM>();
-            foreach (var post in response.Data.Entities) { 
-                postVM.Add(new PostVM(post.Content,post.PostImageUrls));
+            var postVM = new List<PostVM>();
+            foreach (var post in response.Data.Entities)
+            {
+                postVM.Add(new PostVM(post.Content, post.PostImageUrls));
             }
 
             TempData["Message"] = "Profile image uploaded successfully.";
@@ -162,7 +165,7 @@ namespace Friendbook.MVC.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> UploadPostWithImages(PostVM postDto, List<IFormFile> images)
+        public async Task<IActionResult> UploadPostWithImages(PostVM postDto, string privacy, List<IFormFile> images)
         {
             var token = HttpContext.Request.Cookies["token"];
             if (token == null) return RedirectToAction("Login", "Auth");
@@ -174,11 +177,13 @@ namespace Friendbook.MVC.Controllers
             if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
 
             var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
-            var request = new RestRequest($"posts/create/{userId}", Method.Post);
+            var request = new RestRequest($"/create/{userId}", Method.Post);
             request.AddHeader("Authorization", $"Bearer {token}");
 
-            request.AddJsonBody(postDto);
+            // Populate the request with PostDto properties and privacy setting
+            request.AddObject(postDto);
 
+            // Add images to the request
             if (images != null && images.Any())
             {
                 foreach (var image in images)
@@ -189,21 +194,23 @@ namespace Friendbook.MVC.Controllers
                         {
                             await image.CopyToAsync(memoryStream);
                             var fileBytes = memoryStream.ToArray();
-                            request.AddFile("images", fileBytes, image.FileName, image.ContentType);
+                            request.AddFile("file", fileBytes, image.FileName, image.ContentType);
                         }
                     }
                 }
             }
 
-            var response = await _restClient.ExecuteAsync(request);
-            if (response.IsSuccessful)
+            var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
+
+            if (response == null || response.Data == null || !response.Data.IsSuccessfull)
             {
-                return Json(new { success = true, message = "Post uploaded successfully" });
+                TempData["Message"] = response?.Data?.ErrorMessage ?? "Post creation failed.";
+                return RedirectToAction("Index");
             }
 
-            return Json(new { success = false, message = "Failed to upload post" });
+            TempData["Message"] = "Post created successfully.";
+            return RedirectToAction("Index");
         }
-
 
     }
 }
