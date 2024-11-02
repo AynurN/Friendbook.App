@@ -48,7 +48,7 @@ namespace Friendbook.Business.Services.Implementations
             foreach (var image in images)
             {
                 var imageUrl = await UploadPostImageAsync(image);
-                post.PostImages.Add(new PostImage { ImageURL = imageUrl, AppUser = user });
+                post.PostImages.Add(new PostImage { ImageURL = imageUrl });
             }
 
             await postRepo.CreateAsync(post);
@@ -91,7 +91,7 @@ namespace Friendbook.Business.Services.Implementations
             foreach (var image in newImages)
             {
                 var imageUrl = await UploadPostImageAsync(image);
-                post.PostImages.Add(new PostImage { ImageURL = imageUrl, AppUser = post.User });
+                post.PostImages.Add(new PostImage { ImageURL = imageUrl });
             }
 
             postRepo.Update(post);

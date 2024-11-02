@@ -11,8 +11,8 @@ namespace Friendbook.Core.Entities
         public string ImageURL { get; set; }
 
         //relational
-        public string UserId {  get; set; }
-        public  AppUser  AppUser { get; set; }
+        public int PostId { get; set; }
+        public Post Post { get; set; }
 
     }
 }

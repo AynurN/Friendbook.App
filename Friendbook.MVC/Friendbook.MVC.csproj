@@ -19,4 +19,8 @@
     <Folder Include="wwwroot\postimgs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\Friendbook.Business\Friendbook.Business.csproj" />
+  </ItemGroup>
+
 </Project>

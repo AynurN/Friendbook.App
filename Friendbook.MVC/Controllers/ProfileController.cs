@@ -1,4 +1,5 @@
-﻿using Friendbook.MVC.ApiResponseMessages;
+﻿using Friendbook.Business.Dtos.PostDtos;
+using Friendbook.MVC.ApiResponseMessages;
 using Friendbook.MVC.Services.Interfacses;
 using Friendbook.MVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -43,13 +44,13 @@ namespace Friendbook.MVC.Controllers
             if (response == null || response.Data == null)
             {
                 TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
             var postVM = new List<PostVM>();
-            foreach (var post in response.Data.Entities)
-            {
-                postVM.Add(new PostVM(post.Content, post.PostImageUrls));
-            }
+            //foreach (var post in response.Data.Entities)
+            //{
+            //postVM.Add(new PostVM(post.Content, post.PostImageUrls));
+            //}
 
             TempData["Message"] = "Profile image uploaded successfully.";
             return View(postVM);
@@ -78,7 +79,7 @@ namespace Friendbook.MVC.Controllers
                     await profileImage.CopyToAsync(memoryStream);
                     var fileBytes = memoryStream.ToArray();
                     request.AddFile("file", fileBytes, profileImage.FileName, profileImage.ContentType);
-           
+
                 }
             }
 

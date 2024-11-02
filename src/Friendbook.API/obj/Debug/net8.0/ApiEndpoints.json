@@ -90,6 +90,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Friendbook.API.Controllers.MessagesController",
+    "Method": "GetMessages",
+    "RelativePath": "api/Messages/GetMessages/{senderId}/{receiverId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "senderId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "receiverId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Friendbook.API.Controllers.MessagesController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Messages/SendMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Friendbook.Core.Entities.DirectMessage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Friendbook.API.Controllers.PostsController",
     "Method": "Create",
     "RelativePath": "api/Posts/Create/{id}",

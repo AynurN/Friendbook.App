@@ -26,7 +26,10 @@ namespace Friendbook.API
                     policy.WithOrigins("https://localhost:7143").AllowAnyHeader().AllowAnyMethod();
                 });
             });
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+            }); ;
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -58,9 +61,12 @@ namespace Friendbook.API
 
             builder.Services.AddServices();
             builder.Services.AddSignalR();
-
+            
+   
 
             var app = builder.Build();
+           
+
 
             app.UseCors("AllowSpecific");
             

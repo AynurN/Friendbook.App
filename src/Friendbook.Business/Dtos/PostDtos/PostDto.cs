@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Friendbook.Business.Dtos.PostDtos
 {
-   public record  PostDto(string Content, List<string> PostImageUrls );
+   public record  PostDto(string Content, List<string> PostImageUrls);
     
 }

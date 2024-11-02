@@ -73,7 +73,7 @@ namespace Friendbook.API.Controllers
         [HttpGet("[action]/{id}")]
         public async Task<IActionResult> GetUserPosts(string id)
         {
-            var user = await repository.GetByExpression(false, x => x.Id == id, new[] { "Posts.PostImages" }).FirstOrDefaultAsync();
+            var user = await repository.GetByExpression(false, x => x.Id == id, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound(new ApiResponse<string>
@@ -90,7 +90,7 @@ namespace Friendbook.API.Controllers
                 posts.Add(postDto);
             }
 
-            return Ok(new ApiResponse<List<PostDto>>
+            return Ok( new ApiResponse<List<PostDto>>
             {
                 StatusCode = StatusCodes.Status200OK,
                 Entities = posts

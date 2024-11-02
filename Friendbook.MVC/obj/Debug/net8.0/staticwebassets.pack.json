@@ -1221,8 +1221,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\9cea7871-4497-4b94-ad91-36ad8385cb6d.jpg",
-      "PackagePath": "staticwebassets\\imgs\\9cea7871-4497-4b94-ad91-36ad8385cb6d.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\65ac98ca-4c8f-40da-b86c-8d10bc80ec8f.jpg",
+      "PackagePath": "staticwebassets\\imgs\\65ac98ca-4c8f-40da-b86c-8d10bc80ec8f.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\bf39f853-87a8-4aa6-a86e-256f503b8164.jpg",
@@ -1467,6 +1467,38 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\058d9ea2-2586-44bf-b7b4-5f83b12f56f0.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\058d9ea2-2586-44bf-b7b4-5f83b12f56f0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\3c068744-41ec-4b8d-845d-d482dbd21b63.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\3c068744-41ec-4b8d-845d-d482dbd21b63.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\7e299375-7b68-43ef-8641-95c50dc0c51a.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\7e299375-7b68-43ef-8641-95c50dc0c51a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\b0f64df7-a7a9-4362-b50d-57a17fb067d1.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\b0f64df7-a7a9-4362-b50d-57a17fb067d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\b6e335cc-4713-4a94-ace2-d79709749aeb.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\b6e335cc-4713-4a94-ace2-d79709749aeb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\c3ae81e7-70d8-4e8a-9dda-4be2d755de7b.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\c3ae81e7-70d8-4e8a-9dda-4be2d755de7b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\c7246ab3-9506-4d6f-aab1-7f07ff4bccd2.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\c7246ab3-9506-4d6f-aab1-7f07ff4bccd2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\f03db1e1-31d2-40f5-8330-3403662986eb.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\f03db1e1-31d2-40f5-8330-3403662986eb.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Friendbook.MVC.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -261,10 +261,6 @@ namespace Friendbook.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AppUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -275,16 +271,10 @@ namespace Friendbook.Data.Migrations
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PostId")
+                    b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
 
                     b.HasIndex("PostId");
 
@@ -557,17 +547,13 @@ namespace Friendbook.Data.Migrations
 
             modelBuilder.Entity("Friendbook.Core.Entities.PostImage", b =>
                 {
-                    b.HasOne("Friendbook.Core.Entities.AppUser", "AppUser")
-                        .WithMany()
-                        .HasForeignKey("AppUserId")
+                    b.HasOne("Friendbook.Core.Entities.Post", "Post")
+                        .WithMany("PostImages")
+                        .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Friendbook.Core.Entities.Post", null)
-                        .WithMany("PostImages")
-                        .HasForeignKey("PostId");
-
-                    b.Navigation("AppUser");
+                    b.Navigation("Post");
                 });
 
             modelBuilder.Entity("Friendbook.Core.Entities.PostLike", b =>
