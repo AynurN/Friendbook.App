@@ -1,0 +1,23 @@
+﻿@using Friendbook.Core.Entities
+@model List<DirectMessage>
+
+@foreach (var message in Model)
+{
+    
+    <div class="message new">
+        <strong>@(message.Sender.FullName ?? "Unknown"):</strong> @message.Content
+
+        <div class="time">@message.SentAt.ToString("HH:mm")</div>
+    </div>
+    @* <div class="message message-personal new">
+        ı can see that. ıt definitely seemed like he had some problems with
+        women.
+        <div class="timestamp">15:13</div>
+        <div class="checkmark-sent-delivered">✓</div>
+        <div class="checkmark-read">✓</div>
+    </div> *@
+   @*  <div class="message">
+        <strong>@(message.SenderId ?? "Unknown"):</strong> @message.Content
+        <span class="time">@message.SentAt.ToString("HH:mm:ss")</span>
+    </div> *@
+}

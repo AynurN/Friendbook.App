@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Friendbook.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22729ae132219880541afd089d742b015f1ba465")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43950664d2d9de267a48170a7e84afdb36b5b661")]
 [assembly: System.Reflection.AssemblyProductAttribute("Friendbook.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Friendbook.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

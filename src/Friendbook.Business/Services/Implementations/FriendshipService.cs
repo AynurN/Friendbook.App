@@ -1,4 +1,5 @@
-﻿using Friendbook.Business.Hubs;
+﻿using Friendbook.Business.Enums;
+using Friendbook.Business.Hubs;
 using Friendbook.Business.Services.Interfaces;
 using Friendbook.Core.Entities;
 using Friendbook.Core.IRepositories;
@@ -24,19 +25,20 @@ namespace Friendbook.Business.Services.Implementations
             this.repo = repo;
             this.userRepo = userRepo;
         }
-        public async Task AcceptFriendship(int friendshipId)
+        public async Task AcceptFriendship(string appUserId, string friendId)
         {
-            var friendship = await repo.Table.FindAsync(friendshipId);
+            var friendship = await repo.Table.FindAsync(appUserId, friendId);
             if (friendship == null)
                 throw new NullReferenceException("Friendship not found");
 
             friendship.IsAccepted = true;
             await repo.CommitAsync();
 
-            
-            await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
-                .SendAsync("FriendshipAccepted", friendship.FriendId, friendship.AppUserId);
+            // Optional: send notification to both users
+            //await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
+            //    .SendAsync("FriendshipAccepted", friendship.FriendId, friendship.AppUserId);
         }
+
 
         public async Task AddFriendAsync(string appUserId, string friendId)
         {
@@ -44,7 +46,9 @@ namespace Friendbook.Business.Services.Implementations
             {
                 AppUserId = appUserId,
                 FriendId = friendId,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                IsAccepted = false
+
             };
 
            await repo.CreateAsync(friendship);
@@ -53,14 +57,14 @@ namespace Friendbook.Business.Services.Implementations
             var requester = await userRepo.GetByIdAsync(appUserId);
             var requesterName = requester.FullName;
 
-            await notifi.Clients.User(friendId)
-                .SendAsync("ReceiveFriendRequestNotification", requesterName);
+            //await notifi.Clients.User(friendId)
+            //    .SendAsync("ReceiveFriendRequestNotification", requesterName);
 
         }
 
         public async  Task<List<AppUser>> GetFriendsAsync(string appUserId)
         {
-            return await repo.Table
+            return await repo.Table.Include(x=>x.Friend.ProfileImage)
           .Where(f => (f.AppUserId == appUserId || f.FriendId == appUserId) && f.IsAccepted == true)
           .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
           .ToListAsync();
@@ -75,8 +79,28 @@ namespace Friendbook.Business.Services.Implementations
             repo.Delete(friendship);
             await repo.CommitAsync();
 
-            await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
-                .SendAsync("FriendshipRemoved", friendship.FriendId, friendship.AppUserId);
+            //await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
+            //    .SendAsync("FriendshipRemoved", friendship.FriendId, friendship.AppUserId);
         }
+        public async Task<FriendshipStatus> GetFriendshipStatusAsync(string appUserId, string friendId)
+        {
+            var friendship = await repo.Table
+                .FirstOrDefaultAsync(f => (f.AppUserId == appUserId && f.FriendId == friendId) ||
+                                          (f.AppUserId == friendId && f.FriendId == appUserId));
+
+            if (friendship == null)
+                return FriendshipStatus.NoRequest;
+            if(friendship.IsAccepted == true)
+            {
+                return FriendshipStatus.Friends;
+            }
+            else if( friendship.AppUserId==appUserId && friendship.FriendId==friendId &&friendship.IsAccepted == false)
+            {
+                return FriendshipStatus.Sent;
+            }
+              return FriendshipStatus.RequestPending
+                ;   
+        }
+
     }
 }

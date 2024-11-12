@@ -55,7 +55,7 @@ namespace Friendbook.MVC.Controllers
                 return RedirectToAction("Error", "Home");
             }
 
-            var vModel = new ProfileViewModel(response.Data.Entities.FullName, response.Data.Entities.ProfileImageImageUrl!=null ? response.Data.Entities.ProfileImageImageUrl : null,response.Data.Entities.Email );
+            var vModel = new ProfileViewModel(response.Data.Entities.FullName, response.Data.Entities.ProfileImageImageUrl!=null ? response.Data.Entities.ProfileImageImageUrl : null,response.Data.Entities.Email, response.Data.Entities.Id );
 
             return View(vModel);
         }

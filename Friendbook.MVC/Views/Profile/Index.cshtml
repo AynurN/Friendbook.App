@@ -139,8 +139,8 @@
                                         <h5>following</h5>
                                     </li>
                                     <li>
-                                        <h3 class="counter-value" data-count="26335">0</h3>
-                                        <h5>likes</h5>
+                                        <h3 class="counter-value" data-count="@Model.Count">0</h3>
+                                        <h5>posts</h5>
                                     </li>
                                     <li>
                                         <h3 class="counter-value" data-count="6845">0</h3>
@@ -594,7 +594,7 @@
                     <form action="@Url.Action("UploadPostWithImages", "Profile")" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="Content">Post Content</label>
-                            <textarea class="form-control" id="Content" name="postDto.Content" rows="4"></textarea>
+                            <textarea class="form-control" id="Content" name="Content" rows="4"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -829,52 +829,67 @@
                                 </div>
                                 <div class="post-details">
                                     <div class="img-wrapper">
-                                        <div class="gallery-section">
-                                            <div class="portfolio-section ratio_square">
-                                                <div class="container-fluid p-0">
-                                                    <div class="row">
-                                                        <div class="col-8 pt-cls">
-                                                            <div class="overlay">
-                                                                <div class="portfolio-image">
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                       data-bs-target="#imageModel">
-                                                                        <img src="~/assets/images/story/9.jpg" alt=""
-                                                                             class="img-fluid blur-up lazyload bg-img">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 row m-0">
-                                                            <div class="col-12 pt-cls p-0">
+                                        @if(post.PostImageUrls!=null || post.PostImageUrls.Count > 0)
+                                        {
+                                                <div class="gallery-section">
+                                                <div class="portfolio-section ratio_square">
+                                                    <div class="container-fluid p-0">
+                                                        <div class="row">
+                                                            <div class="col-8 pt-cls">
                                                                 <div class="overlay">
                                                                     <div class="portfolio-image">
                                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
                                                                            data-bs-target="#imageModel">
-                                                                            <img src="~/assets/images/story/10.jpg"
-                                                                                 alt=""
+                                                                            <img src="~/postimgs/@post.PostImageUrls[0]" alt=""
                                                                                  class="img-fluid blur-up lazyload bg-img">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 pt-cls p-0">
-                                                                <div class="overlay image-plus">
-                                                                    <div class="portfolio-image">
-                                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                           data-bs-target="#imageModel">
-                                                                            <img src="~/assets/images/story/11.jpg"
-                                                                                 alt=""
-                                                                                 class="img-fluid blur-up lazyload bg-img">
-                                                                            <span>+20</span>
-                                                                        </a>
+                                                            <div class="col-4 row m-0">
+                                                                @if (post.PostImageUrls.Count > 1)
+                                                                {
+                                                                    <div class="col-12 pt-cls p-0">
+                                                                        <div class="overlay">
+                                                                            <div class="portfolio-image">
+                                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                                   data-bs-target="#imageModel">
+                                                                                    <img src="~/postimgs/@post.PostImageUrls[1]"
+                                                                                         alt=""
+                                                                                         class="img-fluid blur-up lazyload bg-img">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                    
+                                                                }
+                                                                @if (post.PostImageUrls.Count > 2)
+                                                                {
+                                                                    <div class="col-12 pt-cls p-0">
+                                                                        <div class="overlay">
+                                                                            <div class="portfolio-image">
+                                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                                   data-bs-target="#imageModel">
+                                                                                    <img src="~/postimgs/@post.PostImageUrls[2]"
+                                                                                         alt=""
+                                                                                         class="img-fluid blur-up lazyload bg-img">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                }
+
+
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                            
+                                        }
+                                    
                                     </div>
                                     <div class="detail-box">
                                         <h3>@post.Content</h3>
@@ -1521,169 +1536,7 @@
 
         </div>
 
-        <!-- conversation panel start -->
-        <div class="conversation-panel xl-light">
-            <div class="panel-header">
-                <h2>friends</h2>
-                <h5>start new conversation</h5>
-                <div class="setting">
-                    <div class="setting-btn setting-dropdown">
-                        <div class="btn-group custom-dropdown dropdown-sm">
-                            <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="icon-theme stroke-width-3 icon iw-11 ih-11" data-feather="sun"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right custom-dropdown">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="icon-font-light iw-16 ih-16" data-feather="user"></i>see
-                                            all</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-font-light iw-16 ih-16" data-feather="search"></i>find
-                                            friends</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-font-light iw-16 ih-16"
-                                                data-feather="settings"></i>settings</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="search-bar">
-                <div class="lg-search">
-                    <i data-feather="search" class="icon-theme icon iw-16"></i>
-                    <input asp-controller="Profile" type="text"  class="form-control" placeholder="find friends...">
-                </div>
-               
-            </div>
-            <div class="friend-section">
-                <div class="header-section">
-                    <a data-bs-toggle="collapse" href="#accordion" role="button" aria-expanded="true" class="">
-                        close
-                        friends
-                        <div class="down-arrow">
-                            <i data-feather="chevron-down" class="icon-theme iw-14 ih-14"></i>
-                        </div>
-                    </a>
-                </div>
-                <div id="accordion" class="friend-list collapse show">
-                    <ul>
-                        <li class="friend-box user1">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/1.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Paige Turner</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="friend-box user2">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/2.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats online"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Bob Frapples</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="friend-section">
-                <div class="header-section">
-                    <a data-bs-toggle="collapse" href="#accordion1" role="button" aria-expanded="true" class="">
-                        recent
-                        chats
-                        <div class="down-arrow">
-                            <i data-feather="chevron-down" class="icon-theme iw-14 ih-14"></i>
-                        </div>
-                    </a>
-                </div>
-                <div id="accordion1" class="friend-list collapse show">
-                    <ul>
-                        <li class="friend-box user3">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/3.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Josephin water</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="friend-box user4">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/4.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats offline"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Petey Cruiser</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="friend-box user5">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/5.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats online"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Anna Sthesia</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="friend-box user6">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/6.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Paul Molive</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="friend-box user7">
-                            <div class="media">
-                                <div class="user-img">
-                                    <img src="~/assets/images/user-sm/7.jpg" class="img-fluid blur-up lazyload bg-img"
-                                        alt="user">
-                                    <span class="available-stats away"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h5 class="user-name">Anna Mull</h5>
-                                    <h6>alabma, USA</h6>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- conversation panel end -->
-
-    </div>
+ 
     <!-- page body end -->
 
 

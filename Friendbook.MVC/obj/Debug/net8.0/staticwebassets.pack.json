@@ -1221,8 +1221,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\0b9979db-d899-4338-ac1c-df440c23fd9b.jpg",
+      "PackagePath": "staticwebassets\\imgs\\0b9979db-d899-4338-ac1c-df440c23fd9b.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\65ac98ca-4c8f-40da-b86c-8d10bc80ec8f.jpg",
       "PackagePath": "staticwebassets\\imgs\\65ac98ca-4c8f-40da-b86c-8d10bc80ec8f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\806cf940-61b3-4d12-87c6-b01b87a13f0a.jpg",
+      "PackagePath": "staticwebassets\\imgs\\806cf940-61b3-4d12-87c6-b01b87a13f0a.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\imgs\\bf39f853-87a8-4aa6-a86e-256f503b8164.jpg",
@@ -1469,36 +1477,128 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\058d9ea2-2586-44bf-b7b4-5f83b12f56f0.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\058d9ea2-2586-44bf-b7b4-5f83b12f56f0.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\112af8a5-d45d-4ff2-bad2-b98940b1d110.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\112af8a5-d45d-4ff2-bad2-b98940b1d110.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\3c068744-41ec-4b8d-845d-d482dbd21b63.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\3c068744-41ec-4b8d-845d-d482dbd21b63.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\1bc0d672-a440-489a-a467-c2aa91fc9ac8.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\1bc0d672-a440-489a-a467-c2aa91fc9ac8.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\7e299375-7b68-43ef-8641-95c50dc0c51a.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\7e299375-7b68-43ef-8641-95c50dc0c51a.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\1f572cf5-4843-4a65-9d6d-0379bc1cce27.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\1f572cf5-4843-4a65-9d6d-0379bc1cce27.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\b0f64df7-a7a9-4362-b50d-57a17fb067d1.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\b0f64df7-a7a9-4362-b50d-57a17fb067d1.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\263a92d8-bd97-4171-83b2-aea6882181bf.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\263a92d8-bd97-4171-83b2-aea6882181bf.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\b6e335cc-4713-4a94-ace2-d79709749aeb.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\b6e335cc-4713-4a94-ace2-d79709749aeb.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\28eea399-de87-4f08-9994-e38748eb06dd.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\28eea399-de87-4f08-9994-e38748eb06dd.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\c3ae81e7-70d8-4e8a-9dda-4be2d755de7b.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\c3ae81e7-70d8-4e8a-9dda-4be2d755de7b.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\2d23adcf-f1cb-4d81-bce8-ccd349fd56cf.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\2d23adcf-f1cb-4d81-bce8-ccd349fd56cf.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\c7246ab3-9506-4d6f-aab1-7f07ff4bccd2.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\c7246ab3-9506-4d6f-aab1-7f07ff4bccd2.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\2f5f4641-8a28-4a35-88f2-90c1ab3c8b5d.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\2f5f4641-8a28-4a35-88f2-90c1ab3c8b5d.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\f03db1e1-31d2-40f5-8330-3403662986eb.jpg",
-      "PackagePath": "staticwebassets\\postimgs\\f03db1e1-31d2-40f5-8330-3403662986eb.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\31a83364-a621-460a-9338-fe73da852d05.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\31a83364-a621-460a-9338-fe73da852d05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\33c22d43-dbf4-45a0-9825-291ca8621110.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\33c22d43-dbf4-45a0-9825-291ca8621110.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\4224785a-4c7b-485a-9f6a-3f4834e02c98.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\4224785a-4c7b-485a-9f6a-3f4834e02c98.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\43f20d05-22be-4c9a-b58b-091b75787528.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\43f20d05-22be-4c9a-b58b-091b75787528.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\451ecbe2-a898-463c-88d8-066c357c580a.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\451ecbe2-a898-463c-88d8-066c357c580a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\490472fa-ab0c-454c-ad20-2c69d48c6790.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\490472fa-ab0c-454c-ad20-2c69d48c6790.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\4f836184-2889-4eed-9e96-a65f50048572.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\4f836184-2889-4eed-9e96-a65f50048572.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\5636b4a8-d80b-4a0c-ac84-c43ed7f8aa2b.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\5636b4a8-d80b-4a0c-ac84-c43ed7f8aa2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\57e928fc-4e92-40e3-b30e-d2dcddcaabb0.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\57e928fc-4e92-40e3-b30e-d2dcddcaabb0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\5d76be06-8899-4d87-b803-388960f23efa.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\5d76be06-8899-4d87-b803-388960f23efa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\6c8fb2a9-5ab5-4f23-96bc-b6eeb3b146b8.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\6c8fb2a9-5ab5-4f23-96bc-b6eeb3b146b8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\933a2a1d-f16b-4912-a187-cd62bb00a9e4.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\933a2a1d-f16b-4912-a187-cd62bb00a9e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\94581f75-c5c8-442c-bbee-7964d61963ea.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\94581f75-c5c8-442c-bbee-7964d61963ea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\9e27197b-a229-4406-8a47-f40ed68cb7bc.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\9e27197b-a229-4406-8a47-f40ed68cb7bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\a2e3af15-45c5-405e-89c4-dfdce8e83497.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\a2e3af15-45c5-405e-89c4-dfdce8e83497.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\a9414063-3ea7-4e4a-bb03-1ccb605bfbd6.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\a9414063-3ea7-4e4a-bb03-1ccb605bfbd6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\b65da4a4-ac25-49e3-a6f4-a30b1e8c44c4.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\b65da4a4-ac25-49e3-a6f4-a30b1e8c44c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\bb343562-810f-4342-81c1-458d45b99ee4.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\bb343562-810f-4342-81c1-458d45b99ee4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\bc827880-78a9-45ce-b645-ddd34d09f7da.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\bc827880-78a9-45ce-b645-ddd34d09f7da.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\bd24beb8-9c45-4292-9676-ab904473c6eb.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\bd24beb8-9c45-4292-9676-ab904473c6eb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\c3432dec-1cd9-4777-a0de-2aa3d66a0149.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\c3432dec-1cd9-4777-a0de-2aa3d66a0149.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\cade44c1-89b2-4ce4-b12d-2a067e658cab.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\cade44c1-89b2-4ce4-b12d-2a067e658cab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\f1fef99e-75b7-4144-a3f8-26dc73db6793.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\f1fef99e-75b7-4144-a3f8-26dc73db6793.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\f3a80598-c4f8-4400-b287-28eb59868bee.jpg",
+      "PackagePath": "staticwebassets\\postimgs\\f3a80598-c4f8-4400-b287-28eb59868bee.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Friendbook.MVC.Microsoft.AspNetCore.StaticWebAssets.props",

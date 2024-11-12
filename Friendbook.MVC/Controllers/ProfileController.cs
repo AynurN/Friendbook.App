@@ -1,8 +1,14 @@
 ﻿using Friendbook.Business.Dtos.PostDtos;
+using Friendbook.Business.Services.Implementations;
+using Friendbook.Business.Services.Interfaces;
+using Friendbook.Core.Entities;
+using Friendbook.Core.IRepositories;
 using Friendbook.MVC.ApiResponseMessages;
 using Friendbook.MVC.Services.Interfacses;
 using Friendbook.MVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
 using RestSharp;
 using System.Configuration;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,11 +21,15 @@ namespace Friendbook.MVC.Controllers
     {
         private readonly IConfiguration configuration;
         private readonly ICrudService crudService;
+        private readonly IAppUserRepository repo;
+        private readonly IPostService postService;
 
-        public ProfileController(IConfiguration configuration, ICrudService crudService) : base(configuration)
+        public ProfileController(IConfiguration configuration, ICrudService crudService,  IAppUserRepository repo, IPostService postService) : base(configuration)
         {
             this.configuration = configuration;
             this.crudService = crudService;
+            this.repo = repo;
+           this.postService = postService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,27 +43,31 @@ namespace Friendbook.MVC.Controllers
             var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
 
             if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
-
-            var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
-            var request = new RestRequest($"/users/GetUserPosts/{userId}", Method.Get);
-            request.AddHeader("Authorization", $"Bearer {token}");
-
-
-            var response = await _restClient.ExecuteAsync<ApiResponseMessage<List<PostVM>>>(request);
-
-            if (response == null || response.Data == null)
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
+            if (user == null)
             {
-                TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
-                return RedirectToAction("Index", "Home");
+                return NotFound(new ApiResponseMessage<string>
+                {
+                    StatusCode = 404,
+                    ErrorMessage = "User not found!"
+                });
             }
-            var postVM = new List<PostVM>();
+
+            List<PostVM> posts = new List<PostVM>();
+            foreach (var post in user.Posts)
+            {
+                PostVM postDto = new PostVM(post.Content, post.PostImages.Select(x => x.ImageURL).ToList(),post.CreatedAt);
+                posts.Add(postDto);
+            }
+            posts = posts.OrderByDescending(x => x.CreatedAt).ToList();
+         
             //foreach (var post in response.Data.Entities)
             //{
             //postVM.Add(new PostVM(post.Content, post.PostImageUrls));
             //}
 
             TempData["Message"] = "Profile image uploaded successfully.";
-            return View(postVM);
+            return View(posts);
         }
 
         [HttpPost("[action]")]
@@ -157,7 +171,7 @@ namespace Friendbook.MVC.Controllers
             var postVM = new List<PostVM>();
             foreach (var post in response.Data.Entities)
             {
-                postVM.Add(new PostVM(post.Content, post.PostImageUrls));
+                postVM.Add(new PostVM(post.Content, post.PostImageUrls,post.CreatedAt));
             }
 
             TempData["Message"] = "Profile image uploaded successfully.";
@@ -166,7 +180,7 @@ namespace Friendbook.MVC.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> UploadPostWithImages(PostVM postDto, string privacy, List<IFormFile> images)
+        public async Task<IActionResult> UploadPostWithImages(PostCreateVM postVM)
         {
             var token = HttpContext.Request.Cookies["token"];
             if (token == null) return RedirectToAction("Login", "Auth");
@@ -177,41 +191,27 @@ namespace Friendbook.MVC.Controllers
 
             if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
 
-            var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
-            var request = new RestRequest($"/create/{userId}", Method.Post);
-            request.AddHeader("Authorization", $"Bearer {token}");
-
-            // Populate the request with PostDto properties and privacy setting
-            request.AddObject(postDto);
-
-            // Add images to the request
-            if (images != null && images.Any())
+            // Validate Content
+            if (string.IsNullOrWhiteSpace(postVM.Content))
             {
-                foreach (var image in images)
-                {
-                    if (image.Length > 0)
-                    {
-                        using (var memoryStream = new MemoryStream())
-                        {
-                            await image.CopyToAsync(memoryStream);
-                            var fileBytes = memoryStream.ToArray();
-                            request.AddFile("file", fileBytes, image.FileName, image.ContentType);
-                        }
-                    }
-                }
+                ModelState.AddModelError("Content", "Content is required.");
+                return View(postVM); // Return the view with the validation error
             }
 
-            var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
-
-            if (response == null || response.Data == null || !response.Data.IsSuccessfull)
+            // Validate Images
+            if (postVM.Images == null || !postVM.Images.Any())
             {
-                TempData["Message"] = response?.Data?.ErrorMessage ?? "Post creation failed.";
-                return RedirectToAction("Index");
+                ModelState.AddModelError("images", "No images uploaded.");
+                return View(postVM); // Return the view with the validation error
             }
+
+            // Save the post
+            Post post = await postService.CreatePostWithImagesAsync(userId, postVM.Content, postVM.Images);
 
             TempData["Message"] = "Post created successfully.";
             return RedirectToAction("Index");
         }
+
 
     }
 }

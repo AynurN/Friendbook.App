@@ -40,8 +40,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "friendshipId",
-        "Type": "System.Int32",
+        "Name": "appUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "friendId",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -55,6 +60,11 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "appUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
       {
         "Name": "friendId",
         "Type": "System.String",
@@ -70,7 +80,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "appUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -119,8 +135,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "message",
-        "Type": "Friendbook.Core.Entities.DirectMessage",
+        "Name": "messageDto",
+        "Type": "Friendbook.Business.Dtos.MessageDtos.DirectMessageDto",
         "IsRequired": true
       }
     ],
@@ -142,11 +158,6 @@
       {
         "Name": "Content",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PostImageUrls",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {

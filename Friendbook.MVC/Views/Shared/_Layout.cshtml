@@ -157,93 +157,11 @@
                         <ul class="option-list">
                             <!-- message -->
                             <li class="header-btn custom-dropdown dropdown-lg btn-group message-btn">
-                                <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
+                                <a  asp-action="Index" asp-controller="Message" >
                                     <i class="icon-light stroke-width-3 iw-16 ih-16"
-                                       data-feather="message-circle"></i><span class="count success">2</span>
+                                       ></i>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-header">
-                                        <div class="left-title">
-                                            <span>messages</span>
-                                        </div>
-                                        <div class="right-option">
-                                            <ul>
-                                                <li>
-                                                    <a href="messanger.html">
-                                                        <i class="iw-16 ih-16" data-feather="maximize"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="iw-16 ih-16" data-feather="edit"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="iw-16 ih-16" data-feather="more-horizontal"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="mobile-close">
-                                            <h5>close</h5>
-                                        </div>
-                                    </div>
-                                    <div class="search-bar input-style icon-left">
-                                        <i class="iw-16 ih-16 icon" data-feather="search"></i>
-                                        <input type="text" class="form-control" placeholder="search messages...">
-                                    </div>
-                                    <div class="dropdown-content">
-                                        <ul class="friend-list">
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/1.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">Paige Turner</h5>
-                                                                <h6>Are you there ?</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="active-status">
-                                                        <span class="active"></span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">Paige Turner</h5>
-                                                                <h6>Are you there ?</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/3.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">Bob Frapples</h5>
-                                                                <h6>hello ! how are you ?</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="active-status">
-                                                        <span class="offline"></span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                             
                             </li>
                             <!-- dark/light -->
                             <li class="header-btn custom-dropdown">
@@ -1162,7 +1080,7 @@
                     <ul class="btn-group">
                         <!-- home -->
                         <li class="header-btn home-btn">
-                            <a class="main-link" href="index.html">
+                            <a class="main-link" asp-action="Index" asp-controller="Home">
                                 <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="home"></i>
                             </a>
                         </li>
@@ -1263,92 +1181,10 @@
                     <ul class="option-list">
                         <!-- message -->
                         <li class="header-btn custom-dropdown dropdown-lg btn-group message-btn">
-                            <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
+                            <a class="main-link" asp-action="Index" asp-controller="Message">
                                 <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="message-circle"></i><span class="count success">2</span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-header">
-                                    <div class="left-title">
-                                        <span>messages</span>
-                                    </div>
-                                    <div class="right-option">
-                                        <ul>
-                                            <li>
-                                                <a href="messanger.html">
-                                                    <i class="iw-16 ih-16" data-feather="maximize"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="iw-16 ih-16" data-feather="edit"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="iw-16 ih-16" data-feather="more-horizontal"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="mobile-close">
-                                        <h5>close</h5>
-                                    </div>
-                                </div>
-                                <div class="search-bar input-style icon-left">
-                                    <i class="iw-16 ih-16 icon" data-feather="search"></i>
-                                    <input type="text" class="form-control" placeholder="search messages...">
-                                </div>
-                                <div class="dropdown-content">
-                                    <ul class="friend-list">
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/1.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6>Are you there ?</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="active-status">
-                                                    <span class="active"></span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6>Are you there ?</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/3.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Bob Frapples</h5>
-                                                            <h6>hello ! how are you ?</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="active-status">
-                                                    <span class="offline"></span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+ 
                         </li>
                         <!-- dark/light -->
                         <li class="header-btn custom-dropdown">
@@ -1644,6 +1480,7 @@
     </header>
     <!-- header end -->
     @RenderBody();
+    @RenderSection("Scripts", required: false)
     <!-- latest jquery-->
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
 
@@ -1715,9 +1552,11 @@
         function renderUserSuggestions(users) {
             const suggestionsContainer = document.getElementById('searchedUsers');
             suggestionsContainer.innerHTML = '';
+            // console.log(Array.isArray(Object.keys(users.entities)));
 
-            if (Array.isArray(users.entities)) {
-                users.entities.forEach(user => {
+            if (Array.isArray(Object.keys(users.entities))) {
+                console.log(users.entities.$values);
+                users.entities.$values.forEach(user => {
                     const userItem = document.createElement('li');
                     userItem.innerHTML = `
                                         <div class="media" onclick="window.location.href='/Friendship/UserProfile?userId=${user.id}'">

@@ -20,12 +20,12 @@ namespace Friendbook.API.Controllers
         }
 
         [HttpPost("[action]/{id}")]
-        public async Task<IActionResult> Create(string id,[FromForm] PostDto postDto, [FromForm] List<IFormFile> images)
+        public async Task<IActionResult> Create(string id,string Content, [FromForm] List<IFormFile> images)
         {
             var response = new ApiResponse<Post>();
             try
             {
-                var post = await postService.CreatePostWithImagesAsync(id, postDto, images);
+                var post = await postService.CreatePostWithImagesAsync(id, Content,images);
                 response.Entities = post;
                 response.StatusCode = 200;
             }

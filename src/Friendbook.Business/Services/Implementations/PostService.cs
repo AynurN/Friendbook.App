@@ -31,18 +31,21 @@ namespace Friendbook.Business.Services.Implementations
             this.environment = environment;
         }
 
-        public async Task<Post> CreatePostWithImagesAsync(string userId, PostDto postDto, List<IFormFile> images)
+        public async Task<Post> CreatePostWithImagesAsync(string userId,string Content, List<IFormFile> images)
         {
             var user = await userRepo.GetByIdAsync(userId);
             if (user == null) throw new KeyNotFoundException("User not found");
+            if (Content == null) throw new KeyNotFoundException("Content not found");
+            if (images == null || images.Count==0) throw new KeyNotFoundException("Images not found");
 
             var post = new Post
             {
-                Content = postDto.Content,
+                Content = Content,
                 User = user,
                 PostImages = new List<PostImage>(),
                 Comments = new List<Comment>(),
-                Likes = new List<PostLike>()
+                Likes = new List<PostLike>(),
+                CreatedAt = DateTime.Now,
             };
 
             foreach (var image in images)
@@ -110,7 +113,7 @@ namespace Friendbook.Business.Services.Implementations
                 throw new InvalidOperationException("Invalid file format. Only .jpg, .jpeg, and .png are allowed");
 
             var uniqueFileName = Guid.NewGuid() + extension;
-            var filePath = Path.Combine(environment.WebRootPath, PostImagesPath, uniqueFileName);
+            var filePath = Path.Combine( PostImagesPath, uniqueFileName);
 
             using (var stream = new FileStream(filePath, FileMode.Create))
             {

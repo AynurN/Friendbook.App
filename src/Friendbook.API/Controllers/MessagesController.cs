@@ -1,4 +1,5 @@
 ﻿using Friendbook.API.ApiResponses;
+using Friendbook.Business.Dtos.MessageDtos;
 using Friendbook.Core.Entities;
 using Friendbook.Core.IRepositories;
 using Microsoft.AspNetCore.Http;
@@ -31,11 +32,19 @@ namespace Friendbook.API.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> SendMessage([FromBody] DirectMessage message)
+        public async Task<IActionResult> SendMessage([FromBody] DirectMessageDto messageDto)
         {
-            message.SentAt = DateTime.UtcNow;
+            var message = new DirectMessage
+            {
+                Content = messageDto.Content,
+                SenderId = messageDto.SenderId,
+                ReceiverId = messageDto.ReceiverId,
+                SentAt = DateTime.UtcNow
+            };
+
             await repo.CreateAsync(message);
             return Ok(new ApiResponse<DirectMessage> { StatusCode = 201, Entities = message });
         }
+
     }
 }

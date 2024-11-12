@@ -1,4 +1,5 @@
-﻿@using Friendbook.MVC.ViewModels
+﻿@using Friendbook.Business.Enums
+@using Friendbook.MVC.ViewModels
   <!-- page body start -->
 @model FriendProfileVM
 <div class="page-body container-fluid custom-padding profile-page">
@@ -133,14 +134,38 @@
                                     <h5>following</h5>
                                 </li>
                                 <li>
-                                    <h3 class="counter-value" data-count="26335">0</h3>
-                                    <h5>likes</h5>
+                                    <h3 class="counter-value" data-count="@Model.posts.Count">0</h3>
+                                    <h5>posts</h5>
                                 </li>
                                 <li>
                                     <h3 class="counter-value" data-count="6845">0</h3>
                                     <h5>followers</h5>
                                 </li>
                             </ul>
+                            @if (Model.friendship == FriendshipStatus.NoRequest)
+                            {
+
+                                <form asp-action="AddFriend" asp-controller="Friendship" method="post">
+                                    <input type="hidden" name="friendId" value="@Model.vm.Id" />
+                                    <button type="submit" class="btn btn-primary">Add Friend</button>
+                                </form>
+
+                            }
+                            else if (Model.friendship == FriendshipStatus.RequestPending)
+                            {
+                                <form asp-action="AcceptFriendship" asp-controller="Friendship" method="post">
+                                    <input type="hidden" name="friendId" value="@Model.vm.Id" />
+                                    <button type="submit" class="btn btn-success">Accept Friend Request</button>
+                                </form>
+                            }
+                            else if(Model.friendship == FriendshipStatus.Sent)
+                            {
+                                <p>Friendship request has been sent</p>
+                            }
+                            else if (Model.friendship == FriendshipStatus.Friends)
+                            {
+                                <p>Friends</p>
+                            }
                         </div>
                     </div>
                 </div>
@@ -590,15 +615,17 @@
                 </div>
                 <div class="content-center">
                     <div class="post-panel infinite-loader-sec">
-                      @foreach(var post in Model.posts){
+                        @foreach (var post in Model.posts)
+                        {
                             <div class="post-wrapper col-grid-box section-t-space">
                                 <div class="post-title">
                                     <div class="profile">
                                         <div class="media">
-                                            <div class="user-img">
+                                            <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
+                                               data-name="sufiya eliza" data-img="~/assets/images/user-sm/14.jpg">
                                                 <img src="~/assets/images/user-sm/14.jpg"
                                                      class="img-fluid blur-up lazyload bg-img" alt="user">
-                                            </div>
+                                            </a>
                                             <div class="media-body">
                                                 <h5>sufiya eliza</h5>
                                                 <h6>30 mins ago</h6>
@@ -617,8 +644,7 @@
                                                     <li>
                                                         <a href="#">
                                                             <i class="icon-font-light iw-16 ih-16"
-                                                               data-feather="bookmark"></i>save
-                                                            post
+                                                               data-feather="bookmark"></i>save post
                                                         </a>
                                                     </li>
                                                     <li>
@@ -630,8 +656,7 @@
                                                     <li>
                                                         <a href="#">
                                                             <i class="icon-font-light iw-16 ih-16"
-                                                               data-feather="x-square"></i>hide
-                                                            post
+                                                               data-feather="x-square"></i>hide post
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -641,52 +666,67 @@
                                 </div>
                                 <div class="post-details">
                                     <div class="img-wrapper">
-                                        <div class="gallery-section">
-                                            <div class="portfolio-section ratio_square">
-                                                <div class="container-fluid p-0">
-                                                    <div class="row">
-                                                        <div class="col-8 pt-cls">
-                                                            <div class="overlay">
-                                                                <div class="portfolio-image">
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                       data-bs-target="#imageModel">
-                                                                        <img src="~/assets/images/post/17.jpg" alt=""
-                                                                             class="img-fluid blur-up lazyload bg-img">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 row m-0">
-                                                            <div class="col-12 pt-cls p-0">
+                                        @if (post.PostImageUrls != null || post.PostImageUrls.Count > 0)
+                                        {
+                                            <div class="gallery-section">
+                                                <div class="portfolio-section ratio_square">
+                                                    <div class="container-fluid p-0">
+                                                        <div class="row">
+                                                            <div class="col-8 pt-cls">
                                                                 <div class="overlay">
                                                                     <div class="portfolio-image">
                                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
                                                                            data-bs-target="#imageModel">
-                                                                            <img src="~/assets/images/post/16.jpg"
-                                                                                 alt=""
+                                                                            <img src="~/postimgs/@post.PostImageUrls[0]" alt=""
                                                                                  class="img-fluid blur-up lazyload bg-img">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 pt-cls p-0">
-                                                                <div class="overlay image-plus">
-                                                                    <div class="portfolio-image">
-                                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                           data-bs-target="#imageModel">
-                                                                            <img src="~/assets/images/post/15.jpg"
-                                                                                 alt=""
-                                                                                 class="img-fluid blur-up lazyload bg-img">
-                                                                            <span>+20</span>
-                                                                        </a>
+                                                            <div class="col-4 row m-0">
+                                                                @if (post.PostImageUrls.Count > 1)
+                                                                {
+                                                                    <div class="col-12 pt-cls p-0">
+                                                                        <div class="overlay">
+                                                                            <div class="portfolio-image">
+                                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                                   data-bs-target="#imageModel">
+                                                                                    <img src="~/postimgs/@post.PostImageUrls[1]"
+                                                                                         alt=""
+                                                                                         class="img-fluid blur-up lazyload bg-img">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+
+                                                                }
+                                                                @if (post.PostImageUrls.Count > 2)
+                                                                {
+                                                                    <div class="col-12 pt-cls p-0">
+                                                                        <div class="overlay">
+                                                                            <div class="portfolio-image">
+                                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                                   data-bs-target="#imageModel">
+                                                                                    <img src="~/postimgs/@post.PostImageUrls[2]"
+                                                                                         alt=""
+                                                                                         class="img-fluid blur-up lazyload bg-img">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                }
+
+
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+
+                                        }
+
                                     </div>
                                     <div class="detail-box">
                                         <h3>@post.Content</h3>
@@ -794,8 +834,7 @@
                                             </li>
                                             <li class="comment-click">
                                                 <a href="javascript:void(0)">
-                                                    <i class="iw-18 ih-18" data-feather="message-square"></i>
-                                                    comment
+                                                    <i class="iw-18 ih-18" data-feather="message-square"></i> comment
                                                 </a>
                                             </li>
                                             <li data-bs-target="#shareModal" data-bs-toggle="modal">
@@ -924,9 +963,8 @@
                                                         </div>
                                                     </div>
                                                     <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i>
-                                                        load
-                                                        more replies
+                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
+                                                        replies
                                                     </a>
                                                 </div>
                                             </div>
@@ -968,7 +1006,8 @@
                                     </div>
                                 </div>
                             </div>
-                      }
+
+                        }
                         
 
                     </div>

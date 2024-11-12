@@ -1,0 +1,391 @@
+﻿ @using Friendbook.MVC.ViewModels
+@model ChatVM
+@* <section class="messanger-section">
+    <div class="chat-users">
+        <div class="user-header">
+            <a href="index.html" class="back-btn d-block d-sm-none">
+                <i class="ih-18 iw-18" data-feather="arrow-left"></i>
+            </a>
+            <div class="search-bar">
+                <i data-feather="search" class="icon-theme icon iw-16"></i>
+                <input type="text" class="form-control" placeholder="find friends...">
+            </div>
+            <a class="new-chat" href="#"><i class="icon-light iw-14 ih-14" data-feather="edit"></i></a>
+        </div>
+        <ul class="nav nav-tabs" id="mytab" role="tablist">
+           
+            @if (ViewBag.Friends != null)
+            {
+                @foreach (var friend in ViewBag.Friends)
+                {
+                    <li class="nav-item" role="presentation">
+                       
+                            <div class="media list-media">
+                                <div class="story-img">
+                                    <div class="user-img">
+                                        <img class="img-fluid blur-up bg-img lazyloaded" src="~/imgs/@((friend.ProfileImage != null && friend.ProfileImage.ImageURL != null) ? friend.ProfileImage.ImageURL : "profile-icon-9.png")"
+                                             alt="@friend.FullName">
+                                       
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>@friend.FullName></h5>
+
+                                </div>
+                            </div>
+                             <button onclick="loadChat('@friend.Id')">Chat</button> *
+                     
+                    </li>
+                }} 
+        </ul>
+    </div>
+    <div class="chat-content">
+        <div class="tab-content" id="mytabcontent">
+           
+                <div class="tab-pane fade" id="user4" role="tabpanel" aria-labelledby="user4">
+                    <div class="tab-box">
+                        <div class="user-chat">
+                            <div class="user-title">
+                                <div class="back-btn d-block d-sm-none">
+                                    <i data-feather="arrow-left"></i>
+                                </div>
+                                <div class="media list-media">
+                                    <div class="story-img">
+                                        <div class="user-img">
+                                            <img src="~/assets/images/user/4.jpg"
+                                                 class="img-fluid blur-up lazyload bg-img" alt="user">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5>anna mull </h5>
+                                        <h6>active 10m ago</h6>
+                                    </div>
+                                </div>
+                                <div class="menu-option">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i data-feather="phone" class="icon-dark"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i data-feather="video" class="icon-dark"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i data-feather="settings" class="icon-dark"></i></a>
+                                        </li>
+                                        <li class="d-block d-lg-none info-user">
+                                            <a href="#"><i data-feather="info" class="icon-dark"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chat-history">
+                            <div class="avenue-messenger">
+                                @* <div class="chat-content">
+                                <h3>Chat</h3>
+                                <div id="chatMessages">
+                                <!-- Initial Chat Messages Load Here -->
+                                @Html.Partial("_ChatMessagesPartial", Model.Messages)
+                                </div>
+                                <!-- Send Message Form -->
+                                <form id="sendMessageForm" onsubmit="sendMessage(); return false;">
+                                <input type="text" id="messageContent" placeholder="Type a message..." required />
+                                <button type="submit">Send</button>
+                                </form>
+                                </div>
+                                </div>
+                                <div class="chat">
+                                <div class="messages-content" id="chatMessages">
+                                @Html.Partial("_ChatMessagesPartial", Model.Messages)
+
+                                </div>
+                                @* <div class="message-box">
+                                @*  <textarea class="message-input emojipicker"
+                                placeholder="type message..."></textarea> *@
+                               @*  <form id="sendMessageForm" onsubmit="sendMessage(); return false;">
+                                <input type="text" id="messageContent" placeholder="Type a message..." required />
+                                <button type="submit" class="message-submit"><i data-feather="send"></i></button>
+                                </form> *@
+
+                                @*  <div class="add-extent">
+                                <i class="fas fa-plus animated-btn"></i>
+                                <div class="options">
+                                <ul>
+                                <li><img src="https://themes.pixelstrap.com/friendbook/assets/svg/image.svg" alt=""></li>
+                                <li><img src="https://themes.pixelstrap.com/friendbook/assets/svg/paperclip.svg" alt=""></li>
+                                <li><img src="https://themes.pixelstrap.com/friendbook/assets/svg/camera.svg" alt=""></li>
+                                </ul>
+                                </div>
+                                </div>
+                                <a href="#" class="message-submit"><i data-feather="send"></i></a>
+                                </div> *@
+@* </div>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div class="back-btn d-lg-none d-block">
+                                <i data-feather="x" class="icon-theme"></i>
+                            </div>
+                            <div class="user-image">
+                                <img src="~/assets/images/user/4.jpg" class="img-fluid blur-up lazyload bg-img" alt="">
+                            </div>
+                            <div class="user-name">
+                                <h5>anna mull</h5>
+                                <h6>london, united kingdom</h6>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipisicing elit. tempora possimus magnam
+                                    adipisci aspernatur.
+                                </p>
+                                <div class="social-btn">
+                                    <ul>
+                                        <li class="facebook">
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="https://themes.pixelstrap.com/friendbook/assets/svg/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="https://themes.pixelstrap.com/friendbook/assets/svg/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="whatsapp">
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="https://themes.pixelstrap.com/friendbook/assets/svg/icons.svg#whatsapp"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="user-gallery">
+                                <h5>media <a href="#">see all</a></h5>
+                                <div class="gallery-section">
+                                    <div class="portfolio-section ratio_square">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="overlay">
+                                                        <div class="portfolio-image">
+                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                               data-bs-target="#imagemodel">
+                                                                <img src="~/assets/images/post/2.jpg" alt=""
+                                                                     class="img-fluid blur-up lazyload bg-img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="overlay">
+                                                        <div class="portfolio-image">
+                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                               data-bs-target="#imagemodel">
+                                                                <img src="~/assets/images/post/4.jpg" alt=""
+                                                                     class="img-fluid blur-up lazyload bg-img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="overlay">
+                                                        <div class="portfolio-image">
+                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                               data-bs-target="#imagemodel">
+                                                                <img src="~/assets/images/post/11.jpg" alt=""
+                                                                     class="img-fluid blur-up lazyload bg-img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               </div>
+           
+        
+</section>
+@section Scripts {
+    <script>
+        let receiverId = '@Model.ReceiverId';
+
+        function loadChat(newReceiverId) {
+            receiverId = newReceiverId;
+            $.get('/Message/GetMessages', { receiverId: receiverId })
+                .done(function (partialViewResult) {
+                    $('#chatMessages').html(partialViewResult);
+                });
+        }
+
+        function sendMessage() {
+            const content = $('#messageContent').val();
+            $.post('/Message/SendMessage', { receiverId: receiverId, content: content })
+                .done(function () {
+                    loadChat(receiverId); // Reload chat after sending
+                    $('#messageContent').val(''); // Clear input field
+                });
+        }
+    </script>
+} *@
+
+
+
+
+@* <div class="friends-chat-container" style="margin:100px">
+    <!-- Friends List -->
+    <div class="friends-list">
+        <h3>Your Friends</h3>
+        <ul>
+            @if(ViewBag.Friends != null)
+            {
+                @foreach (var friend in ViewBag.Friends)
+                {
+                    <li>
+                                <img src="~/imgs/@((friend.ProfileImage != null && friend.ProfileImage.ImageURL != null) ? friend.ProfileImage.ImageURL : "profile-icon-9.png")"
+                                     alt="@friend.FullName" width="30" height="30" />
+                                <strong>@friend.FullName</strong>
+                        <button onclick="loadChat('@friend.Id')">Chat</button>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <!-- Chat Content -->
+    <div class="chat-content">
+        <h3>Chat</h3>
+        <div id="chatMessages">
+            <!-- Initial Chat Messages Load Here -->
+            @Html.Partial("_ChatMessagesPartial", Model.Messages)
+        </div>
+        <!-- Send Message Form -->
+        <form id="sendMessageForm" onsubmit="sendMessage(); return false;">
+            <input type="text" id="messageContent" placeholder="Type a message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let receiverId = '@Model.ReceiverId';
+
+        function loadChat(newReceiverId) {
+            receiverId = newReceiverId;
+            $.get('/Message/GetMessages', { receiverId: receiverId })
+                .done(function (partialViewResult) {
+                    $('#chatMessages').html(partialViewResult);
+                });
+        }
+
+        function sendMessage() {
+            const content = $('#messageContent').val();
+            $.post('/Message/SendMessage', { receiverId: receiverId, content: content })
+                .done(function () {
+                    loadChat(receiverId); // Reload chat after sending
+                    $('#messageContent').val(''); // Clear input field
+                });
+        }
+    </script>
+}
+ *@
+<section class="messanger-section">
+    <div class="chat-users">
+        <div class="user-header">
+            <a href="index.html" class="back-btn d-block d-sm-none">
+                <i class="ih-18 iw-18" data-feather="arrow-left"></i>
+            </a>
+            <div class="search-bar">
+                <i data-feather="search" class="icon-theme icon iw-16"></i>
+                <input type="text" class="form-control" placeholder="find friends...">
+            </div>
+            <a class="new-chat" href="#"><i class="icon-light iw-14 ih-14" data-feather="edit"></i></a>
+        </div>
+
+        <ul class="nav nav-tabs" id="mytab" role="tablist">
+            @if (ViewBag.Friends != null)
+            {
+                @foreach (var friend in ViewBag.Friends)
+                {
+                    <li class="nav-item" role="presentation">
+                        <div class="media list-media">
+                            <div class="story-img">
+                                <div class="user-img">
+                                    <img class="img-fluid blur-up bg-img lazyloaded" src="~/imgs/@((friend.ProfileImage != null && friend.ProfileImage.ImageURL != null) ? friend.ProfileImage.ImageURL : "profile-icon-9.png")" alt="@friend.FullName">
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <a href="javascript:void(0);" onclick="loadChat('@friend.Id')">
+                                    <h5>@friend.FullName</h5>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <!-- Chat Content -->
+    <div class="chat-content">
+        <div class="tab-content" id="mytabcontent">
+            <div class="tab-pane fade show active" id="chatPanel" role="tabpanel">
+                <div class="tab-box">
+                    <div class="user-chat">
+                        <div class="chat-history">
+                            <div class="avenue-messenger">
+                                <div class="chat-content">
+                                    <h3>Chat</h3>
+                                    <!-- Chat Messages Load Here -->
+                                    <div id="chatMessages">
+                                        @Html.Partial("_ChatMessagesPartial", Model.Messages)
+                                    </div>
+
+                                    <!-- Send Message Form -->
+                                    <form id="sendMessageForm" onsubmit="sendMessage(); return false;">
+                                        <input type="text" id="messageContent" placeholder="Type a message..." required />
+                                        <button type="submit" class="message-submit"><i data-feather="send"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let receiverId = '@Model.ReceiverId';
+
+        // Load Chat Messages for Selected Friend
+        function loadChat(newReceiverId) {
+            receiverId = newReceiverId;
+            $.get('/Message/GetMessages', { receiverId: receiverId })
+                .done(function (partialViewResult) {
+                    $('#chatMessages').html(partialViewResult);
+                });
+        }
+
+        // Send New Message
+        function sendMessage() {
+            const content = $('#messageContent').val();
+            $.post('/Message/SendMessage', { receiverId: receiverId, content: content })
+                .done(function () {
+                    loadChat(receiverId); // Reload chat after sending
+                    $('#messageContent').val(''); // Clear input field
+                });
+        }
+    </script>
+}

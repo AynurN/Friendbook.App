@@ -11,7 +11,7 @@ namespace Friendbook.Business.Services.Interfaces
 {
     public interface IPostService
     {
-        Task<Post> CreatePostWithImagesAsync(string userId, PostDto postDto, List<IFormFile> images);
+        Task<Post> CreatePostWithImagesAsync(string userId, string Content, List<IFormFile> images);
         Task<Post> UpdatePostWithImagesAsync(int postId, PostDto postDto, List<IFormFile> newImages);
         Task<bool> DeletePostAsync(int postId);
        
