@@ -43,6 +43,7 @@ namespace Friendbook.MVC.Controllers
 
                     var response = _restClient.Execute<ApiResponseMessage<ProfileViewModel>>(request);
                     var friends = await friendship.GetFriendsAsync(userId);
+                    var requests= await friendship.GetRequestsAsync(userId);
                     var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
 
                     if (response != null && response.Data != null)
@@ -52,6 +53,7 @@ namespace Friendbook.MVC.Controllers
                         ViewBag.Email = response.Data.Entities.Email;
                         ViewBag.FriendCount = friends.Count;
                         ViewBag.PostCount = user.Posts.Count;
+                        ViewBag.Requests = requests;
                     }
                 }
             }

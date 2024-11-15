@@ -104,7 +104,20 @@ namespace Friendbook.Business.Services.Implementations
                 .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
                 .ToList();
         }
+        public async Task<List<AppUser>> GetRequestsAsync(string appUserId)
+        {
+            var friends = await repo.Table
+                .Include(f => f.Friend.ProfileImage)
+                .Include(f => f.Friend.Posts).ThenInclude(p => p.PostImages)
+                .Include(f => f.AppUser.ProfileImage)
+                .Include(f => f.AppUser.Posts).ThenInclude(p => p.PostImages)
+                .Where(f => ( f.FriendId == appUserId) && f.IsAccepted == false)
+                .ToListAsync();
 
+            return friends
+                .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
+                .ToList();
+        }
 
         public async  Task RemoveFriendAsync(int friendshipId)
         {

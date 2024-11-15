@@ -1,7 +1,9 @@
-﻿@using Friendbook.MVC.ViewModels
+﻿@using Friendbook.Core.Entities
+@using Friendbook.MVC.ViewModels
 @{
     var searchTerm = ViewData["searchFullName"]?.ToString();
     var searchedUsers = ViewBag.SearchedUsers as List<UserProfileViewModel>;
+    var requests = ViewBag.Requests as List<AppUser>;
 }
 
 
@@ -71,66 +73,34 @@
                                     </div>
                                     <div class="dropdown-content">
                                         <ul class="friend-list">
-                                            <li>
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/5.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6> 1 mutual friend</h6>
+                                            @if(requests.Count>0)
+                                            @foreach(var request in requests)
+                                            {
+                                                <li>
+                                                    <div class="media">
+                                                        <img src="~/imgs/@(request.ProfileImage.ImageURL != null ? request.ProfileImage.ImageURL : "profile-icon-9.png")" alt="user">
+                                                        <div class="media-body">
+                                                            <div>
+                                                                <h5 class="mt-0">@request.FullName</h5>
+                                                              
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="action-btns">
-                                                    <button type="button" class="btn btn-solid">confirm</button>
-                                                    <button type="button" class="btn btn-outline ms-1">delete</button>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/6.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6> 1 mutual friend</h6>
-                                                        </div>
+                                                    <div class="action-btns">
+                                                        
+                                                            <form asp-action="AcceptFriendship" asp-controller="Friendship" method="post">
+                                                                <input type="hidden" name="friendId" value="@request.Id" />
+                                                                <button type="submit" class="btn btn-solid">Confirm</button>
+                                                            </form>
+                                                            <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
+                                                                <input type="hidden" name="friendId" value="@request.Id" />
+                                                                <button type="submit" class="btn btn-outline ms-1">Delete</button>
+                                                            </form>
+                                                        
                                                     </div>
-                                                </div>
-                                                <div class="action-btns">
-                                                    <button type="button" class="btn btn-solid">confirm</button>
-                                                    <button type="button" class="btn btn-outline ms-1">delete</button>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/7.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6> 1 mutual friend</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="action-btns">
-                                                    <button type="button" class="btn btn-solid">confirm</button>
-                                                    <button type="button" class="btn btn-outline ms-1">delete</button>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">Paige Turner</h5>
-                                                            <h6> 1 mutual friend</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="action-btns">
-                                                    <button type="button" class="btn btn-solid">confirm</button>
-                                                    <button type="button" class="btn btn-outline ms-1">delete</button>
-                                                </div>
-                                            </li>
+                                                </li>
+                                            }
+
                                         </ul>
                                     </div>
                                 </div>
@@ -285,78 +255,33 @@
                                     </div>
                                     <div class="dropdown-content">
                                         <ul class="friend-list">
-                                            <li class="d-block">
-                                                <div>
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/5.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">
-                                                                    <span>Paige Turner</span> send you a
-                                                                    friend request
-                                                                </h5>
-                                                                <h6> 1 mutual friend</h6>
-                                                                <div class="action-btns">
-                                                                    <button type="button" class="btn btn-solid">
-                                                                        <i data-feather="check"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-solid ms-1">
-                                                                        <i data-feather="x"></i>
-                                                                    </button>
+                                            @if (requests.Count > 0)
+                                                @foreach (var request in requests)
+                                                {
+                                                    <li>
+                                                        <div class="media">
+                                                            <img src="~/imgs/@(request.ProfileImage.ImageURL != null ? request.ProfileImage.ImageURL : "profile-icon-9.png")" alt="user">
+                                                            <div class="media-body">
+                                                                <div>
+                                                                    <h5 class="mt-0">@request.FullName</h5>
+
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/6.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">
-                                                                    <span>Bob Frapples</span> add their
-                                                                    stories
-                                                                </h5>
-                                                                <h6>8 hour ago</h6>
-                                                            </div>
+                                                        <div class="action-btns">
+
+                                                            <form asp-action="AcceptFriendship" asp-controller="Friendship" method="post">
+                                                                <input type="hidden" name="friendId" value="@request.Id" />
+                                                                <button type="submit" class="btn btn-solid">Confirm</button>
+                                                            </form>
+                                                            <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
+                                                                <input type="hidden" name="friendId" value="@request.Id" />
+                                                                <button type="submit" class="btn btn-outline ms-1">Delete</button>
+                                                            </form>
+
                                                         </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/7.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">
-                                                                    <span>Josephin water</span> have
-                                                                    birthday today
-                                                                </h5>
-                                                                <h6>sun at 5.55 AM</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="media">
-                                                        <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                        <div class="media-body">
-                                                            <div>
-                                                                <h5 class="mt-0">
-                                                                    <span>Petey Cruiser</span> added a new
-                                                                    photo
-                                                                </h5>
-                                                                <h6>sun at 5.40 AM</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                                    </li>
+                                                }
                                         </ul>
                                     </div>
                                 </div>
@@ -1099,66 +1024,33 @@
                                 </div>
                                 <div class="dropdown-content">
                                     <ul class="friend-list">
-                                        <li>
-                                            <div class="media">
-                                                <img src="~/assets/images/user-sm/5.jpg" alt="user">
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h5 class="mt-0">Paige Turner</h5>
-                                                        <h6> 1 mutual friend</h6>
+                                        @if (requests.Count > 0)
+                                            @foreach (var request in requests)
+                                            {
+                                                <li>
+                                                    <div class="media">
+                                                        <img src="~/imgs/@(request.ProfileImage.ImageURL != null ? request.ProfileImage.ImageURL : "profile-icon-9.png")" alt="user">
+                                                        <div class="media-body">
+                                                            <div>
+                                                                <h5 class="mt-0">@request.FullName</h5>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="action-btns">
-                                                <button type="button" class="btn btn-solid">confirm</button>
-                                                <button type="button" class="btn btn-outline ms-1">delete</button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img src="~/assets/images/user-sm/6.jpg" alt="user">
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h5 class="mt-0">Paige Turner</h5>
-                                                        <h6> 1 mutual friend</h6>
+                                                    <div class="action-btns">
+
+                                                        <form asp-action="AcceptFriendship" asp-controller="Friendship" method="post">
+                                                            <input type="hidden" name="friendId" value="@request.Id" />
+                                                            <button type="submit" class="btn btn-solid">Confirm</button>
+                                                        </form>
+                                                        <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
+                                                            <input type="hidden" name="friendId" value="@request.Id" />
+                                                            <button type="submit" class="btn btn-outline ms-1">Delete</button>
+                                                        </form>
+
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="action-btns">
-                                                <button type="button" class="btn btn-solid">confirm</button>
-                                                <button type="button" class="btn btn-outline ms-1">delete</button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img src="~/assets/images/user-sm/7.jpg" alt="user">
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h5 class="mt-0">Paige Turner</h5>
-                                                        <h6> 1 mutual friend</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="action-btns">
-                                                <button type="button" class="btn btn-solid">confirm</button>
-                                                <button type="button" class="btn btn-outline ms-1">delete</button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h5 class="mt-0">Paige Turner</h5>
-                                                        <h6> 1 mutual friend</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="action-btns">
-                                                <button type="button" class="btn btn-solid">confirm</button>
-                                                <button type="button" class="btn btn-outline ms-1">delete</button>
-                                            </div>
-                                        </li>
+                                                </li>
+                                            }
                                     </ul>
                                 </div>
                             </div>
