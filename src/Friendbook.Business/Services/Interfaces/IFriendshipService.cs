@@ -12,6 +12,8 @@ namespace Friendbook.Business.Services.Interfaces
     {
         Task AddFriendAsync(string appUserId, string friendId);
         Task AcceptFriendship(string appUserId, string friendId);
+        Task DeclineFriendship(string appUserId, string friendId);
+        Task DeleteFriendship(string appUserId, string friendId);
         Task RemoveFriendAsync(int friendshipId);
         Task<List<AppUser>> GetFriendsAsync(string appUserId);
         Task<FriendshipStatus> GetFriendshipStatusAsync(string appUserId, string friendId);

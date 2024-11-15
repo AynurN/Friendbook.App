@@ -1,7 +1,10 @@
-﻿using Friendbook.MVC.ApiResponseMessages;
+﻿using Friendbook.Business.Services.Interfaces;
+using Friendbook.Core.IRepositories;
+using Friendbook.MVC.ApiResponseMessages;
 using Friendbook.MVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
 using RestSharp;
 using System.Configuration;
 using System.IdentityModel.Tokens.Jwt;
@@ -11,12 +14,18 @@ namespace Friendbook.MVC.Controllers
     public class BaseController : Controller
     {
         private readonly IConfiguration configuration;
+        private readonly IFriendshipService friendship;
+        private readonly IAppUserRepository repo;
+  
 
-        public BaseController(IConfiguration configuration)
+        public BaseController(IConfiguration configuration, IFriendshipService friendship,IAppUserRepository repo)
         {
             this.configuration = configuration;
+            this.friendship = friendship;
+            this.repo = repo;
+           
         }
-        public override void OnActionExecuting(ActionExecutingContext context)
+        public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             var token = HttpContext.Request.Cookies["token"];
             if (token != null)
@@ -33,19 +42,23 @@ namespace Friendbook.MVC.Controllers
                     request.AddHeader("Authorization", $"Bearer {token}");
 
                     var response = _restClient.Execute<ApiResponseMessage<ProfileViewModel>>(request);
+                    var friends = await friendship.GetFriendsAsync(userId);
+                    var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
 
                     if (response != null && response.Data != null)
                     {
                         ViewBag.FullName = response.Data.Entities.FullName;
                         ViewBag.ProfileImageUrl = response.Data.Entities.ProfileImageImageUrl;
-                        ViewBag.Email= response.Data.Entities.Email;
-
+                        ViewBag.Email = response.Data.Entities.Email;
+                        ViewBag.FriendCount = friends.Count;
+                        ViewBag.PostCount = user.Posts.Count;
                     }
                 }
             }
 
-            base.OnActionExecuting(context);
+            await next(); // Call the next delegate/middleware in the pipeline
         }
+
     }
 
 }

@@ -20,13 +20,16 @@ namespace Friendbook.MVC.Controllers
         private readonly IConfiguration configuration;
         private readonly IDirectMessageRepository repo;
         private readonly IFriendshipService friendshipService; // To fetch the user's friends
+        private readonly IAppUserRepository appUserrepo;
 
-        public MessageController(IConfiguration configuration, IDirectMessageRepository repo, IFriendshipService friendshipService) : base(configuration)
+        public MessageController(IConfiguration configuration, IFriendshipService friendship, IAppUserRepository appUserrepo, IDirectMessageRepository repo ) : base(configuration, friendship, appUserrepo)
         {
             this.configuration = configuration;
-            this.repo = repo;   
-            this.friendshipService = friendshipService;
+            this.repo = repo;
+            this.friendshipService = friendship;
+            this.appUserrepo = appUserrepo;
         }
+
 
 
         // Loads the friend list and initial chat messages (if a friend is selected)

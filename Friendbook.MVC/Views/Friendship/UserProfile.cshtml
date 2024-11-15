@@ -157,6 +157,10 @@
                                     <input type="hidden" name="friendId" value="@Model.vm.Id" />
                                     <button type="submit" class="btn btn-success">Accept Friend Request</button>
                                 </form>
+                                <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
+                                    <input type="hidden" name="friendId" value="@Model.vm.Id" />
+                                    <button type="submit" class="btn btn-danger">Decline Friend Request</button>
+                                </form>
                             }
                             else if(Model.friendship == FriendshipStatus.Sent)
                             {
@@ -165,6 +169,10 @@
                             else if (Model.friendship == FriendshipStatus.Friends)
                             {
                                 <p>Friends</p>
+                                <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
+                                    <input type="hidden" name="friendId" value="@Model.vm.Id" />
+                                    <button type="submit" class="btn btn-danger">Remove friend</button>
+                                </form>
                             }
                         </div>
                     </div>
@@ -623,12 +631,12 @@
                                         <div class="media">
                                             <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/14.jpg">
-                                                <img src="~/assets/images/user-sm/14.jpg"
+                                                <img src="~/imgs/@(post.ProfilePicture!=null ? post.ProfilePicture : "profile-icon-9.png" )"
                                                      class="img-fluid blur-up lazyload bg-img" alt="user">
                                             </a>
                                             <div class="media-body">
-                                                <h5>sufiya eliza</h5>
-                                                <h6>30 mins ago</h6>
+                                                <h5>@post.UserName</h5>
+                                                <h6></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -730,11 +738,7 @@
                                     </div>
                                     <div class="detail-box">
                                         <h3>@post.Content</h3>
-                                        <h5 class="tag"><span>#Musiccelebration,</span> #music, #party, #music</h5>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            has been the industry's standard dummy text ever since the 1500s
-                                        </p>
+                                        
                                         <div class="bookmark favourite-btn">
                                             <i class="iw-14 ih-14" data-feather="bookmark"></i>
                                         </div>

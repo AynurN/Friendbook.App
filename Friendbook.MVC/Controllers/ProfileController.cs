@@ -23,13 +23,15 @@ namespace Friendbook.MVC.Controllers
         private readonly ICrudService crudService;
         private readonly IAppUserRepository repo;
         private readonly IPostService postService;
+        private readonly IFriendshipService friendshipService;
 
-        public ProfileController(IConfiguration configuration, ICrudService crudService,  IAppUserRepository repo, IPostService postService) : base(configuration)
+        public ProfileController(IConfiguration configuration, ICrudService crudService,  IAppUserRepository repo, IPostService postService, IFriendshipService friendshipService) : base(configuration,friendshipService,repo)
         {
             this.configuration = configuration;
             this.crudService = crudService;
             this.repo = repo;
            this.postService = postService;
+            this.friendshipService = friendshipService;
         }
 
         public async Task<IActionResult> Index()
@@ -43,7 +45,7 @@ namespace Friendbook.MVC.Controllers
             var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
 
             if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
-            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages","ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound(new ApiResponseMessage<string>
@@ -56,7 +58,12 @@ namespace Friendbook.MVC.Controllers
             List<PostVM> posts = new List<PostVM>();
             foreach (var post in user.Posts)
             {
-                PostVM postDto = new PostVM(post.Content, post.PostImages.Select(x => x.ImageURL).ToList(),post.CreatedAt);
+
+                var content = post.Content ?? string.Empty;
+                var postImages = post.PostImages?.Select(x => x.ImageURL).ToList() ?? new List<string>();
+                var profileImageUrl = user.ProfileImage?.ImageURL ?? "profile-icon-9.png";
+                var fullNamef = user.FullName ?? "Anonymous";
+                PostVM postDto = new PostVM(post.Content, post.PostImages.Select(x => x.ImageURL).ToList(),post.CreatedAt,profileImageUrl,fullNamef);
                 posts.Add(postDto);
             }
             posts = posts.OrderByDescending(x => x.CreatedAt).ToList();
@@ -159,7 +166,7 @@ namespace Friendbook.MVC.Controllers
             var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
             var request = new RestRequest($"/users/GetUserPosts/{userId}", Method.Get);
             request.AddHeader("Authorization", $"Bearer {token}");
-
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages", "ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
 
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<List<PostVM>>>(request);
 
@@ -171,7 +178,7 @@ namespace Friendbook.MVC.Controllers
             var postVM = new List<PostVM>();
             foreach (var post in response.Data.Entities)
             {
-                postVM.Add(new PostVM(post.Content, post.PostImageUrls,post.CreatedAt));
+                postVM.Add(new PostVM(post.Content, post.PostImageUrls,post.CreatedAt,user.ProfileImage.ImageURL,user.FullName));
             }
 
             TempData["Message"] = "Profile image uploaded successfully.";

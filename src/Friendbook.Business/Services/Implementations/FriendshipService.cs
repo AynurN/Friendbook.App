@@ -39,6 +39,34 @@ namespace Friendbook.Business.Services.Implementations
             //    .SendAsync("FriendshipAccepted", friendship.FriendId, friendship.AppUserId);
         }
 
+        public async Task DeclineFriendship(string appUserId, string friendId)
+        {
+            var friendship = await repo.Table.FindAsync(appUserId, friendId);
+            if (friendship == null)
+                throw new NullReferenceException("Friendship not found");
+
+            repo.Delete(friendship);
+
+            await repo.CommitAsync();
+
+            // Optional: send notification to both users
+            //await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
+            //    .SendAsync("FriendshipAccepted", friendship.FriendId, friendship.AppUserId);
+        }
+        public async Task DeleteFriendship(string appUserId, string friendId)
+        {
+            var friendship = await repo.Table.FindAsync(appUserId, friendId) ?? await repo.Table.FindAsync(friendId, appUserId);
+            if (friendship == null)
+                throw new NullReferenceException("Friendship not found");
+
+            repo.Delete(friendship);
+
+            await repo.CommitAsync();
+
+            // Optional: send notification to both users
+            //await notifi.Clients.Users(friendship.FriendId, friendship.AppUserId)
+            //    .SendAsync("FriendshipAccepted", friendship.FriendId, friendship.AppUserId);
+        }
 
         public async Task AddFriendAsync(string appUserId, string friendId)
         {
@@ -62,13 +90,21 @@ namespace Friendbook.Business.Services.Implementations
 
         }
 
-        public async  Task<List<AppUser>> GetFriendsAsync(string appUserId)
+        public async Task<List<AppUser>> GetFriendsAsync(string appUserId)
         {
-            return await repo.Table.Include(x=>x.Friend.ProfileImage)
-          .Where(f => (f.AppUserId == appUserId || f.FriendId == appUserId) && f.IsAccepted == true)
-          .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
-          .ToListAsync();
+            var friends = await repo.Table
+                .Include(f => f.Friend.ProfileImage)
+                .Include(f => f.Friend.Posts).ThenInclude(p => p.PostImages)
+                .Include(f => f.AppUser.ProfileImage)
+                .Include(f => f.AppUser.Posts).ThenInclude(p => p.PostImages)
+                .Where(f => (f.AppUserId == appUserId || f.FriendId == appUserId) && f.IsAccepted == true)
+                .ToListAsync();
+
+            return friends
+                .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
+                .ToList();
         }
+
 
         public async  Task RemoveFriendAsync(int friendshipId)
         {

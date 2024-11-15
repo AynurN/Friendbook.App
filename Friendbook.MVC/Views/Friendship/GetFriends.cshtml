@@ -1,0 +1,95 @@
+﻿@using Friendbook.Core.Entities
+
+
+@model List<AppUser>
+
+<div class="container-fluid section-t-space px-0">
+    <div class="page-content">
+
+        <div class="content-center w-100">
+            <!-- friend list -->
+            <div class="friend-list-box section-b-space">
+                <div class="card-title">
+                    <h3>friends</h3>
+                    <div class="right-setting">
+                        <div class="search-input input-style icon-right">
+                            <i data-feather="search" class="icon-dark icon iw-16"></i>
+                            <input type="text" class="form-control" placeholder="find friends...">
+                        </div>
+                        <div class="ms-2 setting-dropdown">
+                            <div class="btn-group custom-dropdown arrow-none dropdown-sm">
+                                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    filter
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right custom-dropdown">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">all friends</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">close friends</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">office friends</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="friend-list friend-page-list">
+                        <ul>
+                            @foreach(var user in Model)
+                            {
+                                <li>
+                                    <div class="profile-box friend-box">
+                                        <div class="profile-content">
+                                            <div class="image-section">
+                                                <div class="profile-img">
+                                                    <div>
+                                                        <img src="~/imgs/@(user.ProfileImage.ImageURL !=null ? user.ProfileImage.ImageURL : "profile-icon-9.png" )"
+                                                             class="img-fluid blur-up lazyload bg-img"
+                                                             alt="profile">
+                                                    </div>
+                                                    <span class="stats">
+                                                        <img src="../assets/images/icon/verified.png"
+                                                             class="img-fluid blur-up lazyload" alt="verified">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-detail">
+                                                <h2>@(user.FullName != null ? user.FullName : "Unknown" )<span>❤</span></h2>
+                                                <h5>@(user.Email != null ? user.Email : "Unknown")</h5>
+                                                <div class="counter-stats">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            <h3 class="counter-value">@user.Posts.Count</h3>
+                                                            <h5>posts</h5>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+
+                                                <a asp-controller="Friendship" asp-action="UserProfile" asp-route-userId="@user.Id" class="btn btn-outline">
+                                                    view
+                                                    profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            }
+                          
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

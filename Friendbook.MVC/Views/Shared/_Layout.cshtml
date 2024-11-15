@@ -142,13 +142,13 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <h3>326</h3>
+                                        <h3>@ViewBag.PostCount</h3>
                                         <span>total posts</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <h3>2456</h3>
+                                    <a asp-controller="Friendship" asp-action="GetFriends">
+                                        <h3>@ViewBag.FriendCount</h3>
                                         <span>total friends</span>
                                     </a>
                                 </li>
@@ -1169,12 +1169,16 @@
                     <div class="post-stats">
                         <ul>
                             <li>
-                                <h3>326</h3>
+                                <a asp-controller="Profile" asp-action="Index">
+                                <h3>@ViewBag.PostCount</h3>
                                 <span>total posts</span>
+                                </a>
                             </li>
                             <li>
-                                <h3>2456</h3>
-                                <span>total friends</span>
+                                <a asp-controller="Friendship" asp-action="GetFriends">
+                                    <h3>@ViewBag.FriendCount</h3>
+                                    <span>total friends</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
