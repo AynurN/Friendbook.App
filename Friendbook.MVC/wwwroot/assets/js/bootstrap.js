@@ -107,6 +107,7 @@
       return 0;
     } // Get transition-duration of the element
 
+      
 
     let {
       transitionDuration,

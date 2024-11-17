@@ -29,6 +29,13 @@
 
     <!-- Theme css -->
     <link id="change-link" rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- jQuery (required by Slick) -->
+   
+
 
 </head>
 
@@ -134,14 +141,7 @@
                              
                             </li>
                             <!-- dark/light -->
-                            <li class="header-btn custom-dropdown">
-                                <a class="main-link" href="javascript:void(0)">
-                                    <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="moon"></i>
-                                </a>
-                                <a class="main-link d-none" href="javascript:void(0)">
-                                    <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="sun"></i>
-                                </a>
-                            </li>
+                
                             <!-- mobile app button -->
                             <li class="header-btn custom-dropdown d-md-none d-block app-btn">
                                 <a class="main-link" href="javascript:void(0)">
@@ -241,51 +241,7 @@
                                 </div>
                             </li>
                             <!-- notification -->
-                            <li class="header-btn custom-dropdown dropdown-lg btn-group notification-btn">
-                                <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="bell"></i><span class="count warning">2</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-header">
-                                        <span>Notification</span>
-                                        <div class="mobile-close">
-                                            <h5>close</h5>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-content">
-                                        <ul class="friend-list">
-                                            @if (requests.Count > 0)
-                                                @foreach (var request in requests)
-                                                {
-                                                    <li>
-                                                        <div class="media">
-                                                            <img src="~/imgs/@(request.ProfileImage.ImageURL != null ? request.ProfileImage.ImageURL : "profile-icon-9.png")" alt="user">
-                                                            <div class="media-body">
-                                                                <div>
-                                                                    <h5 class="mt-0">@request.FullName</h5>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="action-btns">
-
-                                                            <form asp-action="AcceptFriendship" asp-controller="Friendship" method="post">
-                                                                <input type="hidden" name="friendId" value="@request.Id" />
-                                                                <button type="submit" class="btn btn-solid">Confirm</button>
-                                                            </form>
-                                                            <form asp-action="DeclineFriendship" asp-controller="Friendship" method="post">
-                                                                <input type="hidden" name="friendId" value="@request.Id" />
-                                                                <button type="submit" class="btn btn-outline ms-1">Delete</button>
-                                                            </form>
-
-                                                        </div>
-                                                    </li>
-                                                }
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+                           
                             <!-- profile -->
                             <li class="header-btn custom-dropdown profile-btn btn-group">
                                 <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown"
@@ -1078,19 +1034,12 @@
                         <!-- message -->
                         <li class="header-btn custom-dropdown dropdown-lg btn-group message-btn">
                             <a class="main-link" asp-action="Index" asp-controller="Message">
-                                <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="message-circle"></i><span class="count success">2</span>
+                                <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="message-circle"></i>
                             </a>
  
                         </li>
                         <!-- dark/light -->
-                        <li class="header-btn custom-dropdown">
-                            <a id="dark" class="main-link" href="javascript:void(0)">
-                                <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="moon"></i>
-                            </a>
-                            <a id="light" class="main-link d-none" href="javascript:void(0)">
-                                <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="sun"></i>
-                            </a>
-                        </li>
+                      
                         <!-- mobile app button -->
                         <li class="header-btn custom-dropdown d-md-none d-block app-btn">
                             <a class="main-link" href="javascript:void(0)">
@@ -1190,95 +1139,7 @@
                             </div>
                         </li>
                         <!-- notification -->
-                        <li class="header-btn custom-dropdown dropdown-lg btn-group notification-btn">
-                            <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
-                                <i class="icon-light stroke-width-3 iw-16 ih-16" data-feather="bell"></i><span class="count warning">2</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-header">
-                                    <span>Notification</span>
-                                    <div class="mobile-close">
-                                        <h5>close</h5>
-                                    </div>
-                                </div>
-                                <div class="dropdown-content">
-                                    <ul class="friend-list">
-                                        <li class="d-block">
-                                            <div>
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/5.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">
-                                                                <span>Paige Turner</span> send you a friend
-                                                                request
-                                                            </h5>
-                                                            <h6> 1 mutual friend</h6>
-                                                            <div class="action-btns">
-                                                                <button type="button" class="btn btn-solid">
-                                                                    <i data-feather="check"></i>
-                                                                </button>
-                                                                <button type="button" class="btn btn-solid ms-1">
-                                                                    <i data-feather="x"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/6.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">
-                                                                <span>Bob Frapples</span> add their stories
-                                                            </h5>
-                                                            <h6>8 hour ago</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/7.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">
-                                                                <span>Josephin water</span> have birthday
-                                                                today
-                                                            </h5>
-                                                            <h6>sun at 5.55 AM</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="media">
-                                                    <img src="~/assets/images/user-sm/2.jpg" alt="user">
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">
-                                                                <span>Petey Cruiser</span> added a new
-                                                                photo
-                                                            </h5>
-                                                            <h6>sun at 5.40 AM</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                      
                         <!-- profile -->
                         <li class="header-btn custom-dropdown profile-btn btn-group">
                             <a class="main-link" href="javascript:void(0)" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -1323,32 +1184,7 @@
                                             </div>
 
                                         </li>
-                                        <li>
-                                            <a href="settings.html">
-                                                <div class="media">
-                                                    <i data-feather="settings"></i>
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">setting & privacy</h5>
-                                                            <h6>all settings & privacy</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="help-support.html">
-                                                <div class="media">
-                                                    <i data-feather="help-circle"></i>
-                                                    <div class="media-body">
-                                                        <div>
-                                                            <h5 class="mt-0">help & support</h5>
-                                                            <h6>browse help here</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                     
                                         <li>
 
                                             <div class="media">
@@ -1413,6 +1249,24 @@
 
     <!-- Theme js-->
     <script src="~/assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).on('shown.bs.modal', function (e) {
+            // Find the slider inside the modal
+            $('.slide-1').not('.slick-initialized').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+        });
+
+    </script>
 
     <script>
         feather.replace();

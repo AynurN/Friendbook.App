@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Friendbook.App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|c:\\users\\user\\desktop\\friendbook.app\\friendbook.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63E6DFF9-7BDA-4D98-9277-FD3F3D57C24F}|Friendbook.MVC\\Friendbook.MVC.csproj|solutionrelative:friendbook.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "Friendbook.MVC\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAANECAAAAAAAAAAAewOgCAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:48:11.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Friendbook.MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAApwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T13:01:25.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
