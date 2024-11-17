@@ -45,7 +45,7 @@ namespace Friendbook.MVC.Controllers
             var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
 
             if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
-            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages","ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages","ProfileImage", "Posts.Comments.AppUser.ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound(new ApiResponseMessage<string>
@@ -63,8 +63,9 @@ namespace Friendbook.MVC.Controllers
                 var postImages = post.PostImages?.Select(x => x.ImageURL).ToList() ?? new List<string>();
                 var profileImageUrl = user.ProfileImage?.ImageURL ?? "profile-icon-9.png";
                 var fullNamef = user.FullName ?? "Anonymous";
-                PostVM postDto = new PostVM(post.Content, post.PostImages.Select(x => x.ImageURL).ToList(),post.CreatedAt,profileImageUrl,fullNamef);
-                posts.Add(postDto);
+                var Comments = post.Comments != null ? post.Comments.ToList() : new List<Comment>();
+                PostVM postVM = new PostVM(content, postImages, post.CreatedAt, profileImageUrl, fullNamef, post.Id, Comments);
+                posts.Add(postVM);
             }
             posts = posts.OrderByDescending(x => x.CreatedAt).ToList();
          
@@ -166,7 +167,7 @@ namespace Friendbook.MVC.Controllers
             var _restClient = new RestClient(configuration.GetSection("API:Base_Url").Value);
             var request = new RestRequest($"/users/GetUserPosts/{userId}", Method.Get);
             request.AddHeader("Authorization", $"Bearer {token}");
-            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages", "ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages", "ProfileImage", "Posts.Comments" }).AsSplitQuery().FirstOrDefaultAsync();
 
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<List<PostVM>>>(request);
 
@@ -178,7 +179,7 @@ namespace Friendbook.MVC.Controllers
             var postVM = new List<PostVM>();
             foreach (var post in response.Data.Entities)
             {
-                postVM.Add(new PostVM(post.Content, post.PostImageUrls,post.CreatedAt,user.ProfileImage.ImageURL,user.FullName));
+                postVM.Add(new PostVM(post.Content, post.PostImageUrls,post.CreatedAt,user.ProfileImage.ImageURL,user.FullName,post.Id,post.PostComments));
             }
 
             TempData["Message"] = "Profile image uploaded successfully.";
@@ -219,6 +220,36 @@ namespace Friendbook.MVC.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> AddComment(int postId, string content, int? parentCommentId)
+        {
+            var token = HttpContext.Request.Cookies["token"];
+            if (token == null) return RedirectToAction("Login", "Auth");
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
+
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Error", "Home");
+
+            if (string.IsNullOrWhiteSpace(content))
+            {
+                TempData["Message"] = "Comment content cannot be empty.";
+                return RedirectToAction("GetPosts"); // Redirect to the posts page
+            }
+
+            try
+            {
+                await postService.AddCommentAsync(userId, postId,content, parentCommentId);
+                TempData["Message"] = "Comment added successfully.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = $"Error adding comment: {ex.Message}";
+            }
+
+            return RedirectToAction("GetPosts");
+        }
 
     }
 }

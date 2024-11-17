@@ -13,6 +13,7 @@ namespace Friendbook.Business.Services.Interfaces
     {
         Task<Post> CreatePostWithImagesAsync(string userId, string Content, List<IFormFile> images);
         Task<Post> UpdatePostWithImagesAsync(int postId, PostDto postDto, List<IFormFile> newImages);
+        Task<Comment> AddCommentAsync(string userId, int postId, string content, int? parentCommentId = null);
         Task<bool> DeletePostAsync(int postId);
        
     }

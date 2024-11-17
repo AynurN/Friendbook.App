@@ -73,7 +73,7 @@ namespace Friendbook.API.Controllers
         [HttpGet("[action]/{id}")]
         public async Task<IActionResult> GetUserPosts(string id)
         {
-            var user = await repository.GetByExpression(false, x => x.Id == id, new[] { "Posts.PostImages" }).AsSplitQuery().FirstOrDefaultAsync();
+            var user = await repository.GetByExpression(false, x => x.Id == id, new[] { "Posts.PostImages", "Posts.PostComments","ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound(new ApiResponse<string>
@@ -86,7 +86,7 @@ namespace Friendbook.API.Controllers
             List<PostDto> posts = new List<PostDto>();
             foreach (var post in user.Posts)
             {
-                PostDto postDto = new PostDto(post.Content,post.PostImages.Select(x=>x.ImageURL).ToList());
+                PostDto postDto = new PostDto(post.Content,post.PostImages.Select(x=>x.ImageURL).ToList(),post.CreatedAt,user.ProfileImage.ImageURL,user.FullName,post.Id,post.Comments.ToList());
                 posts.Add(postDto);
             }
 

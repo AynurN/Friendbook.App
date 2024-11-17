@@ -20,15 +20,17 @@ namespace Friendbook.Business.Services.Implementations
         private readonly IPostRepository postRepo;
         private readonly IAppUserRepository userRepo;
         private readonly IWebHostEnvironment environment;
+        private readonly ICommentRepository commentRepository;
         private const int MaxFileSize = 5 * 1024 * 1024; // 5 MB limit
         private readonly string[] AllowedExtensions = { ".jpg", ".jpeg", ".png" };
         private readonly string PostImagesPath = "C:\\Users\\user\\Desktop\\Friendbook.App\\Friendbook.MVC\\wwwroot\\postimgs\\";
 
-        public PostService(IPostRepository postRepo, IAppUserRepository userRepo, IWebHostEnvironment environment)
+        public PostService(IPostRepository postRepo, IAppUserRepository userRepo, IWebHostEnvironment environment, ICommentRepository commentRepository)
         {
             this.postRepo = postRepo;
             this.userRepo = userRepo;
             this.environment = environment;
+            this.commentRepository = commentRepository;
         }
 
         public async Task<Post> CreatePostWithImagesAsync(string userId,string Content, List<IFormFile> images)
@@ -75,7 +77,7 @@ namespace Friendbook.Business.Services.Implementations
 
             return true;
         }
-
+       
         public async Task<Post> UpdatePostWithImagesAsync(int postId, PostDto postDto, List<IFormFile> newImages)
         {
             var post = await postRepo.GetByExpression(false, x => x.Id == postId, "User", "PostImages").FirstOrDefaultAsync();
@@ -132,11 +134,54 @@ namespace Friendbook.Business.Services.Implementations
             }
         }
 
-        
+        public async Task<Comment> AddCommentAsync(string userId, int postId, string content, int? parentCommentId = null)
+        {
+            if (string.IsNullOrWhiteSpace(content))
+                throw new ArgumentException("Comment content cannot be empty", nameof(content));
+
+            var user = await userRepo.GetByIdAsync(userId);
+            if (user == null)
+                throw new KeyNotFoundException("User not found");
+
+            var post = await postRepo.GetByIdAsync(postId);
+            if (post == null)
+                throw new KeyNotFoundException("Post not found");
+
+            Comment parentComment = null;
+            if (parentCommentId.HasValue)
+            {
+                parentComment = await commentRepository.GetByIdAsync(parentCommentId.Value);
+                if (parentComment == null || parentComment.PostId != postId)
+                    throw new KeyNotFoundException("Parent comment not found or does not belong to the specified post");
+            }
+
+            var newComment = new Comment
+            {
+                Content = content,
+                PostId = postId,
+                Post = post,
+                ParentCommentId = parentCommentId,
+                ParentComment = parentComment,
+                Replies = new List<Comment>(),
+                CreatedAt = DateTime.UtcNow,
+                AppUserId = userId,
+                AppUser = user
+            };
+
+            await commentRepository.CreateAsync(newComment);
+            await commentRepository.CommitAsync();
+
+            return newComment;
+        }
+
+
+
+
 
         // Additional methods for retrieving posts by ID or fetching all posts can be added here.
     }
 
 
-    }
+
+}
 

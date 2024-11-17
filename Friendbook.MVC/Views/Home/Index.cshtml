@@ -1,5 +1,5 @@
 ﻿@using Friendbook.MVC.ViewModels
-
+@using Friendbook.Core.Entities
 @model HomeVM
 <!-- page body start -->
     <div class="page-body container-fluid custom-padding">
@@ -376,12 +376,12 @@
                                         <div class="media">
                                             <a class="popover-cls user-img" data-bs-toggle="popover" data-placement="right"
                                                data-name="sufiya eliza" data-img="~/assets/images/user-sm/14.jpg">
-                                                <img src="~/imgs/@(post.ProfilePicture!=null ? post.ProfilePicture : "profile-icon-9.png" )"
+                                                <img src="~/imgs/@(post.ProfilePicture !=null ? post.ProfilePicture : "profile-icon-9.png" )"
                                                      class="img-fluid blur-up lazyload bg-img" alt="user">
                                             </a>
                                             <div class="media-body">
                                                 <h5>@post.UserName</h5>
-                                                <h6></h6>
+                                                <h6>@post.CreatedAt.ToString("MMM dd, yyyy")</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -595,7 +595,7 @@
                                     </div>
                                     <div class="comment-section">
 
-                                        <div class="comments d-none">
+                                        <div class="comments d-block">
                                             <div class="ldr-comments">
                                                 <ul>
                                                     <li>
@@ -646,117 +646,64 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                             class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>
-                                                            Oooo Very Cute and Sweet Dog, happy birthday Cuty....
-                                                            &#128578;
-                                                        </p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like (5)</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="sub-comment">
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/3.jpg"
-                                                                 class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
+                                            @if (post.PostComments != null && post.PostComments.Any())
+                                            {
+                                                @foreach (var comment in post.PostComments)
+                                                {
+                                                    <div class="main-comment">
+                                                        <div class="media">
+                                                            <a href="#" class="user-img">
+                                                                <img src="~/imgs/@(comment.AppUser.ProfileImage.ImageURL != null ? comment.AppUser.ProfileImage.ImageURL : "profile-icon-9.png" )" alt="user" class="img-fluid blur-up lazyload bg-img">
                                                             </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a href="#" class="user-img">
-                                                            <img src="~/assets/images/user-sm/4.jpg"
-                                                                 class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h5>sufiya elija</h5>
-                                                            </a>
-                                                            <p>Thank You So Much ❤❤</p>
-                                                            <ul class="comment-option">
-                                                                <li><a href="#">like</a></li>
-                                                                <li><a href="#">reply</a></li>
-                                                                <li><a href="#">translate</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="comment-time">
-                                                            <h6>50 mins ago</h6>
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <h5>@comment.AppUser.FullName</h5>
+                                                                </a>
+                                                                <p>
+                                                                    @comment.Content
+                                                                </p>
+                                                                <ul class="comment-option">
+                                                                    <li><a href="#">like (5)</a></li>
+                                                                    <li><a href="#">reply</a></li>
+                                                                    <li><a href="#">translate</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="comment-time">
+                                                                <h6>@comment.CreatedAt.ToString("MMM dd, yyyy HH:mm")</h6>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a href="javascript:void(0)" class="loader">
-                                                        <i class="iw-15 ih-15" data-feather="rotate-cw"></i> load more
-                                                        replies
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="main-comment">
-                                                <div class="media">
-                                                    <a href="#" class="user-img">
-                                                        <img src="~/assets/images/user-sm/2.jpg"
-                                                             class="img-fluid blur-up lazyload bg-img" alt="user">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="#">
-                                                            <h5>Pabelo Mukrani</h5>
-                                                        </a>
-                                                        <p>It’s party time, Sufiya..... and happy birthday cuty 🎉🎊</p>
-                                                        <ul class="comment-option">
-                                                            <li><a href="#">like</a></li>
-                                                            <li><a href="#">reply</a></li>
-                                                            <li><a href="#">translate</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="comment-time">
-                                                        <h6>50 mins ago</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                }
+                                            }
+
+
                                         </div>
                                         <div class="reply">
-                                            <div class="search-input input-style input-lg icon-right">
-                                                <input type="text" class="form-control emojiPicker"
-                                                       placeholder="write a comment..">
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i data-feather="camera" class="icon iw-14 ih-14"></i>
-                                                </a>
-                                            </div>
+
+                                            <form asp-action="AddComment" asp-controller="Profile" method="post" class="reply">
+                                                <input type="hidden" name="postId" value="@post.Id" />
+                                                <input type="hidden" name="parentCommentId" value="" />
+                                                <div class="search-input input-style input-lg icon-right">
+                                                    <input type="text" class="form-control emojiPicker" name="content"
+                                                           placeholder="write a comment..">
+                                                    <a href="javascript:void(0)">
+                                                        <i data-feather="smile" class="icon icon-2 iw-14 ih-14"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <i data-feather="camera" class="icon iw-14 ih-14"></i>
+                                                    </a>
+                                                    <button type="submit" class="btn btn-primary">Comment</button>
+                                                </div>
+                                            </form>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
                         }
+
                         </div>
                         <div id="load-more" class="post-loader">
                             <div class="loader-icon">

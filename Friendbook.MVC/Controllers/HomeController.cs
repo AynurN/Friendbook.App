@@ -73,8 +73,8 @@ namespace Friendbook.MVC.Controllers
                         var postImages = post.PostImages?.Select(x => x.ImageURL).ToList() ?? new List<string>();
                         var profileImageUrl = friend.ProfileImage?.ImageURL ?? "profile-icon-9.png";
                         var fullNamef = friend.FullName ?? "Anonymous";
-
-                        PostVM postVM = new PostVM(content, postImages, post.CreatedAt, profileImageUrl, fullNamef);
+                        var Comments = post.Comments != null ? post.Comments.ToList() : new List<Comment>();
+                        PostVM postVM = new PostVM(content, postImages, post.CreatedAt, profileImageUrl, fullNamef, post.Id,Comments);
                         posts.Add(postVM);
                     }
                 }

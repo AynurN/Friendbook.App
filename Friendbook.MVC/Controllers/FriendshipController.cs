@@ -57,7 +57,7 @@ namespace Friendbook.MVC.Controllers
             var profile = profileResponse.Data.Entities;
 
             // Fetch user posts
-            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages","ProfileImage" }).AsSplitQuery().FirstOrDefaultAsync();
+            var user = await repo.GetByExpression(false, x => x.Id == userId, new[] { "Posts.PostImages","ProfileImage","Posts.Comments" }).AsSplitQuery().FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound(new ApiResponseMessage<string>
@@ -78,7 +78,7 @@ namespace Friendbook.MVC.Controllers
                     var profileImageUrl = user.ProfileImage?.ImageURL ?? "profile-icon-9.png"; 
                     var fullName = user.FullName ?? "Anonymous"; 
 
-                    PostVM postDto = new PostVM(content, postImages, post.CreatedAt, profileImageUrl, fullName);
+                    PostVM postDto = new PostVM(content, postImages, post.CreatedAt, profileImageUrl, fullName,post.Id,post.Comments.ToList());
                     posts.Add(postDto);
                 }
             }

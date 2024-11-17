@@ -94,9 +94,15 @@ namespace Friendbook.Business.Services.Implementations
         {
             var friends = await repo.Table
                 .Include(f => f.Friend.ProfileImage)
-                .Include(f => f.Friend.Posts).ThenInclude(p => p.PostImages)
+                .Include(f => f.Friend.Posts)
+                    .ThenInclude(p => p.PostImages)
+                .Include(f => f.Friend.Posts)
+                    .ThenInclude(p => p.Comments)
                 .Include(f => f.AppUser.ProfileImage)
-                .Include(f => f.AppUser.Posts).ThenInclude(p => p.PostImages)
+                .Include(f => f.AppUser.Posts)
+                    .ThenInclude(p => p.PostImages)
+                .Include(f => f.AppUser.Posts)
+                    .ThenInclude(p => p.Comments).ThenInclude(p=>p.AppUser).ThenInclude(p => p.ProfileImage)
                 .Where(f => (f.AppUserId == appUserId || f.FriendId == appUserId) && f.IsAccepted == true)
                 .ToListAsync();
 
@@ -104,6 +110,7 @@ namespace Friendbook.Business.Services.Implementations
                 .Select(f => f.AppUserId == appUserId ? f.Friend : f.AppUser)
                 .ToList();
         }
+
         public async Task<List<AppUser>> GetRequestsAsync(string appUserId)
         {
             var friends = await repo.Table
