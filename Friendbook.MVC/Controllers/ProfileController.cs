@@ -109,7 +109,7 @@ namespace Friendbook.MVC.Controllers
 
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
 
-            if (response == null || response.Data == null || !response.Data.IsSuccessfull)
+            if (response == null || response.Data == null || !response.Data.IsSuccessful)
             {
                 TempData["Message"] = response?.Data?.ErrorMessage ?? "Profile image upload failed.";
                 return RedirectToAction("Index");
@@ -142,7 +142,7 @@ namespace Friendbook.MVC.Controllers
 
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<string>>(request);
 
-            if (response == null || response.Data == null || !response.Data.IsSuccessfull)
+            if (response == null || response.Data == null || !response.Data.IsSuccessful)
             {
                 TempData["ErrorMessage"] = response?.Data?.ErrorMessage ?? "Profile image deletion failed.";
                 return RedirectToAction("Index");

@@ -1,5 +1,8 @@
 ﻿@using Friendbook.MVC.Areas.LoginRegister.ViewModels
 @model UserLoginVM
+{
+    successMessage= @TempData["Message"]
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,10 +81,12 @@
                                 <h3>Hello Everyone, Welcome Back</h3>
                                 <h4>
                                     Welcome to Friendbook, please login to your account.
+                                    <span class="text-danger"> @TempData["Message"]</span>
                                 </h4>
                             </div>
                             <div class="form-sec">
                                 <div>
+                                    
                                     <form class="theme-form" action="@Url.Action("Login", "Auth")" method="post">
                                         <div class="form-group">
                                             <label asp-for="Email">Email address</label>
@@ -95,15 +100,12 @@
                                             <label asp-for="Password">Password</label>
                                             <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1"
                                                    placeholder="Password">
-                                            <i class="input-icon iw-20 ih-20" data-feather="eye"></i>
+                                            
                                             <span class="text-danger" asp-validation-for="Password"></span>
                                             <!-- <i class="input-icon" data-feather="eye-off" width="20" height="20"></i> -->
                                         </div>
                 
-                                            <a href="#" class="ms-auto forget-password">
-                                                forget
-                                                password?
-                                            </a>
+                                           
                                        
                                         <div class="btn-section">
                                             <button  class="btn btn-solid btn-lg">login</button>

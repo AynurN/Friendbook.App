@@ -2,6 +2,8 @@
 using Friendbook.MVC.Services.Implementations;
 using Friendbook.MVC.Services.Interfacses;
 using Microsoft.AspNetCore.Mvc;
+using Friendbook.MVC.HelperTools;
+using System.Text.RegularExpressions;
 
 namespace Friendbook.MVC.Areas.LoginRegister.Controllers
 {
@@ -26,10 +28,17 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(UserLoginVM vm)
         {
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) {
+                ModelState.AddModelError("Password", "Invalid credentials");
+                return View();
+            } 
 
             var data = (await authService.Login(vm)).Data.Entities;
-
+            if(data == null)
+            {
+                ModelState.AddModelError("Password", "Invalid credentials");
+                return View();
+            }
             HttpContext.Response.Cookies.Append("token", data.AccessToken, new CookieOptions
             {
                 Expires = data.ExpireDate,
@@ -68,11 +77,16 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
             //}
             //else
             //{
-            if (response == null)
+            if (response == null || !response.IsSuccessful)
             {
-                ModelState.AddModelError(response.Data.PropertyName, response.Data.ErrorMessage);
-                return View();
 
+                if (!Helper.IsValidPassword(vm.Password)) {
+                    ModelState.AddModelError("Password", "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+                }
+                if (!Helper.IsValidEmail(vm.Email)) {
+                    ModelState.AddModelError("Email", "Invalid email format.");
+                }
+                return View();
             }
            
             //}
@@ -89,4 +103,5 @@ namespace Friendbook.MVC.Areas.LoginRegister.Controllers
             return RedirectToAction("Login", "Auth", new { area = "LoginRegister" });
         }
     }
+    
 }

@@ -39,6 +39,10 @@ namespace Friendbook.Business.Services.Implementations
             }
 
             var result = await signInManager.CheckPasswordSignInAsync(user, userLoginDto.Password, false);
+            if (!result.Succeeded)
+            {
+                throw new UnauthorizedAccessException("Invalid Credentials");
+            }
             var roles = await userManager.GetRolesAsync(user);
 
             List<Claim> claims =
@@ -71,26 +75,32 @@ namespace Friendbook.Business.Services.Implementations
 
         public async Task Register(UserRegisterDto userRegisterDto)
         {
-            if (userRegisterDto.Password != userRegisterDto.ConfirmPassword) throw new PasswordsDoNotMatchException(StatusCodes.Status400BadRequest, "ConfirmPassword", "Passwords do not match");
+            
+            UserValidationHelper.ValidateUserRegistration(userRegisterDto);
 
+          
             Random random = new Random();
             int randomDigits = random.Next(100, 1000);
+            string userName = $"{userRegisterDto.FullName.Substring(0, 3)}{randomDigits}";
 
-            string userName = $"{userRegisterDto.FullName.Substring(0,3)}{randomDigits}";
-            AppUser appUser = new AppUser()
+          
+            AppUser appUser = new AppUser
             {
                 Email = userRegisterDto.Email,
-                FullName= userRegisterDto.FullName,
+                FullName = userRegisterDto.FullName,
                 UserName = userName
             };
 
             var result = await userManager.CreateAsync(appUser, userRegisterDto.Password);
-
             if (!result.Succeeded)
             {
-                throw new Exception();
+                string errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                throw new UserCreationException(StatusCodes.Status500InternalServerError, "UserCreation", errors);
             }
+
+            // Assign Role
             await userManager.AddToRoleAsync(appUser, "Member");
         }
+
     }
 }

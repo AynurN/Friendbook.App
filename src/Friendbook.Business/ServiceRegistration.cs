@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Friendbook.Core.Entities;
+using Friendbook.Business.Dtos.UserDtos;
 
 namespace Friendbook.Business
 {
@@ -21,8 +22,9 @@ namespace Friendbook.Business
             services.AddScoped<IFriendshipService, FriendshipService>(); 
             services.AddScoped<IUserService, UserService>(); 
             services.AddScoped<IProfileImageService, ProfileImageService>(); 
-            services.AddScoped<IPostService, PostService>(); 
-          
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<ValidateUserRegistrationFilter>();
+
         }
     }
 }

@@ -276,3 +276,4 @@ C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC\bin\Debug\net8.0\Friendbook.
 C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC\bin\Debug\net8.0\Friendbook.Business.pdb
 C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC\bin\Debug\net8.0\Friendbook.Core.pdb
 C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC\bin\Debug\net8.0\Friendbook.Data.pdb
+C:\Users\user\Desktop\Friendbook.App\Friendbook.MVC\obj\Debug\net8.0\Friendbook.MVC.MvcApplicationPartsAssemblyInfo.cs

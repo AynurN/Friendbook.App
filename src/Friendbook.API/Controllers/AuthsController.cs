@@ -55,6 +55,7 @@ namespace Friendbook.API.Controllers
             // }
 
             [HttpPost("[action]")]
+        [ServiceFilter(typeof(ValidateUserRegistrationFilter))]
         public async Task<IActionResult> Register([FromBody] UserRegisterDto userRegisterDto)
         {
             try
@@ -69,6 +70,36 @@ namespace Friendbook.API.Controllers
                     ErrorMessage = ex.Message,
                     Entities = null,
                     PropertyName = ex.PropertyName
+                });
+            }
+            catch (InvalidEmailFormatException ex)
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Entities = null,
+                    PropertyName = ex.Field
+                });
+            }
+            catch (WeakPasswordException ex)
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Entities = null,
+                    PropertyName = ex.Field
+                });
+            }
+            catch (UserCreationException ex)
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Entities = null,
+                    PropertyName = ex.Field
                 });
             }
             catch (Exception ex)

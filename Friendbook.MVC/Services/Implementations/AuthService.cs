@@ -1,7 +1,9 @@
 ﻿using Friendbook.MVC.ApiResponseMessages;
 using Friendbook.MVC.Areas.LoginRegister.ViewModels;
 using Friendbook.MVC.Services.Interfacses;
+using Newtonsoft.Json;
 using RestSharp;
+using System.Net;
 
 namespace Friendbook.MVC.Services.Implementations
 {
@@ -36,6 +38,7 @@ namespace Friendbook.MVC.Services.Implementations
         {
             var request = new RestRequest("/auths/register", Method.Post);
             request.AddJsonBody(vm);
+            
             var response = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(request);
 
             return response;

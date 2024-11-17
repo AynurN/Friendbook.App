@@ -6,7 +6,7 @@
         public string ErrorMessage { get; set; }
         public T Entities { get; set; }
         public string PropertyName { get; set; }
-        public bool IsSuccessfull { get; set; }
+        public bool IsSuccessful { get; set; }
         
     }
 }
